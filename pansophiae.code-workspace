@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "./repos/server-deno"
+		},
+		{
+			"path": "./repos/client-web"
+		},
+		{
+			"path": "./repos/schema"
+		}
+	]
+}
