@@ -7,6 +7,9 @@
 			"path": "./repos/client-web"
 		},
 		{
+			"path": "./repos/webext"
+		},
+		{
 			"path": "./repos/schema"
 		}
 	]
