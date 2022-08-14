@@ -8,7 +8,7 @@ task.init() {
 }
 
 task.dev() {
-	code './pansophiae.code-workspace'
+	code './kaxon.code-workspace'
 }
 
 task.cp() {
@@ -32,6 +32,6 @@ util.symlink_or_clone() {
 	else
 		bake.info "Cloning $repo_name"
 		
-		git clone "git@github.com:pansophiae/$repo_name" "./repos/$repo_name"
+		git clone "git@github.com:project-kaxon/$repo_name" "./repos/$repo_name"
 	fi
 }
