@@ -1,16 +1,25 @@
 {
 	"folders": [
 		{
-			"path": "./repos/server-deno"
+			"path": "./repos/client-web"
 		},
 		{
-			"path": "./repos/client-web"
+			"path": "./repos/server-deno"
 		},
 		{
 			"path": "./repos/webext"
 		},
 		{
-			"path": "./repos/schema"
+			"path": "./repos/webext-broker",
+		},
+		{
+			"path": "./repos/launcher",
+		},
+		{
+			"path": "./repos/common"
+		},
+		{
+			"path": "."
 		}
 	]
 }
