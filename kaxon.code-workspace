@@ -10,10 +10,13 @@
 			"path": "./repos/webext"
 		},
 		{
-			"path": "./repos/webext-broker",
+			"path": "./repos/webext-broker"
 		},
 		{
-			"path": "./repos/launcher",
+			"path": "./repos/docs"
+		},
+		{
+			"path": "./repos/launcher"
 		},
 		{
 			"path": "./repos/common"

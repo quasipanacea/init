@@ -8,6 +8,7 @@ task.init() {
 	util.clone_and_symlink 'webext'
 	util.clone_and_symlink 'webext-broker'
 	util.clone_and_symlink 'launcher'
+	util.clone_and_symlink 'docs'
 	util.clone_and_symlink 'common'
 	util.clone_and_symlink '.github'
 
