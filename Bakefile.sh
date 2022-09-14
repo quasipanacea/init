@@ -1,19 +1,32 @@
 # shellcheck shell=bash
 
+init() {
+	declare -g global_repos=(server-deno client-web webext webext-broker launcher docs common .github)
+}
+
 task.init() {
 	mkdir -p './repos'
+	
+	for repo in "${global_repos[@]}"; do
+		util.clone_and_symlink "$repo"
+	done
 
-	util.clone_and_symlink 'server-deno'
-	util.clone_and_symlink 'client-web'
-	util.clone_and_symlink 'webext'
-	util.clone_and_symlink 'webext-broker'
-	util.clone_and_symlink 'launcher'
-	util.clone_and_symlink 'docs'
-	util.clone_and_symlink 'common'
-	util.clone_and_symlink '.github'
-
-	for dir in 'server-deno' 'client-web' 'webext-broker'; do
+	for dir in server-deno client-web webext-broker; do
 		ln -sfT "$BAKE_ROOT/repos/common" "$BAKE_ROOT/repos/$dir/common"
+	done
+}
+
+task.update() {
+	for repo in "${global_repos[@]}"; do
+		(
+			cd "./repos/$repo"
+			
+			if [ -n "$(git status -s)" ]; then
+				bake.die "There are unstaged changes in repo: $repo"
+			fi
+
+			git pull origin main
+		)
 	done
 }
 
