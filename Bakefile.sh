@@ -6,7 +6,7 @@ init() {
 
 task.init() {
 	mkdir -p './repos'
-	
+
 	for repo in "${global_repos[@]}"; do
 		util.clone "$repo"
 	done
@@ -19,13 +19,13 @@ task.init() {
 task.update() {
 	for repo in "${global_repos[@]}"; do
 		pushd "./repos/$repo"
-			
+
 		if [ -n "$(git status -s)" ]; then
 			bake.die "There are unstaged changes in repo: $repo"
 		fi
 
 		git pull origin main
-		
+
 		popd
 	done
 }
