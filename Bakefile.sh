@@ -11,7 +11,19 @@ task.init() {
 		util.clone "$repo"
 	done
 
-	for dir in 'server-deno' 'client-web' 'webext-broker'; do
+	for dir in ./repos/{client-web,webext}; do
+		pushd "$dir"
+		pnpm install
+		popd
+	done
+
+	for dir in ./repos/webext-broker; do
+		pushd "$dir"
+		poetry install
+		popd
+	done
+
+	for dir in 'client-web' 'server-deno' 'webext-broker'; do
 		ln -sfT "$BAKE_ROOT/repos/common" "$BAKE_ROOT/repos/$dir/common"
 	done
 }
@@ -32,6 +44,7 @@ task.update() {
 
 task.dev() {
 	code './kaxon.code-workspace'
+	nohup kitty tmuxinator &>/dev/null </dev/null &
 }
 
 util.clone() {
