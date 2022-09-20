@@ -1,7 +1,7 @@
 # shellcheck shell=bash
 
 init() {
-	declare -g global_repos=(server-deno client-web webext webext-broker launcher docs common .github)
+	declare -g global_repos=(agent server-deno client-web webext launcher docs common .github)
 }
 
 task.init() {
@@ -17,13 +17,13 @@ task.init() {
 		popd
 	done
 
-	for dir in ./repos/webext-broker; do
+	for dir in ./repos/agent; do
 		pushd "$dir"
 		poetry install
 		popd
 	done
 
-	for dir in 'client-web' 'server-deno' 'webext-broker'; do
+	for dir in 'client-web' 'server-deno' 'agent'; do
 		ln -sfT "$BAKE_ROOT/repos/common" "$BAKE_ROOT/repos/$dir/common"
 	done
 }

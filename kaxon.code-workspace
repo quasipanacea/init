@@ -1,6 +1,9 @@
 {
 	"folders": [
 		{
+			"path": "./repos/agent"
+		},
+		{
 			"path": "./repos/client-web"
 		},
 		{
@@ -8,9 +11,6 @@
 		},
 		{
 			"path": "./repos/webext"
-		},
-		{
-			"path": "./repos/webext-broker"
 		},
 		{
 			"path": "./repos/docs"
