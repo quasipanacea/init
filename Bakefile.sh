@@ -1,7 +1,7 @@
 # shellcheck shell=bash
 
 init() {
-	declare -g global_repos=(agent server-deno client-web webext launcher docs common .github)
+	declare -g global_repos=(aggregator agent server-deno client-web webext launcher docs common .github)
 }
 
 task.init() {

@@ -1,6 +1,9 @@
 {
 	"folders": [
 		{
+			"path": "./repos/aggregator"
+		},
+		{
 			"path": "./repos/agent"
 		},
 		{
