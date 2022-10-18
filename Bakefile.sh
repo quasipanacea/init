@@ -1,35 +1,53 @@
 # shellcheck shell=bash
+# shellcheck disable=SC2164
 
 init() {
-	declare -g global_repos=(aggregator agent server-deno client-web webext launcher docs common .github)
+	declare -g all_repos=(aggregator agent server-deno client-web webext docs common .github)
+	declare -g npm_repos=(client-web webext)
+	declare -g poetry_repos=(agent)
+	declare -g repos_with_common_symlink=(client-web server-deno agent)
+}
+
+task.bootstrap() {
+	task.init
+
+	local agent_file="$PWD/bootstrap/build/bin/agent"
+	if [ ! -f "$agent_file" ] || bake.has_flag '--force'; then
+		mkdir -p 'bootstrap'
+		cd 'bootstrap'
+
+		util.dl-nightly 'agent'
+		tar xf './agent.tar.gz'
+	fi
+
+	bake.info 'Running agent'
+	exec "$agent_file"
 }
 
 task.init() {
 	mkdir -p './repos'
 
-	for repo in "${global_repos[@]}"; do
+	for repo in "${all_repos[@]}"; do
 		util.clone "$repo"
 	done
 
-	for dir in ./repos/{client-web,webext}; do
-		pushd "$dir"
+	for dir in "${npm_repos[@]}"; do cd "./repos/$dir"
+		bake.info "Installing dependencies for: $dir"
 		pnpm install
-		popd
-	done
+	cd ~-; done
 
-	for dir in ./repos/agent; do
-		pushd "$dir"
+	for dir in "${poetry_repos[@]}"; do cd "./repos/$dir"
+		bake.info "Installing dependencies for: $dir"
 		poetry install
-		popd
-	done
+	cd ~-; done
 
-	for dir in 'client-web' 'server-deno' 'agent'; do
+	for dir in "${repos_with_common_symlink[@]}"; do cd "./repos/$dir";
 		ln -sfT "$BAKE_ROOT/repos/common" "$BAKE_ROOT/repos/$dir/common"
-	done
+	cd ~-; done
 }
 
 task.update() {
-	for repo in "${global_repos[@]}"; do
+	for repo in "${all_repos[@]}"; do
 		pushd "./repos/$repo"
 
 		if [ -n "$(git status -s)" ]; then
