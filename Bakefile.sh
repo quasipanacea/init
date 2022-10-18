@@ -9,15 +9,24 @@ init() {
 }
 
 task.bootstrap() {
-	task.init
+	if [ ! -d './.git' ]; then
+		rm -f './bake' './Bakefile.sh'
+		git clone "git@github.com:project-kaxon/init" .
+	fi
 
-	local agent_file="$PWD/bootstrap/build/bin/agent"
+	if [ ! -d './repos' ]; then
+		task.init
+	fi
+
+	local agent_file='./bootstrap/build/bin/agent'
 	if [ ! -f "$agent_file" ] || bake.has_flag '--force'; then
-		mkdir -p 'bootstrap'
-		cd 'bootstrap'
+		mkdir -p './bootstrap'
+		cd './bootstrap'
 
 		util.dl-nightly 'agent'
 		tar xf './agent.tar.gz'
+
+		cd ~-
 	fi
 
 	bake.info 'Running agent'
@@ -41,9 +50,9 @@ task.init() {
 		poetry install
 	cd ~-; done
 
-	for dir in "${repos_with_common_symlink[@]}"; do cd "./repos/$dir";
+	for dir in "${repos_with_common_symlink[@]}"; do
 		ln -sfT "$BAKE_ROOT/repos/common" "$BAKE_ROOT/repos/$dir/common"
-	cd ~-; done
+	done
 }
 
 task.update() {
