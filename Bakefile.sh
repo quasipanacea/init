@@ -30,7 +30,11 @@ task.bootstrap() {
 	fi
 
 	bake.info 'Running agent'
-	exec "$agent_file"
+	if (($# == 0)); then
+		exec "$agent_file" --help
+	else
+		exec "$agent_file" "$@"
+	fi
 }
 
 task.init() {
