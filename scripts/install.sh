@@ -2,8 +2,8 @@
 set -e
 
 main() {
-	local bake_script='https://raw.githubusercontent.com/project-kaxon/init/main/bake'
-	local bake_file='https://raw.githubusercontent.com/project-kaxon/init/main/Bakefile.sh'
+	local bake_script='https://raw.githubusercontent.com/cosmic-knowledge/init/main/bake'
+	local bake_file='https://raw.githubusercontent.com/cosmic-knowledge/init/main/Bakefile.sh'
 
 	curl -fsSLo './bake' "$bake_script"
 	curl -fsSLo './Bakefile.sh' "$bake_file"

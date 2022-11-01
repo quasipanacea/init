@@ -1,10 +1,13 @@
 {
 	"folders": [
 		{
-			"path": "./repos/aggregator"
-		},
+			"path": "./repos/.github"
+		}
 		{
 			"path": "./repos/agent"
+		},
+		{
+			"path": "./repos/aggregator"
 		},
 		{
 			"path": "./repos/client-web"

@@ -11,11 +11,7 @@ init() {
 task.bootstrap() {
 	if [ ! -d './.git' ]; then
 		rm -f './bake' './Bakefile.sh'
-		git clone "git@github.com:project-kaxon/init" .
-	fi
-
-	if [ ! -d './repos' ]; then
-		task.init
+		git clone "git@github.com:cosmic-knowledge/init" .
 	fi
 
 	local agent_file='./bootstrap/build/bin/agent'
@@ -26,7 +22,7 @@ task.bootstrap() {
 		util.dl-nightly 'agent'
 		tar xf './agent.tar.gz'
 
-		cd ~-
+		cd -
 	fi
 
 	bake.info 'Running agent'
@@ -37,12 +33,17 @@ task.bootstrap() {
 	fi
 }
 
-task.init() {
+task.clone() {
 	mkdir -p './repos'
-
 	for repo in "${all_repos[@]}"; do
 		util.clone "$repo"
 	done
+}
+
+task.init() {
+	mkdir -p './repos'
+
+	task.clone
 
 	for dir in "${npm_repos[@]}"; do cd "./repos/$dir"
 		bake.info "Installing dependencies for: $dir"
@@ -114,14 +115,14 @@ task.run-nightly() {
 util.dl-nightly() {
 	local repo="$1"
 
-	curl -#SfLo "$repo.tar.gz" "https://github.com/project-kaxon/$repo/releases/download/nightly/build.tar.gz"
+	curl -#SfLo "$repo.tar.gz" "https://github.com/cosmic-knowledge/$repo/releases/download/nightly/build.tar.gz"
 }
 
 util.clone() {
 	local repo_name="$1"
 
 	if [ ! -d "$BAKE_ROOT/repos/$repo_name" ]; then
-		bake.info "Cloning: project-kaxon/$repo_name"
-		git clone "git@github.com:project-kaxon/$repo_name" "$BAKE_ROOT/repos/$repo_name"
+		bake.info "Cloning: cosmic-knowledge/$repo_name"
+		git clone "git@github.com:cosmic-knowledge/$repo_name" "$BAKE_ROOT/repos/$repo_name"
 	fi
 }
