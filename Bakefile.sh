@@ -33,17 +33,22 @@ task.bootstrap() {
 	fi
 }
 
-task.clone() {
+task.init() {
+	task.clone
+	task.do-deps
+	task.do-symlinks
+}
+
+task.do-clone() {
 	mkdir -p './repos'
+
 	for repo in "${all_repos[@]}"; do
 		util.clone "$repo"
 	done
 }
 
-task.init() {
+task.do-deps() {
 	mkdir -p './repos'
-
-	task.clone
 
 	for dir in "${npm_repos[@]}"; do cd "./repos/$dir"
 		bake.info "Installing dependencies for: $dir"
@@ -54,6 +59,10 @@ task.init() {
 		bake.info "Installing dependencies for: $dir"
 		poetry install
 	cd ~-; done
+}
+
+task.do-symlinks() {
+	mkdir -p './repos'
 
 	for dir in "${repos_with_common_symlink[@]}"; do
 		ln -sfT "$BAKE_ROOT/repos/common" "$BAKE_ROOT/repos/$dir/common"

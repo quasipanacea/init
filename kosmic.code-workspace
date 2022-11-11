@@ -2,7 +2,7 @@
 	"folders": [
 		{
 			"path": "./repos/.github"
-		}
+		},
 		{
 			"path": "./repos/agent"
 		},
