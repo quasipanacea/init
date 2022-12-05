@@ -84,7 +84,7 @@ task.update() {
 }
 
 task.dev() {
-	code './kaxon.code-workspace'
+	code './quazipanacea.code-workspace'
 	nohup kitty tmuxinator &>/dev/null </dev/null &
 }
 
