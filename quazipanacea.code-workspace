@@ -22,9 +22,6 @@
 			"path": "./repos/docs"
 		},
 		{
-			"path": "./repos/common"
-		},
-		{
 			"path": "."
 		}
 	],
