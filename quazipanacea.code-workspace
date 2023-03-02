@@ -4,11 +4,12 @@
 			"path": "./repos/.github"
 		},
 		{
-			"path": "./repos/agent"
+			"path": "./repos/docs"
 		},
 		{
-			"path": "./repos/aggregator"
+			"path": "./repos/cli"
 		},
+
 		{
 			"path": "./repos/client-web"
 		},
@@ -19,7 +20,10 @@
 			"path": "./repos/webext"
 		},
 		{
-			"path": "./repos/docs"
+			"path": "agent"
+		},
+		{
+			"path": "./repos/aggregator"
 		},
 		{
 			"path": "."
