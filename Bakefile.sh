@@ -2,35 +2,14 @@
 # shellcheck disable=SC2164
 
 init() {
-	declare -g all_repos=(aggregator agent server-deno client-web webext docs common .github)
+	declare -g all_repos=(aggregator cli agent server-deno client-web webext docs common .github)
 	declare -g npm_repos=(client-web webext)
 	declare -g poetry_repos=(agent)
 	declare -g repos_with_common_symlink=(client-web server-deno agent)
 }
 
 task.bootstrap() {
-	if [ ! -d './.git' ]; then
-		rm -f './bake' './Bakefile.sh'
-		git clone "git@github.com:cosmic-knowledge/init" .
-	fi
-
-	local agent_file='./bootstrap/build/bin/agent'
-	if [ ! -f "$agent_file" ] || bake.has_flag '--force'; then
-		mkdir -p './bootstrap'
-		cd './bootstrap'
-
-		util.dl-nightly 'agent'
-		tar xf './agent.tar.gz'
-
-		cd -
-	fi
-
-	bake.info 'Running agent'
-	if (($# == 0)); then
-		exec "$agent_file" --help
-	else
-		exec "$agent_file" "$@"
-	fi
+	printf '%s\n' 'Not Implemented'
 }
 
 task.init() {

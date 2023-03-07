@@ -9,7 +9,6 @@
 		{
 			"path": "./repos/cli"
 		},
-
 		{
 			"path": "./repos/client-web"
 		},
@@ -20,7 +19,7 @@
 			"path": "./repos/webext"
 		},
 		{
-			"path": "agent"
+			"path": "./repos/agent"
 		},
 		{
 			"path": "./repos/aggregator"
