@@ -5,7 +5,6 @@ init() {
 	declare -g all_repos=(aggregator cli agent server-deno client-web webext docs common .github)
 	declare -g npm_repos=(client-web webext)
 	declare -g poetry_repos=(agent)
-	declare -g repos_with_common_symlink=(client-web server-deno agent)
 }
 
 task.bootstrap() {
@@ -15,7 +14,6 @@ task.bootstrap() {
 task.init() {
 	task.clone
 	task.do-deps
-	task.do-symlinks
 }
 
 task.do-clone() {
@@ -38,14 +36,6 @@ task.do-deps() {
 		bake.info "Installing dependencies for: $dir"
 		poetry install
 	cd ~-; done
-}
-
-task.do-symlinks() {
-	mkdir -p './repos'
-
-	for dir in "${repos_with_common_symlink[@]}"; do
-		ln -sfT "$BAKE_ROOT/repos/common" "$BAKE_ROOT/repos/$dir/common"
-	done
 }
 
 task.update() {
