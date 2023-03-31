@@ -1,4 +1,7 @@
 {
+	"settings": {
+		"typescript.tsdk": "client-web/node_modules/typescript/lib"
+	},
 	"folders": [
 		{
 			"path": "./repos/.github"
@@ -8,6 +11,9 @@
 		},
 		{
 			"path": "./repos/cli"
+		},
+		{
+			"path": "./repos/common"
 		},
 		{
 			"path": "./repos/client-web"
@@ -27,8 +33,5 @@
 		{
 			"path": "."
 		}
-	],
-	"settings": {
-		"typescript.tsdk": "node_modules/typescript/lib"
-	}
+	]
 }

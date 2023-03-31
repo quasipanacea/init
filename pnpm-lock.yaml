@@ -1,0 +1,152 @@
+lockfileVersion: 5.4
+
+importers:
+
+  .:
+    specifiers:
+      typescript: ^5.0.3
+    devDependencies:
+      typescript: 5.0.3
+
+  repos/common/plugins/qp-cover-list:
+    specifiers: {}
+
+  repos/common/plugins/qp-cover-markmap:
+    specifiers: {}
+
+  repos/common/plugins/qp-group-line:
+    specifiers: {}
+
+  repos/common/plugins/qp-overview-by-group:
+    specifiers: {}
+
+  repos/common/plugins/qp-overview-debug:
+    specifiers: {}
+
+  repos/common/plugins/qp-overview-graph-cytoscape:
+    specifiers: {}
+
+  repos/common/plugins/qp-overview-graph-vis:
+    specifiers: {}
+
+  repos/common/plugins/qp-overview-mindelixir:
+    specifiers: {}
+
+  repos/common/plugins/qp-pack-core:
+    specifiers:
+      '@quazipanacea/common': workspace:*
+      '@quazipanacea/cover-list': workspace:*
+      '@quazipanacea/cover-markmap': workspace:*
+      '@quazipanacea/group-line': workspace:*
+      '@quazipanacea/overview-by-group': workspace:*
+      '@quazipanacea/overview-debug': workspace:*
+      '@quazipanacea/overview-graph-cytoscape': workspace:*
+      '@quazipanacea/overview-graph-vis': workspace:*
+      '@quazipanacea/overview-mindelixir': workspace:*
+      '@quazipanacea/pod-chemical': workspace:*
+      '@quazipanacea/pod-debug': workspace:*
+      '@quazipanacea/pod-latex': workspace:*
+      '@quazipanacea/pod-markdown': workspace:*
+      '@quazipanacea/pod-plaintext': workspace:*
+    dependencies:
+      '@quazipanacea/common': link:../../shared/qp-common
+      '@quazipanacea/cover-list': link:../qp-cover-list
+      '@quazipanacea/cover-markmap': link:../qp-cover-markmap
+      '@quazipanacea/group-line': link:../qp-group-line
+      '@quazipanacea/overview-by-group': link:../qp-overview-by-group
+      '@quazipanacea/overview-debug': link:../qp-overview-debug
+      '@quazipanacea/overview-graph-cytoscape': link:../qp-overview-graph-cytoscape
+      '@quazipanacea/overview-graph-vis': link:../qp-overview-graph-vis
+      '@quazipanacea/overview-mindelixir': link:../qp-overview-mindelixir
+      '@quazipanacea/pod-chemical': link:../qp-pod-chemical
+      '@quazipanacea/pod-debug': link:../qp-pod-debug
+      '@quazipanacea/pod-latex': link:../qp-pod-latex
+      '@quazipanacea/pod-markdown': link:../qp-pod-markdown
+      '@quazipanacea/pod-plaintext': link:../qp-pod-plaintext
+
+  repos/common/plugins/qp-pod-chemical:
+    specifiers:
+      '@quazipanacea/common': workspace:*
+      '@quazipanacea/plugin-utility': workspace:*
+    dependencies:
+      '@quazipanacea/common': link:../../shared/qp-common
+      '@quazipanacea/plugin-utility': link:../../shared/qp-plugin-utility
+
+  repos/common/plugins/qp-pod-debug:
+    specifiers:
+      '@quazipanacea/plugin-utility': workspace:*
+    dependencies:
+      '@quazipanacea/plugin-utility': link:../../shared/qp-plugin-utility
+
+  repos/common/plugins/qp-pod-latex:
+    specifiers:
+      '@quazipanacea/plugin-utility': workspace:*
+    dependencies:
+      '@quazipanacea/plugin-utility': link:../../shared/qp-plugin-utility
+
+  repos/common/plugins/qp-pod-markdown:
+    specifiers:
+      '@quazipanacea/plugin-utility': workspace:*
+    dependencies:
+      '@quazipanacea/plugin-utility': link:../../shared/qp-plugin-utility
+
+  repos/common/plugins/qp-pod-plaintext:
+    specifiers:
+      '@quazipanacea/plugin-utility': workspace:*
+    dependencies:
+      '@quazipanacea/plugin-utility': link:../../shared/qp-plugin-utility
+
+  repos/common/shared/qp-common:
+    specifiers: {}
+
+  repos/common/shared/qp-plugin-components:
+    specifiers: {}
+
+  repos/common/shared/qp-plugin-utility:
+    specifiers: {}
+
+  repos/server-deno:
+    specifiers:
+      '@quazipanacea/common': workspace:*
+      '@quazipanacea/cover-list': workspace:*
+      '@quazipanacea/cover-markmap': workspace:*
+      '@quazipanacea/group-line': workspace:*
+      '@quazipanacea/overview-by-group': workspace:*
+      '@quazipanacea/overview-debug': workspace:*
+      '@quazipanacea/overview-graph-cytoscape': workspace:*
+      '@quazipanacea/overview-graph-vis': workspace:*
+      '@quazipanacea/overview-mindelixir': workspace:*
+      '@quazipanacea/pack-core': workspace:*
+      '@quazipanacea/plugin-components': workspace:*
+      '@quazipanacea/plugin-utility': workspace:*
+      '@quazipanacea/pod-chemical': workspace:*
+      '@quazipanacea/pod-debug': workspace:*
+      '@quazipanacea/pod-latex': workspace:*
+      '@quazipanacea/pod-markdown': workspace:*
+      '@quazipanacea/pod-plaintext': workspace:*
+    dependencies:
+      '@quazipanacea/common': link:../common/shared/qp-common
+      '@quazipanacea/cover-list': link:../common/plugins/qp-cover-list
+      '@quazipanacea/cover-markmap': link:../common/plugins/qp-cover-markmap
+      '@quazipanacea/group-line': link:../common/plugins/qp-group-line
+      '@quazipanacea/overview-by-group': link:../common/plugins/qp-overview-by-group
+      '@quazipanacea/overview-debug': link:../common/plugins/qp-overview-debug
+      '@quazipanacea/overview-graph-cytoscape': link:../common/plugins/qp-overview-graph-cytoscape
+      '@quazipanacea/overview-graph-vis': link:../common/plugins/qp-overview-graph-vis
+      '@quazipanacea/overview-mindelixir': link:../common/plugins/qp-overview-mindelixir
+      '@quazipanacea/pack-core': link:../common/plugins/qp-pack-core
+      '@quazipanacea/plugin-components': link:../common/shared/qp-plugin-components
+      '@quazipanacea/plugin-utility': link:../common/shared/qp-plugin-utility
+      '@quazipanacea/pod-chemical': link:../common/plugins/qp-pod-chemical
+      '@quazipanacea/pod-debug': link:../common/plugins/qp-pod-debug
+      '@quazipanacea/pod-latex': link:../common/plugins/qp-pod-latex
+      '@quazipanacea/pod-markdown': link:../common/plugins/qp-pod-markdown
+      '@quazipanacea/pod-plaintext': link:../common/plugins/qp-pod-plaintext
+
+packages:
+
+  /typescript/5.0.3:
+    resolution: {integrity: sha512-xv8mOEDnigb/tN9PSMTwSEqAnUvkoXMQlicOb0IUVDBSQCgBSaAAROUZYy2IcUy5qU6XajK5jjjO7TMWqBTKZA==}
+    engines: {node: '>=12.20'}
+    hasBin: true
+    dev: true

@@ -1,0 +1,4 @@
+packages:
+  - './repos/common/plugins/*'
+  - './repos/common/shared/*'
+  - './repos/server-deno'
