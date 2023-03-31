@@ -2,3 +2,4 @@ repos/
 nightly/
 bootstrap/
 dependencies/
+node_modules/
