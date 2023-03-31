@@ -1,20 +1,20 @@
 # init
 
-See the [organization](https://github.com/quazipanacea) for details.
+See the [organization](https://github.com/quasipanacea) for details.
 
 ## Installation (production)
 
 ```sh
-cargo install quazipanacea-cli
+cargo install quasipanacea-cli
 
-quazipanacea-cli install
-quazipanacea-cli run
+quasipanacea-cli install
+quasipanacea-cli run
 ```
 
 ## Installation (development)
 
-This installs all GitHub repositories that are part of Quazipanacea. The target directory of the installation is the current working directory.
+This installs all GitHub repositories that are part of Quasipanacea. The target directory of the installation is the current working directory.
 
 ```sh
-curl -#fLo- 'https://raw.githubusercontent.com/quazipanacea/init/main/scripts/install.sh' | bash
+curl -#fLo- 'https://raw.githubusercontent.com/quasipanacea/init/main/scripts/install.sh' | bash
 ```

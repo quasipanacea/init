@@ -63,7 +63,7 @@ task.update() {
 }
 
 task.dev() {
-	code './quazipanacea.code-workspace'
+	code './quasipanacea.code-workspace'
 	nohup kitty tmuxinator &>/dev/null </dev/null &
 }
 
@@ -103,14 +103,14 @@ task.run-nightly() {
 util.dl-nightly() {
 	local repo="$1"
 
-	curl -#SfLo "$repo.tar.gz" "https://github.com/quazipanacea/$repo/releases/download/nightly/build.tar.gz"
+	curl -#SfLo "$repo.tar.gz" "https://github.com/quasipanacea/$repo/releases/download/nightly/build.tar.gz"
 }
 
 util.clone() {
 	local repo_name="$1"
 
 	if [ ! -d "$BAKE_ROOT/repos/$repo_name" ]; then
-		bake.info "Cloning: quazipanacea/$repo_name"
-		git clone "git@github.com:quazipanacea/$repo_name" "$BAKE_ROOT/repos/$repo_name"
+		bake.info "Cloning: quasipanacea/$repo_name"
+		git clone "git@github.com:quasipanacea/$repo_name" "$BAKE_ROOT/repos/$repo_name"
 	fi
 }

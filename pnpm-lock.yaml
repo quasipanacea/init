@@ -10,9 +10,9 @@ importers:
 
   repos/client-web:
     specifiers:
-      '@quazipanacea/common': workspace:*
-      '@quazipanacea/pack-core': workspace:*
-      '@quazipanacea/plugin-components': workspace:*
+      '@quasipanacea/common': workspace:*
+      '@quasipanacea/pack-core': workspace:*
+      '@quasipanacea/plugin-components': workspace:*
       '@rollup/plugin-node-resolve': ^15.0.1
       '@rushstack/eslint-patch': ^1.2.0
       '@trpc/client': ^10.18.0
@@ -44,9 +44,9 @@ importers:
       vue-tsc: 1.2.0
       zod: ^3.19.1
     dependencies:
-      '@quazipanacea/common': link:../common/shared/qp-common
-      '@quazipanacea/pack-core': link:../common/plugins/qp-pack-core
-      '@quazipanacea/plugin-components': link:../common/shared/qp-plugin-components
+      '@quasipanacea/common': link:../common/shared/qp-common
+      '@quasipanacea/pack-core': link:../common/plugins/qp-pack-core
+      '@quasipanacea/plugin-components': link:../common/shared/qp-plugin-components
       '@trpc/client': 10.18.0_@trpc+server@10.18.0
       '@trpc/server': 10.18.0
       '@vueuse/core': 9.13.0_vue@3.2.47
@@ -81,27 +81,27 @@ importers:
 
   repos/common/plugins/qp-cover-list:
     specifiers:
-      '@quazipanacea/common': workspace:*
-      '@quazipanacea/plugin-components': workspace:*
-      '@quazipanacea/plugin-utility': workspace:*
+      '@quasipanacea/common': workspace:*
+      '@quasipanacea/plugin-components': workspace:*
+      '@quasipanacea/plugin-utility': workspace:*
     dependencies:
-      '@quazipanacea/common': link:../../shared/qp-common
-      '@quazipanacea/plugin-components': link:../../shared/qp-plugin-components
-      '@quazipanacea/plugin-utility': link:../../shared/qp-plugin-utility
+      '@quasipanacea/common': link:../../shared/qp-common
+      '@quasipanacea/plugin-components': link:../../shared/qp-plugin-components
+      '@quasipanacea/plugin-utility': link:../../shared/qp-plugin-utility
 
   repos/common/plugins/qp-cover-markmap:
     specifiers:
-      '@quazipanacea/common': workspace:*
-      '@quazipanacea/plugin-components': workspace:*
-      '@quazipanacea/plugin-utility': workspace:*
+      '@quasipanacea/common': workspace:*
+      '@quasipanacea/plugin-components': workspace:*
+      '@quasipanacea/plugin-utility': workspace:*
       markmap-common: ^0.14.2
       markmap-lib: ^0.14.4
       markmap-toolbar: ^0.14.4
       markmap-view: ^0.14.4
     dependencies:
-      '@quazipanacea/common': link:../../shared/qp-common
-      '@quazipanacea/plugin-components': link:../../shared/qp-plugin-components
-      '@quazipanacea/plugin-utility': link:../../shared/qp-plugin-utility
+      '@quasipanacea/common': link:../../shared/qp-common
+      '@quasipanacea/plugin-components': link:../../shared/qp-plugin-components
+      '@quasipanacea/plugin-utility': link:../../shared/qp-plugin-utility
       markmap-common: 0.14.2
       markmap-lib: 0.14.4_markmap-common@0.14.2
       markmap-toolbar: 0.14.4
@@ -109,39 +109,39 @@ importers:
 
   repos/common/plugins/qp-group-line:
     specifiers:
-      '@quazipanacea/common': workspace:*
-      '@quazipanacea/plugin-components': workspace:*
-      '@quazipanacea/plugin-utility': workspace:*
+      '@quasipanacea/common': workspace:*
+      '@quasipanacea/plugin-components': workspace:*
+      '@quasipanacea/plugin-utility': workspace:*
     dependencies:
-      '@quazipanacea/common': link:../../shared/qp-common
-      '@quazipanacea/plugin-components': link:../../shared/qp-plugin-components
-      '@quazipanacea/plugin-utility': link:../../shared/qp-plugin-utility
+      '@quasipanacea/common': link:../../shared/qp-common
+      '@quasipanacea/plugin-components': link:../../shared/qp-plugin-components
+      '@quasipanacea/plugin-utility': link:../../shared/qp-plugin-utility
 
   repos/common/plugins/qp-overview-by-group:
     specifiers:
-      '@quazipanacea/common': workspace:*
-      '@quazipanacea/plugin-components': workspace:*
-      '@quazipanacea/plugin-utility': workspace:*
+      '@quasipanacea/common': workspace:*
+      '@quasipanacea/plugin-components': workspace:*
+      '@quasipanacea/plugin-utility': workspace:*
     dependencies:
-      '@quazipanacea/common': link:../../shared/qp-common
-      '@quazipanacea/plugin-components': link:../../shared/qp-plugin-components
-      '@quazipanacea/plugin-utility': link:../../shared/qp-plugin-utility
+      '@quasipanacea/common': link:../../shared/qp-common
+      '@quasipanacea/plugin-components': link:../../shared/qp-plugin-components
+      '@quasipanacea/plugin-utility': link:../../shared/qp-plugin-utility
 
   repos/common/plugins/qp-overview-debug:
     specifiers:
-      '@quazipanacea/common': workspace:*
-      '@quazipanacea/plugin-components': workspace:*
-      '@quazipanacea/plugin-utility': workspace:*
+      '@quasipanacea/common': workspace:*
+      '@quasipanacea/plugin-components': workspace:*
+      '@quasipanacea/plugin-utility': workspace:*
     dependencies:
-      '@quazipanacea/common': link:../../shared/qp-common
-      '@quazipanacea/plugin-components': link:../../shared/qp-plugin-components
-      '@quazipanacea/plugin-utility': link:../../shared/qp-plugin-utility
+      '@quasipanacea/common': link:../../shared/qp-common
+      '@quasipanacea/plugin-components': link:../../shared/qp-plugin-components
+      '@quasipanacea/plugin-utility': link:../../shared/qp-plugin-utility
 
   repos/common/plugins/qp-overview-graph-cytoscape:
     specifiers:
-      '@quazipanacea/common': workspace:*
-      '@quazipanacea/plugin-components': workspace:*
-      '@quazipanacea/plugin-utility': workspace:*
+      '@quasipanacea/common': workspace:*
+      '@quasipanacea/plugin-components': workspace:*
+      '@quasipanacea/plugin-utility': workspace:*
       cytoscape: ^3.23.0
       cytoscape-cola: ^2.5.1
       cytoscape-compound-drag-and-drop: ^1.1.0
@@ -150,9 +150,9 @@ importers:
       cytoscape-lasso: ^1.1.4
       cytoscape-undo-redo: ^1.3.3
     dependencies:
-      '@quazipanacea/common': link:../../shared/qp-common
-      '@quazipanacea/plugin-components': link:../../shared/qp-plugin-components
-      '@quazipanacea/plugin-utility': link:../../shared/qp-plugin-utility
+      '@quasipanacea/common': link:../../shared/qp-common
+      '@quasipanacea/plugin-components': link:../../shared/qp-plugin-components
+      '@quasipanacea/plugin-utility': link:../../shared/qp-plugin-utility
       cytoscape: 3.23.0
       cytoscape-cola: 2.5.1_cytoscape@3.23.0
       cytoscape-compound-drag-and-drop: 1.1.0_cytoscape@3.23.0
@@ -163,134 +163,134 @@ importers:
 
   repos/common/plugins/qp-overview-graph-vis:
     specifiers:
-      '@quazipanacea/common': workspace:*
-      '@quazipanacea/plugin-components': workspace:*
-      '@quazipanacea/plugin-utility': workspace:*
+      '@quasipanacea/common': workspace:*
+      '@quasipanacea/plugin-components': workspace:*
+      '@quasipanacea/plugin-utility': workspace:*
       vis-data: ^7.1.6
       vis-network: ^9.1.6
       vis-util: ^5.0.3
     dependencies:
-      '@quazipanacea/common': link:../../shared/qp-common
-      '@quazipanacea/plugin-components': link:../../shared/qp-plugin-components
-      '@quazipanacea/plugin-utility': link:../../shared/qp-plugin-utility
+      '@quasipanacea/common': link:../../shared/qp-common
+      '@quasipanacea/plugin-components': link:../../shared/qp-plugin-components
+      '@quasipanacea/plugin-utility': link:../../shared/qp-plugin-utility
       vis-data: 7.1.6_vis-util@5.0.3
       vis-network: 9.1.6_zzgkjc5xr445carinby2q6qdja
       vis-util: 5.0.3
 
   repos/common/plugins/qp-overview-mindelixir:
     specifiers:
-      '@quazipanacea/common': workspace:*
-      '@quazipanacea/plugin-components': workspace:*
-      '@quazipanacea/plugin-utility': workspace:*
+      '@quasipanacea/common': workspace:*
+      '@quasipanacea/plugin-components': workspace:*
+      '@quasipanacea/plugin-utility': workspace:*
       mind-elixir: ^1.2.0
     dependencies:
-      '@quazipanacea/common': link:../../shared/qp-common
-      '@quazipanacea/plugin-components': link:../../shared/qp-plugin-components
-      '@quazipanacea/plugin-utility': link:../../shared/qp-plugin-utility
+      '@quasipanacea/common': link:../../shared/qp-common
+      '@quasipanacea/plugin-components': link:../../shared/qp-plugin-components
+      '@quasipanacea/plugin-utility': link:../../shared/qp-plugin-utility
       mind-elixir: 1.2.0
 
   repos/common/plugins/qp-pack-core:
     specifiers:
-      '@quazipanacea/common': workspace:*
-      '@quazipanacea/cover-list': workspace:*
-      '@quazipanacea/cover-markmap': workspace:*
-      '@quazipanacea/group-line': workspace:*
-      '@quazipanacea/overview-by-group': workspace:*
-      '@quazipanacea/overview-debug': workspace:*
-      '@quazipanacea/overview-graph-cytoscape': workspace:*
-      '@quazipanacea/overview-graph-vis': workspace:*
-      '@quazipanacea/overview-mindelixir': workspace:*
-      '@quazipanacea/pod-chemical': workspace:*
-      '@quazipanacea/pod-debug': workspace:*
-      '@quazipanacea/pod-latex': workspace:*
-      '@quazipanacea/pod-markdown': workspace:*
-      '@quazipanacea/pod-plaintext': workspace:*
+      '@quasipanacea/common': workspace:*
+      '@quasipanacea/cover-list': workspace:*
+      '@quasipanacea/cover-markmap': workspace:*
+      '@quasipanacea/group-line': workspace:*
+      '@quasipanacea/overview-by-group': workspace:*
+      '@quasipanacea/overview-debug': workspace:*
+      '@quasipanacea/overview-graph-cytoscape': workspace:*
+      '@quasipanacea/overview-graph-vis': workspace:*
+      '@quasipanacea/overview-mindelixir': workspace:*
+      '@quasipanacea/pod-chemical': workspace:*
+      '@quasipanacea/pod-debug': workspace:*
+      '@quasipanacea/pod-latex': workspace:*
+      '@quasipanacea/pod-markdown': workspace:*
+      '@quasipanacea/pod-plaintext': workspace:*
     dependencies:
-      '@quazipanacea/common': link:../../shared/qp-common
-      '@quazipanacea/cover-list': link:../qp-cover-list
-      '@quazipanacea/cover-markmap': link:../qp-cover-markmap
-      '@quazipanacea/group-line': link:../qp-group-line
-      '@quazipanacea/overview-by-group': link:../qp-overview-by-group
-      '@quazipanacea/overview-debug': link:../qp-overview-debug
-      '@quazipanacea/overview-graph-cytoscape': link:../qp-overview-graph-cytoscape
-      '@quazipanacea/overview-graph-vis': link:../qp-overview-graph-vis
-      '@quazipanacea/overview-mindelixir': link:../qp-overview-mindelixir
-      '@quazipanacea/pod-chemical': link:../qp-pod-chemical
-      '@quazipanacea/pod-debug': link:../qp-pod-debug
-      '@quazipanacea/pod-latex': link:../qp-pod-latex
-      '@quazipanacea/pod-markdown': link:../qp-pod-markdown
-      '@quazipanacea/pod-plaintext': link:../qp-pod-plaintext
+      '@quasipanacea/common': link:../../shared/qp-common
+      '@quasipanacea/cover-list': link:../qp-cover-list
+      '@quasipanacea/cover-markmap': link:../qp-cover-markmap
+      '@quasipanacea/group-line': link:../qp-group-line
+      '@quasipanacea/overview-by-group': link:../qp-overview-by-group
+      '@quasipanacea/overview-debug': link:../qp-overview-debug
+      '@quasipanacea/overview-graph-cytoscape': link:../qp-overview-graph-cytoscape
+      '@quasipanacea/overview-graph-vis': link:../qp-overview-graph-vis
+      '@quasipanacea/overview-mindelixir': link:../qp-overview-mindelixir
+      '@quasipanacea/pod-chemical': link:../qp-pod-chemical
+      '@quasipanacea/pod-debug': link:../qp-pod-debug
+      '@quasipanacea/pod-latex': link:../qp-pod-latex
+      '@quasipanacea/pod-markdown': link:../qp-pod-markdown
+      '@quasipanacea/pod-plaintext': link:../qp-pod-plaintext
 
   repos/common/plugins/qp-pod-chemical:
     specifiers:
-      '@quazipanacea/common': workspace:*
-      '@quazipanacea/plugin-components': workspace:*
-      '@quazipanacea/plugin-utility': workspace:*
+      '@quasipanacea/common': workspace:*
+      '@quasipanacea/plugin-components': workspace:*
+      '@quasipanacea/plugin-utility': workspace:*
       github-markdown-css: ^5.2.0
       katex: ^0.16.4
       mermaid: ^10.0.2
     dependencies:
-      '@quazipanacea/common': link:../../shared/qp-common
-      '@quazipanacea/plugin-components': link:../../shared/qp-plugin-components
-      '@quazipanacea/plugin-utility': link:../../shared/qp-plugin-utility
+      '@quasipanacea/common': link:../../shared/qp-common
+      '@quasipanacea/plugin-components': link:../../shared/qp-plugin-components
+      '@quasipanacea/plugin-utility': link:../../shared/qp-plugin-utility
       github-markdown-css: 5.2.0
       katex: 0.16.4
       mermaid: 10.0.2
 
   repos/common/plugins/qp-pod-debug:
     specifiers:
-      '@quazipanacea/common': workspace:*
-      '@quazipanacea/plugin-components': workspace:*
-      '@quazipanacea/plugin-utility': workspace:*
+      '@quasipanacea/common': workspace:*
+      '@quasipanacea/plugin-components': workspace:*
+      '@quasipanacea/plugin-utility': workspace:*
     dependencies:
-      '@quazipanacea/common': link:../../shared/qp-common
-      '@quazipanacea/plugin-components': link:../../shared/qp-plugin-components
-      '@quazipanacea/plugin-utility': link:../../shared/qp-plugin-utility
+      '@quasipanacea/common': link:../../shared/qp-common
+      '@quasipanacea/plugin-components': link:../../shared/qp-plugin-components
+      '@quasipanacea/plugin-utility': link:../../shared/qp-plugin-utility
 
   repos/common/plugins/qp-pod-latex:
     specifiers:
-      '@quazipanacea/common': workspace:*
-      '@quazipanacea/plugin-components': workspace:*
-      '@quazipanacea/plugin-utility': workspace:*
+      '@quasipanacea/common': workspace:*
+      '@quasipanacea/plugin-components': workspace:*
+      '@quasipanacea/plugin-utility': workspace:*
     dependencies:
-      '@quazipanacea/common': link:../../shared/qp-common
-      '@quazipanacea/plugin-components': link:../../shared/qp-plugin-components
-      '@quazipanacea/plugin-utility': link:../../shared/qp-plugin-utility
+      '@quasipanacea/common': link:../../shared/qp-common
+      '@quasipanacea/plugin-components': link:../../shared/qp-plugin-components
+      '@quasipanacea/plugin-utility': link:../../shared/qp-plugin-utility
 
   repos/common/plugins/qp-pod-markdown:
     specifiers:
-      '@quazipanacea/common': workspace:*
-      '@quazipanacea/plugin-components': workspace:*
-      '@quazipanacea/plugin-utility': workspace:*
+      '@quasipanacea/common': workspace:*
+      '@quasipanacea/plugin-components': workspace:*
+      '@quasipanacea/plugin-utility': workspace:*
       github-markdown-css: ^5.2.0
       katex: ^0.16.4
     dependencies:
-      '@quazipanacea/common': link:../../shared/qp-common
-      '@quazipanacea/plugin-components': link:../../shared/qp-plugin-components
-      '@quazipanacea/plugin-utility': link:../../shared/qp-plugin-utility
+      '@quasipanacea/common': link:../../shared/qp-common
+      '@quasipanacea/plugin-components': link:../../shared/qp-plugin-components
+      '@quasipanacea/plugin-utility': link:../../shared/qp-plugin-utility
       github-markdown-css: 5.2.0
       katex: 0.16.4
 
   repos/common/plugins/qp-pod-plaintext:
     specifiers:
-      '@quazipanacea/common': workspace:*
-      '@quazipanacea/plugin-components': workspace:*
-      '@quazipanacea/plugin-utility': workspace:*
+      '@quasipanacea/common': workspace:*
+      '@quasipanacea/plugin-components': workspace:*
+      '@quasipanacea/plugin-utility': workspace:*
     dependencies:
-      '@quazipanacea/common': link:../../shared/qp-common
-      '@quazipanacea/plugin-components': link:../../shared/qp-plugin-components
-      '@quazipanacea/plugin-utility': link:../../shared/qp-plugin-utility
+      '@quasipanacea/common': link:../../shared/qp-common
+      '@quasipanacea/plugin-components': link:../../shared/qp-plugin-components
+      '@quasipanacea/plugin-utility': link:../../shared/qp-plugin-utility
 
   repos/common/shared/qp-common:
     specifiers:
-      '@quazipanacea/plugin-components': workspace:*
-      '@quazipanacea/plugin-utility': workspace:*
+      '@quasipanacea/plugin-components': workspace:*
+      '@quasipanacea/plugin-utility': workspace:*
       '@trpc/client': ^10.11.0
       '@trpc/server': ^10.11.0
       mind-elixir: ^1.2.0
     dependencies:
-      '@quazipanacea/plugin-components': link:../qp-plugin-components
-      '@quazipanacea/plugin-utility': link:../qp-plugin-utility
+      '@quasipanacea/plugin-components': link:../qp-plugin-components
+      '@quasipanacea/plugin-utility': link:../qp-plugin-utility
       '@trpc/client': 10.18.0_@trpc+server@10.18.0
       '@trpc/server': 10.18.0
       mind-elixir: 1.2.0
@@ -302,8 +302,8 @@ importers:
       '@codemirror/language': ^6.6.0
       '@codemirror/state': ^6.2.0
       '@codemirror/view': ^6.9.3
-      '@quazipanacea/common': workspace:*
-      '@quazipanacea/plugin-utility': workspace:*
+      '@quasipanacea/common': workspace:*
+      '@quasipanacea/plugin-utility': workspace:*
       cm6-theme-basic-light: ^0.2.0
       codemirror: ^6.0.1
       github-markdown-css: ^5.2.0
@@ -317,8 +317,8 @@ importers:
       '@codemirror/language': 6.6.0
       '@codemirror/state': 6.2.0
       '@codemirror/view': 6.9.3
-      '@quazipanacea/common': link:../qp-common
-      '@quazipanacea/plugin-utility': link:../qp-plugin-utility
+      '@quasipanacea/common': link:../qp-common
+      '@quasipanacea/plugin-utility': link:../qp-plugin-utility
       cm6-theme-basic-light: 0.2.0_ipi6fyicmvtccbdgcmxxogx7ni
       codemirror: 6.0.1
       github-markdown-css: 5.2.0
@@ -355,41 +355,41 @@ importers:
 
   repos/server-deno:
     specifiers:
-      '@quazipanacea/common': workspace:*
-      '@quazipanacea/cover-list': workspace:*
-      '@quazipanacea/cover-markmap': workspace:*
-      '@quazipanacea/group-line': workspace:*
-      '@quazipanacea/overview-by-group': workspace:*
-      '@quazipanacea/overview-debug': workspace:*
-      '@quazipanacea/overview-graph-cytoscape': workspace:*
-      '@quazipanacea/overview-graph-vis': workspace:*
-      '@quazipanacea/overview-mindelixir': workspace:*
-      '@quazipanacea/pack-core': workspace:*
-      '@quazipanacea/plugin-components': workspace:*
-      '@quazipanacea/plugin-utility': workspace:*
-      '@quazipanacea/pod-chemical': workspace:*
-      '@quazipanacea/pod-debug': workspace:*
-      '@quazipanacea/pod-latex': workspace:*
-      '@quazipanacea/pod-markdown': workspace:*
-      '@quazipanacea/pod-plaintext': workspace:*
+      '@quasipanacea/common': workspace:*
+      '@quasipanacea/cover-list': workspace:*
+      '@quasipanacea/cover-markmap': workspace:*
+      '@quasipanacea/group-line': workspace:*
+      '@quasipanacea/overview-by-group': workspace:*
+      '@quasipanacea/overview-debug': workspace:*
+      '@quasipanacea/overview-graph-cytoscape': workspace:*
+      '@quasipanacea/overview-graph-vis': workspace:*
+      '@quasipanacea/overview-mindelixir': workspace:*
+      '@quasipanacea/pack-core': workspace:*
+      '@quasipanacea/plugin-components': workspace:*
+      '@quasipanacea/plugin-utility': workspace:*
+      '@quasipanacea/pod-chemical': workspace:*
+      '@quasipanacea/pod-debug': workspace:*
+      '@quasipanacea/pod-latex': workspace:*
+      '@quasipanacea/pod-markdown': workspace:*
+      '@quasipanacea/pod-plaintext': workspace:*
     dependencies:
-      '@quazipanacea/common': link:../common/shared/qp-common
-      '@quazipanacea/cover-list': link:../common/plugins/qp-cover-list
-      '@quazipanacea/cover-markmap': link:../common/plugins/qp-cover-markmap
-      '@quazipanacea/group-line': link:../common/plugins/qp-group-line
-      '@quazipanacea/overview-by-group': link:../common/plugins/qp-overview-by-group
-      '@quazipanacea/overview-debug': link:../common/plugins/qp-overview-debug
-      '@quazipanacea/overview-graph-cytoscape': link:../common/plugins/qp-overview-graph-cytoscape
-      '@quazipanacea/overview-graph-vis': link:../common/plugins/qp-overview-graph-vis
-      '@quazipanacea/overview-mindelixir': link:../common/plugins/qp-overview-mindelixir
-      '@quazipanacea/pack-core': link:../common/plugins/qp-pack-core
-      '@quazipanacea/plugin-components': link:../common/shared/qp-plugin-components
-      '@quazipanacea/plugin-utility': link:../common/shared/qp-plugin-utility
-      '@quazipanacea/pod-chemical': link:../common/plugins/qp-pod-chemical
-      '@quazipanacea/pod-debug': link:../common/plugins/qp-pod-debug
-      '@quazipanacea/pod-latex': link:../common/plugins/qp-pod-latex
-      '@quazipanacea/pod-markdown': link:../common/plugins/qp-pod-markdown
-      '@quazipanacea/pod-plaintext': link:../common/plugins/qp-pod-plaintext
+      '@quasipanacea/common': link:../common/shared/qp-common
+      '@quasipanacea/cover-list': link:../common/plugins/qp-cover-list
+      '@quasipanacea/cover-markmap': link:../common/plugins/qp-cover-markmap
+      '@quasipanacea/group-line': link:../common/plugins/qp-group-line
+      '@quasipanacea/overview-by-group': link:../common/plugins/qp-overview-by-group
+      '@quasipanacea/overview-debug': link:../common/plugins/qp-overview-debug
+      '@quasipanacea/overview-graph-cytoscape': link:../common/plugins/qp-overview-graph-cytoscape
+      '@quasipanacea/overview-graph-vis': link:../common/plugins/qp-overview-graph-vis
+      '@quasipanacea/overview-mindelixir': link:../common/plugins/qp-overview-mindelixir
+      '@quasipanacea/pack-core': link:../common/plugins/qp-pack-core
+      '@quasipanacea/plugin-components': link:../common/shared/qp-plugin-components
+      '@quasipanacea/plugin-utility': link:../common/shared/qp-plugin-utility
+      '@quasipanacea/pod-chemical': link:../common/plugins/qp-pod-chemical
+      '@quasipanacea/pod-debug': link:../common/plugins/qp-pod-debug
+      '@quasipanacea/pod-latex': link:../common/plugins/qp-pod-latex
+      '@quasipanacea/pod-markdown': link:../common/plugins/qp-pod-markdown
+      '@quasipanacea/pod-plaintext': link:../common/plugins/qp-pod-plaintext
 
 packages:
 
