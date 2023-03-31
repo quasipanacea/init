@@ -84,10 +84,15 @@ importers:
       '@quasipanacea/common': workspace:*
       '@quasipanacea/plugin-components': workspace:*
       '@quasipanacea/plugin-utility': workspace:*
+      vue: ^3.2.47
+      vue-router: ^4.1.6
     dependencies:
       '@quasipanacea/common': link:../../shared/qp-common
       '@quasipanacea/plugin-components': link:../../shared/qp-plugin-components
       '@quasipanacea/plugin-utility': link:../../shared/qp-plugin-utility
+    devDependencies:
+      vue: 3.2.47
+      vue-router: 4.1.6_vue@3.2.47
 
   repos/common/plugins/qp-cover-markmap:
     specifiers:
@@ -98,6 +103,8 @@ importers:
       markmap-lib: ^0.14.4
       markmap-toolbar: ^0.14.4
       markmap-view: ^0.14.4
+      vue: ^3.2.47
+      vue-router: ^4.1.6
     dependencies:
       '@quasipanacea/common': link:../../shared/qp-common
       '@quasipanacea/plugin-components': link:../../shared/qp-plugin-components
@@ -106,42 +113,63 @@ importers:
       markmap-lib: 0.14.4_markmap-common@0.14.2
       markmap-toolbar: 0.14.4
       markmap-view: 0.14.4_markmap-common@0.14.2
+    devDependencies:
+      vue: 3.2.47
+      vue-router: 4.1.6_vue@3.2.47
 
   repos/common/plugins/qp-group-line:
     specifiers:
       '@quasipanacea/common': workspace:*
       '@quasipanacea/plugin-components': workspace:*
       '@quasipanacea/plugin-utility': workspace:*
+      '@trpc/client': ^10.18.0
+      vue: ^3.2.47
+      vue-router: ^4.1.6
     dependencies:
       '@quasipanacea/common': link:../../shared/qp-common
       '@quasipanacea/plugin-components': link:../../shared/qp-plugin-components
       '@quasipanacea/plugin-utility': link:../../shared/qp-plugin-utility
+    devDependencies:
+      '@trpc/client': 10.18.0
+      vue: 3.2.47
+      vue-router: 4.1.6_vue@3.2.47
 
   repos/common/plugins/qp-overview-by-group:
     specifiers:
       '@quasipanacea/common': workspace:*
       '@quasipanacea/plugin-components': workspace:*
       '@quasipanacea/plugin-utility': workspace:*
+      vue: ^3.2.47
+      vue-router: ^4.1.6
     dependencies:
       '@quasipanacea/common': link:../../shared/qp-common
       '@quasipanacea/plugin-components': link:../../shared/qp-plugin-components
       '@quasipanacea/plugin-utility': link:../../shared/qp-plugin-utility
+    devDependencies:
+      vue: 3.2.47
+      vue-router: 4.1.6_vue@3.2.47
 
   repos/common/plugins/qp-overview-debug:
     specifiers:
       '@quasipanacea/common': workspace:*
       '@quasipanacea/plugin-components': workspace:*
       '@quasipanacea/plugin-utility': workspace:*
+      vue: ^3.2.47
+      vue-router: ^4.1.6
     dependencies:
       '@quasipanacea/common': link:../../shared/qp-common
       '@quasipanacea/plugin-components': link:../../shared/qp-plugin-components
       '@quasipanacea/plugin-utility': link:../../shared/qp-plugin-utility
+    devDependencies:
+      vue: 3.2.47
+      vue-router: 4.1.6_vue@3.2.47
 
   repos/common/plugins/qp-overview-graph-cytoscape:
     specifiers:
       '@quasipanacea/common': workspace:*
       '@quasipanacea/plugin-components': workspace:*
       '@quasipanacea/plugin-utility': workspace:*
+      '@types/cytoscape': ^3.19.9
       cytoscape: ^3.23.0
       cytoscape-cola: ^2.5.1
       cytoscape-compound-drag-and-drop: ^1.1.0
@@ -149,6 +177,8 @@ importers:
       cytoscape-edgehandles: ^4.0.1
       cytoscape-lasso: ^1.1.4
       cytoscape-undo-redo: ^1.3.3
+      vue: ^3.2.47
+      vue-router: ^4.1.6
     dependencies:
       '@quasipanacea/common': link:../../shared/qp-common
       '@quasipanacea/plugin-components': link:../../shared/qp-plugin-components
@@ -160,6 +190,10 @@ importers:
       cytoscape-edgehandles: 4.0.1_cytoscape@3.23.0
       cytoscape-lasso: 1.1.4_cytoscape@3.23.0
       cytoscape-undo-redo: 1.3.3_cytoscape@3.23.0
+    devDependencies:
+      '@types/cytoscape': 3.19.9
+      vue: 3.2.47
+      vue-router: 4.1.6_vue@3.2.47
 
   repos/common/plugins/qp-overview-graph-vis:
     specifiers:
@@ -169,6 +203,8 @@ importers:
       vis-data: ^7.1.6
       vis-network: ^9.1.6
       vis-util: ^5.0.3
+      vue: ^3.2.47
+      vue-router: ^4.1.6
     dependencies:
       '@quasipanacea/common': link:../../shared/qp-common
       '@quasipanacea/plugin-components': link:../../shared/qp-plugin-components
@@ -176,6 +212,9 @@ importers:
       vis-data: 7.1.6_vis-util@5.0.3
       vis-network: 9.1.6_zzgkjc5xr445carinby2q6qdja
       vis-util: 5.0.3
+    devDependencies:
+      vue: 3.2.47
+      vue-router: 4.1.6_vue@3.2.47
 
   repos/common/plugins/qp-overview-mindelixir:
     specifiers:
@@ -183,11 +222,16 @@ importers:
       '@quasipanacea/plugin-components': workspace:*
       '@quasipanacea/plugin-utility': workspace:*
       mind-elixir: ^1.2.0
+      vue: ^3.2.47
+      vue-router: ^4.1.6
     dependencies:
       '@quasipanacea/common': link:../../shared/qp-common
       '@quasipanacea/plugin-components': link:../../shared/qp-plugin-components
       '@quasipanacea/plugin-utility': link:../../shared/qp-plugin-utility
       mind-elixir: 1.2.0
+    devDependencies:
+      vue: 3.2.47
+      vue-router: 4.1.6_vue@3.2.47
 
   repos/common/plugins/qp-pack-core:
     specifiers:
@@ -229,6 +273,8 @@ importers:
       github-markdown-css: ^5.2.0
       katex: ^0.16.4
       mermaid: ^10.0.2
+      vue: ^3.2.47
+      vue-router: ^4.1.6
     dependencies:
       '@quasipanacea/common': link:../../shared/qp-common
       '@quasipanacea/plugin-components': link:../../shared/qp-plugin-components
@@ -236,26 +282,39 @@ importers:
       github-markdown-css: 5.2.0
       katex: 0.16.4
       mermaid: 10.0.2
+    devDependencies:
+      vue: 3.2.47
+      vue-router: 4.1.6_vue@3.2.47
 
   repos/common/plugins/qp-pod-debug:
     specifiers:
       '@quasipanacea/common': workspace:*
       '@quasipanacea/plugin-components': workspace:*
       '@quasipanacea/plugin-utility': workspace:*
+      vue: ^3.2.47
+      vue-router: ^4.1.6
     dependencies:
       '@quasipanacea/common': link:../../shared/qp-common
       '@quasipanacea/plugin-components': link:../../shared/qp-plugin-components
       '@quasipanacea/plugin-utility': link:../../shared/qp-plugin-utility
+    devDependencies:
+      vue: 3.2.47
+      vue-router: 4.1.6_vue@3.2.47
 
   repos/common/plugins/qp-pod-latex:
     specifiers:
       '@quasipanacea/common': workspace:*
       '@quasipanacea/plugin-components': workspace:*
       '@quasipanacea/plugin-utility': workspace:*
+      vue: ^3.2.47
+      vue-router: ^4.1.6
     dependencies:
       '@quasipanacea/common': link:../../shared/qp-common
       '@quasipanacea/plugin-components': link:../../shared/qp-plugin-components
       '@quasipanacea/plugin-utility': link:../../shared/qp-plugin-utility
+    devDependencies:
+      vue: 3.2.47
+      vue-router: 4.1.6_vue@3.2.47
 
   repos/common/plugins/qp-pod-markdown:
     specifiers:
@@ -264,22 +323,32 @@ importers:
       '@quasipanacea/plugin-utility': workspace:*
       github-markdown-css: ^5.2.0
       katex: ^0.16.4
+      vue: ^3.2.47
+      vue-router: ^4.1.6
     dependencies:
       '@quasipanacea/common': link:../../shared/qp-common
       '@quasipanacea/plugin-components': link:../../shared/qp-plugin-components
       '@quasipanacea/plugin-utility': link:../../shared/qp-plugin-utility
       github-markdown-css: 5.2.0
       katex: 0.16.4
+    devDependencies:
+      vue: 3.2.47
+      vue-router: 4.1.6_vue@3.2.47
 
   repos/common/plugins/qp-pod-plaintext:
     specifiers:
       '@quasipanacea/common': workspace:*
       '@quasipanacea/plugin-components': workspace:*
       '@quasipanacea/plugin-utility': workspace:*
+      vue: ^3.2.47
+      vue-router: ^4.1.6
     dependencies:
       '@quasipanacea/common': link:../../shared/qp-common
       '@quasipanacea/plugin-components': link:../../shared/qp-plugin-components
       '@quasipanacea/plugin-utility': link:../../shared/qp-plugin-utility
+    devDependencies:
+      vue: 3.2.47
+      vue-router: 4.1.6_vue@3.2.47
 
   repos/common/shared/qp-common:
     specifiers:
@@ -288,12 +357,15 @@ importers:
       '@trpc/client': ^10.11.0
       '@trpc/server': ^10.11.0
       mind-elixir: ^1.2.0
+      zod: ^3.19.1
     dependencies:
       '@quasipanacea/plugin-components': link:../qp-plugin-components
       '@quasipanacea/plugin-utility': link:../qp-plugin-utility
       '@trpc/client': 10.18.0_@trpc+server@10.18.0
       '@trpc/server': 10.18.0
       mind-elixir: 1.2.0
+    devDependencies:
+      zod: 3.21.4
 
   repos/common/shared/qp-plugin-components:
     specifiers:
@@ -967,6 +1039,12 @@ packages:
     engines: {node: '>= 10'}
     dev: true
 
+  /@trpc/client/10.18.0:
+    resolution: {integrity: sha512-2d+6r2C/xygTjDWX9jT66defgHzbQP0Z8vrvyT3XtPjqU6JNlRNuS2ZtB8xDPdOQUUVnndzZ43BMr+Zu49K0OQ==}
+    peerDependencies:
+      '@trpc/server': 10.18.0
+    dev: true
+
   /@trpc/client/10.18.0_@trpc+server@10.18.0:
     resolution: {integrity: sha512-2d+6r2C/xygTjDWX9jT66defgHzbQP0Z8vrvyT3XtPjqU6JNlRNuS2ZtB8xDPdOQUUVnndzZ43BMr+Zu49K0OQ==}
     peerDependencies:
@@ -987,6 +1065,10 @@ packages:
 
   /@types/chai/4.3.4:
     resolution: {integrity: sha512-KnRanxnpfpjUTqTCXslZSEdLfXExwgNxYPdiO2WGUj8+HDjFi8R3k5RVKPeSCzLjCcshCAtVO2QBbVuAV4kTnw==}
+    dev: true
+
+  /@types/cytoscape/3.19.9:
+    resolution: {integrity: sha512-oqCx0ZGiBO0UESbjgq052vjDAy2X53lZpMrWqiweMpvVwKw/2IiYDdzPFK6+f4tMfdv9YKEM9raO5bAZc3UYBg==}
     dev: true
 
   /@types/d3-array/2.12.3:
@@ -1517,7 +1599,6 @@ packages:
 
   /@vue/devtools-api/6.5.0:
     resolution: {integrity: sha512-o9KfBeaBmCKl10usN4crU53fYtC1r7jJwdGKjPT24t348rHxgfpZ0xL3Xm/gLUYnc0oTp8LAmrxOeLyu6tbk2Q==}
-    dev: false
 
   /@vue/eslint-config-prettier/7.1.0_fjzellzblqyf2bzxk7qvjavefi:
     resolution: {integrity: sha512-Pv/lVr0bAzSIHLd9iz0KnvAr4GKyCEl+h52bc4e5yWuDVtLgFwycF7nrbWTAQAS+FU6q1geVd07lc6EWfJiWKQ==}
@@ -6006,7 +6087,6 @@ packages:
     dependencies:
       '@vue/devtools-api': 6.5.0
       vue: 3.2.47
-    dev: false
 
   /vue-template-compiler/2.7.14:
     resolution: {integrity: sha512-zyA5Y3ArvVG0NacJDkkzJuPQDF8RFeRlzV2vLeSnhSpieO6LK2OVbdLPi5MPPs09Ii+gMO8nY4S3iKQxBxDmWQ==}
@@ -6195,7 +6275,6 @@ packages:
 
   /zod/3.21.4:
     resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
-    dev: false
 
   /zwitch/2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}

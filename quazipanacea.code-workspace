@@ -1,6 +1,6 @@
 {
 	"settings": {
-		"typescript.tsdk": "client-web/node_modules/typescript/lib",
+		"typescript.tsdk": "node_modules/typescript/lib",
 		"search.exclude": {
 			"**/.git": true,
 			"**/node_modules": true,
