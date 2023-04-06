@@ -1,6 +1,7 @@
 {
 	"extends": "./repos/client-web/node_modules/@vue/tsconfig/tsconfig.web.json",
 	"compilerOptions": {
+		"esModuleInterop": true,
 		"noEmit": true,
 		"allowImportingTsExtensions": true
 	}
