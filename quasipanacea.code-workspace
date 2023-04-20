@@ -30,9 +30,6 @@
 			"path": "./repos/webext"
 		},
 		{
-			"path": "./repos/agent"
-		},
-		{
 			"path": "./repos/aggregator"
 		},
 		{
