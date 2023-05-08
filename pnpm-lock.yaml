@@ -111,94 +111,6 @@ importers:
         specifier: 1.2.0
         version: 1.2.0(typescript@5.0.3)
 
-  repos/common/plugins/qp-anchor-default:
-    dependencies:
-      '@quasipanacea/common':
-        specifier: workspace:*
-        version: link:../../shared/qp-common
-      '@quasipanacea/plugin-components':
-        specifier: workspace:*
-        version: link:../../shared/qp-plugin-components
-      '@quasipanacea/plugin-utility':
-        specifier: workspace:*
-        version: link:../../shared/qp-plugin-utility
-    devDependencies:
-      vue:
-        specifier: ^3.2.47
-        version: 3.2.47
-      vue-router:
-        specifier: ^4.1.6
-        version: 4.1.6(vue@3.2.47)
-
-  repos/common/plugins/qp-anchor-group-simple:
-    dependencies:
-      '@quasipanacea/common':
-        specifier: workspace:*
-        version: link:../../shared/qp-common
-      '@quasipanacea/plugin-components':
-        specifier: workspace:*
-        version: link:../../shared/qp-plugin-components
-      '@quasipanacea/plugin-utility':
-        specifier: workspace:*
-        version: link:../../shared/qp-plugin-utility
-    devDependencies:
-      vue:
-        specifier: ^3.2.47
-        version: 3.2.47
-      vue-router:
-        specifier: ^4.1.6
-        version: 4.1.6(vue@3.2.47)
-
-  repos/common/plugins/qp-cover-list:
-    dependencies:
-      '@quasipanacea/common':
-        specifier: workspace:*
-        version: link:../../shared/qp-common
-      '@quasipanacea/plugin-components':
-        specifier: workspace:*
-        version: link:../../shared/qp-plugin-components
-      '@quasipanacea/plugin-utility':
-        specifier: workspace:*
-        version: link:../../shared/qp-plugin-utility
-    devDependencies:
-      vue:
-        specifier: ^3.2.47
-        version: 3.2.47
-      vue-router:
-        specifier: ^4.1.6
-        version: 4.1.6(vue@3.2.47)
-
-  repos/common/plugins/qp-cover-markmap:
-    dependencies:
-      '@quasipanacea/common':
-        specifier: workspace:*
-        version: link:../../shared/qp-common
-      '@quasipanacea/plugin-components':
-        specifier: workspace:*
-        version: link:../../shared/qp-plugin-components
-      '@quasipanacea/plugin-utility':
-        specifier: workspace:*
-        version: link:../../shared/qp-plugin-utility
-      markmap-common:
-        specifier: ^0.14.2
-        version: 0.14.2
-      markmap-lib:
-        specifier: ^0.14.4
-        version: 0.14.4(markmap-common@0.14.2)
-      markmap-toolbar:
-        specifier: ^0.14.4
-        version: 0.14.4
-      markmap-view:
-        specifier: ^0.14.4
-        version: 0.14.4(markmap-common@0.14.2)
-    devDependencies:
-      vue:
-        specifier: ^3.2.47
-        version: 3.2.47
-      vue-router:
-        specifier: ^4.1.6
-        version: 4.1.6(vue@3.2.47)
-
   repos/common/plugins/qp-group-line:
     dependencies:
       '@quasipanacea/common':
@@ -214,6 +126,44 @@ importers:
       '@trpc/client':
         specifier: ^10.18.0
         version: 10.18.0(@trpc/server@10.18.0)
+      vue:
+        specifier: ^3.2.47
+        version: 3.2.47
+      vue-router:
+        specifier: ^4.1.6
+        version: 4.1.6(vue@3.2.47)
+
+  repos/common/plugins/qp-model-default:
+    dependencies:
+      '@quasipanacea/common':
+        specifier: workspace:*
+        version: link:../../shared/qp-common
+      '@quasipanacea/plugin-components':
+        specifier: workspace:*
+        version: link:../../shared/qp-plugin-components
+      '@quasipanacea/plugin-utility':
+        specifier: workspace:*
+        version: link:../../shared/qp-plugin-utility
+    devDependencies:
+      vue:
+        specifier: ^3.2.47
+        version: 3.2.47
+      vue-router:
+        specifier: ^4.1.6
+        version: 4.1.6(vue@3.2.47)
+
+  repos/common/plugins/qp-model-group-simple:
+    dependencies:
+      '@quasipanacea/common':
+        specifier: workspace:*
+        version: link:../../shared/qp-common
+      '@quasipanacea/plugin-components':
+        specifier: workspace:*
+        version: link:../../shared/qp-plugin-components
+      '@quasipanacea/plugin-utility':
+        specifier: workspace:*
+        version: link:../../shared/qp-plugin-utility
+    devDependencies:
       vue:
         specifier: ^3.2.47
         version: 3.2.47
@@ -264,6 +214,9 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:*
         version: link:../../shared/qp-common
+      '@quasipanacea/model-group-simple':
+        specifier: workspace:^
+        version: link:../qp-model-group-simple
       '@quasipanacea/plugin-components':
         specifier: workspace:*
         version: link:../../shared/qp-plugin-components
@@ -378,24 +331,18 @@ importers:
 
   repos/common/plugins/qp-pack-core:
     dependencies:
-      '@quasipanacea/anchor-default':
-        specifier: workspace:*
-        version: link:../qp-anchor-default
-      '@quasipanacea/anchor-group-simple':
-        specifier: workspace:*
-        version: link:../qp-anchor-group-simple
       '@quasipanacea/common':
         specifier: workspace:*
         version: link:../../shared/qp-common
-      '@quasipanacea/cover-list':
-        specifier: workspace:*
-        version: link:../qp-cover-list
-      '@quasipanacea/cover-markmap':
-        specifier: workspace:*
-        version: link:../qp-cover-markmap
       '@quasipanacea/group-line':
         specifier: workspace:*
         version: link:../qp-group-line
+      '@quasipanacea/model-default':
+        specifier: workspace:*
+        version: link:../qp-model-default
+      '@quasipanacea/model-group-simple':
+        specifier: workspace:*
+        version: link:../qp-model-group-simple
       '@quasipanacea/overview-by-group':
         specifier: workspace:*
         version: link:../qp-overview-by-group
@@ -426,6 +373,12 @@ importers:
       '@quasipanacea/pod-plaintext':
         specifier: workspace:*
         version: link:../qp-pod-plaintext
+      '@quasipanacea/view-list':
+        specifier: workspace:*
+        version: link:../qp-view-list
+      '@quasipanacea/view-markmap':
+        specifier: workspace:*
+        version: link:../qp-view-markmap
 
   repos/common/plugins/qp-pod-chemical:
     dependencies:
@@ -562,6 +515,56 @@ importers:
         specifier: ^4.1.6
         version: 4.1.6(vue@3.2.47)
 
+  repos/common/plugins/qp-view-list:
+    dependencies:
+      '@quasipanacea/common':
+        specifier: workspace:*
+        version: link:../../shared/qp-common
+      '@quasipanacea/plugin-components':
+        specifier: workspace:*
+        version: link:../../shared/qp-plugin-components
+      '@quasipanacea/plugin-utility':
+        specifier: workspace:*
+        version: link:../../shared/qp-plugin-utility
+    devDependencies:
+      vue:
+        specifier: ^3.2.47
+        version: 3.2.47
+      vue-router:
+        specifier: ^4.1.6
+        version: 4.1.6(vue@3.2.47)
+
+  repos/common/plugins/qp-view-markmap:
+    dependencies:
+      '@quasipanacea/common':
+        specifier: workspace:*
+        version: link:../../shared/qp-common
+      '@quasipanacea/plugin-components':
+        specifier: workspace:*
+        version: link:../../shared/qp-plugin-components
+      '@quasipanacea/plugin-utility':
+        specifier: workspace:*
+        version: link:../../shared/qp-plugin-utility
+      markmap-common:
+        specifier: ^0.14.2
+        version: 0.14.2
+      markmap-lib:
+        specifier: ^0.14.4
+        version: 0.14.4(markmap-common@0.14.2)
+      markmap-toolbar:
+        specifier: ^0.14.4
+        version: 0.14.4
+      markmap-view:
+        specifier: ^0.14.4
+        version: 0.14.4(markmap-common@0.14.2)
+    devDependencies:
+      vue:
+        specifier: ^3.2.47
+        version: 3.2.47
+      vue-router:
+        specifier: ^4.1.6
+        version: 4.1.6(vue@3.2.47)
+
   repos/common/shared/qp-common:
     dependencies:
       '@quasipanacea/plugin-components':
@@ -570,6 +573,9 @@ importers:
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
         version: link:../qp-plugin-utility
+      '@quasipanacea/types':
+        specifier: workspace:^
+        version: link:../qp-types
       '@trpc/client':
         specifier: ^10.11.0
         version: 10.18.0(@trpc/server@10.18.0)
@@ -682,12 +688,6 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:*
         version: link:../common/shared/qp-common
-      '@quasipanacea/cover-list':
-        specifier: workspace:*
-        version: link:../common/plugins/qp-cover-list
-      '@quasipanacea/cover-markmap':
-        specifier: workspace:*
-        version: link:../common/plugins/qp-cover-markmap
       '@quasipanacea/group-line':
         specifier: workspace:*
         version: link:../common/plugins/qp-group-line
@@ -727,6 +727,12 @@ importers:
       '@quasipanacea/pod-plaintext':
         specifier: workspace:*
         version: link:../common/plugins/qp-pod-plaintext
+      '@quasipanacea/view-list':
+        specifier: workspace:*
+        version: link:../common/plugins/qp-view-list
+      '@quasipanacea/view-markmap':
+        specifier: workspace:*
+        version: link:../common/plugins/qp-view-markmap
 
 packages:
 
