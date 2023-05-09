@@ -1,6 +1,7 @@
 {
-	"extends": "./repos/client-web/node_modules/@vue/tsconfig/tsconfig.web.json",
+	"extends": "./repos/client-web/node_modules/@vue/tsconfig/tsconfig.json",
 	"compilerOptions": {
+		"lib": ["ES2020", "DOM"],
 		"esModuleInterop": true,
 		"noEmit": true,
 		"allowImportingTsExtensions": true
