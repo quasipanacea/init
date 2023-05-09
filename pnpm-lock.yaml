@@ -20,11 +20,11 @@ importers:
         specifier: workspace:*
         version: link:../common/shared/qp-plugin-components
       '@trpc/client':
-        specifier: ^10.25.0
-        version: 10.25.0(@trpc/server@10.25.0)
+        specifier: ^10.18.0
+        version: 10.18.0(@trpc/server@10.18.0)
       '@trpc/server':
-        specifier: ^10.25.0
-        version: 10.25.0
+        specifier: ^10.18.0
+        version: 10.18.0
       '@vueuse/core':
         specifier: ^10.1.2
         version: 10.1.2(vue@3.2.47)
@@ -47,7 +47,7 @@ importers:
         specifier: ^4.1.6
         version: 4.1.6(vue@3.2.47)
       zod:
-        specifier: ^3.21.4
+        specifier: ^3.19.1
         version: 3.21.4
     devDependencies:
       '@rollup/plugin-node-resolve':
@@ -184,8 +184,8 @@ importers:
         version: link:../../shared/qp-plugin-utility
     devDependencies:
       '@trpc/client':
-        specifier: ^10.25.0
-        version: 10.25.0(@trpc/server@10.25.0)
+        specifier: ^10.18.0
+        version: 10.18.0(@trpc/server@10.18.0)
       vue:
         specifier: ^3.2.47
         version: 3.2.47
@@ -550,17 +550,17 @@ importers:
         specifier: workspace:^
         version: link:../qp-types
       '@trpc/client':
-        specifier: ^10.11.0
+        specifier: ^10.18.0
         version: 10.18.0(@trpc/server@10.18.0)
       '@trpc/server':
-        specifier: ^10.11.0
+        specifier: ^10.18.0
         version: 10.18.0
       mind-elixir:
         specifier: ^1.2.0
         version: 1.2.0
     devDependencies:
       zod:
-        specifier: ^3.21.4
+        specifier: ^3.19.1
         version: 3.21.4
 
   repos/common/shared/qp-plugin-components:
@@ -706,6 +706,10 @@ importers:
       '@quasipanacea/view-markmap':
         specifier: workspace:*
         version: link:../common/plugins/qp-view-markmap
+    devDependencies:
+      '@tsconfig/node18':
+        specifier: ^2.0.0
+        version: 2.0.0
 
 packages:
 
@@ -1295,21 +1299,9 @@ packages:
       '@trpc/server': 10.18.0
     dependencies:
       '@trpc/server': 10.18.0
-    dev: false
-
-  /@trpc/client@10.25.0(@trpc/server@10.25.0):
-    resolution: {integrity: sha512-XWuzbbACX2fzB9UHVkPJtaaAeFiyPjQSC3YgnRtDwjQx03/nt7OsxTBxvG0kblCN0Z2zZrnLF65aDrMJEP43LQ==}
-    peerDependencies:
-      '@trpc/server': 10.25.0
-    dependencies:
-      '@trpc/server': 10.25.0
 
   /@trpc/server@10.18.0:
     resolution: {integrity: sha512-nVMqdDIF9YLOeC3g6RdAvdCPqkHFjpshSqZGThZ+fyjiWSUXj2ZKCduhJFnY77TjtgODojeaaghmzcnjxb+Onw==}
-    dev: false
-
-  /@trpc/server@10.25.0:
-    resolution: {integrity: sha512-OKcGw2iZMUV8zCHoS+uLYGVq2tbZhhK0TPbb0pGhT+KTN8oWYPG+oYpTe9He9J1A2y8qcRAoy5u1zdiUUOiFEg==}
 
   /@tsconfig/node18@2.0.0:
     resolution: {integrity: sha512-uI/B0ShkiEwTk036pncXucVlj4y11EW6mycQvCEzC1PkR2TBvdQZ5Wf96dp+XXWAc70FEDfvwTqanoaDpP6rPw==}
