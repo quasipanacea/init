@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest>
+	<remote name="github" fetch="https://github.com" />
+	<remote name="quasipanacea" fetch="https://github.com/quasipanacea" />
+
+	<project name=".github" revision="main" remote="quasipanacea" path="." />
+	<project name="aggregator" revision="main" remote="quasipanacea" path="." />
+	<project name="cli" revision="main" remote="quasipanacea" path="." />
+	<project name="client-web" revision="main" remote="quasipanacea" path="." />
+	<project name="common" revision="main" remote="quasipanacea" path="." />
+	<project name="docs" revision="main" remote="quasipanacea" path="." />
+	<project name="server-deno" revision="main" remote="quasipanacea" path="." />
+	<project name="webext" revision="main" remote="quasipanacea" path="." />
+</manifest>
