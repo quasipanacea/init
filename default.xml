@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <manifest>
 	<remote name="github" fetch="https://github.com" />
-	<remote name="quasipanacea" fetch="https://github.com/quasipanacea" />
+	<remote name="me" fetch="https://github.com/quasipanacea" />
 
-	<default revision="main" remote="quasipanacea" />
+	<default revision="main" remote="me" />
 
 	<project name=".github" path="repos/.github" />
 	<project name="aggregator" path="repos/aggregator" />
