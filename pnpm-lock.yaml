@@ -678,10 +678,6 @@ importers:
       '@quasipanacea/view-markmap':
         specifier: workspace:*
         version: link:../common/plugins/qp-view-markmap
-    devDependencies:
-      '@tsconfig/node18':
-        specifier: ^2.0.0
-        version: 2.0.0
 
 packages:
 
