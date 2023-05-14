@@ -37,9 +37,6 @@ importers:
       pinia:
         specifier: ^2.0.36
         version: 2.0.36(typescript@5.0.4)(vue@3.2.47)
-      purecss:
-        specifier: ^3.0.0
-        version: 3.0.0
       vue:
         specifier: ^3.2.47
         version: 3.2.47
@@ -193,25 +190,6 @@ importers:
         specifier: ^4.1.6
         version: 4.1.6(vue@3.2.47)
 
-  repos/common/plugins/qp-overview-by-group:
-    dependencies:
-      '@quasipanacea/common':
-        specifier: workspace:*
-        version: link:../../shared/qp-common
-      '@quasipanacea/plugin-components':
-        specifier: workspace:*
-        version: link:../../shared/qp-plugin-components
-      '@quasipanacea/plugin-utility':
-        specifier: workspace:*
-        version: link:../../shared/qp-plugin-utility
-    devDependencies:
-      vue:
-        specifier: ^3.2.47
-        version: 3.2.47
-      vue-router:
-        specifier: ^4.1.6
-        version: 4.1.6(vue@3.2.47)
-
   repos/common/plugins/qp-overview-debug:
     dependencies:
       '@quasipanacea/common':
@@ -310,18 +288,18 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:*
         version: link:../../shared/qp-common
-      '@quasipanacea/group-line':
-        specifier: workspace:*
-        version: link:../qp-model-line
       '@quasipanacea/model-default':
         specifier: workspace:*
         version: link:../qp-model-default
+      '@quasipanacea/model-flat':
+        specifier: workspace:^
+        version: link:../qp-model-flat
       '@quasipanacea/model-group-simple':
         specifier: workspace:*
         version: link:../qp-model-group-simple
-      '@quasipanacea/overview-by-group':
-        specifier: workspace:*
-        version: link:../qp-overview-by-group
+      '@quasipanacea/model-line':
+        specifier: workspace:^
+        version: link:../qp-model-line
       '@quasipanacea/overview-debug':
         specifier: workspace:*
         version: link:../qp-overview-debug
@@ -664,12 +642,6 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:*
         version: link:../common/shared/qp-common
-      '@quasipanacea/group-line':
-        specifier: workspace:*
-        version: link:../common/plugins/qp-model-line
-      '@quasipanacea/overview-by-group':
-        specifier: workspace:*
-        version: link:../common/plugins/qp-overview-by-group
       '@quasipanacea/overview-debug':
         specifier: workspace:*
         version: link:../common/plugins/qp-overview-debug
@@ -5388,10 +5360,6 @@ packages:
     resolution: {integrity: sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==}
     engines: {node: '>=6'}
     dev: true
-
-  /purecss@3.0.0:
-    resolution: {integrity: sha512-IdYbGwbmuA7Hy9ACIO1q7ks4xGLcJSVHxJT2BXIz2c4Ve1aSrNU5bAzA1ILT4Gmdy5K59ruWoRPf9WvJZU5fbA==}
-    dev: false
 
   /qs@6.10.4:
     resolution: {integrity: sha512-OQiU+C+Ds5qiH91qh/mg0w+8nwQuLjM4F4M/PbmhDOoYehPh+Fb0bDjtR1sOvy7YKxvj28Y/M0PhP5uVX0kB+g==}
