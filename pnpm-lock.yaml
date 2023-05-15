@@ -31,9 +31,6 @@ importers:
       bulma:
         specifier: ^0.9.4
         version: 0.9.4
-      mitt:
-        specifier: ^3.0.0
-        version: 3.0.0
       pinia:
         specifier: ^2.0.36
         version: 2.0.36(typescript@5.0.4)(vue@3.2.47)
@@ -533,6 +530,9 @@ importers:
       '@trpc/server':
         specifier: ^10.18.0
         version: 10.18.0
+      evt:
+        specifier: ^2.4.18
+        version: 2.4.18
       mind-elixir:
         specifier: ^1.2.0
         version: 1.2.0
@@ -3535,6 +3535,14 @@ packages:
     resolution: {integrity: sha512-tYUSVOGeQPKt/eC1ABfhHy5Xd96N3oIijJvN3O9+TsC28T5V9yX9oEfEK5faP0EFSNVOG97qtAS68GBrQB2hDg==}
     dev: true
 
+  /evt@2.4.18:
+    resolution: {integrity: sha512-kMYW3DPrUWvFsOUf3cN1NMdg0MEFYLMLqC7hPSasNs8TOZCOBsDgazr6nXda2iUur/2L6BtRu0oCl2++oGYZxA==}
+    dependencies:
+      minimal-polyfills: 2.2.2
+      run-exclusive: 2.2.18
+      tsafe: 1.6.0
+    dev: false
+
   /execa@4.1.0:
     resolution: {integrity: sha512-j5W0//W7f8UxAn8hXVnwG8tLwdiUy4FJLcSupCg6maBYZDpyBvTApK7KyuI4bKj8KOh1r2YH+6ucuYtJv1bTZA==}
     engines: {node: '>=10'}
@@ -4993,6 +5001,10 @@ packages:
     resolution: {integrity: sha512-x98cBCavGe93xJZULYHVjcaB1xddDJK1o/KZ7emQnKnn9NZQ38dgYKZmuvHeo6OlrLzYsWpaCwnufWYfOKMKYQ==}
     dev: false
 
+  /minimal-polyfills@2.2.2:
+    resolution: {integrity: sha512-eEOUq/LH/DbLWihrxUP050Wi7H/N/I2dQT98Ep6SqOpmIbk4sXOI4wqalve66QoZa+6oljbZWU6I6T4dehQGmw==}
+    dev: false
+
   /minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
     dependencies:
@@ -5016,10 +5028,6 @@ packages:
   /minimist@1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
     dev: true
-
-  /mitt@3.0.0:
-    resolution: {integrity: sha512-7dX2/10ITVyqh4aOSVI9gdape+t9l2/8QxHrFmUXu4EEUpdlxl6RudZUPZoc+zuY2hk1j7XxVroIVIan/pD/SQ==}
-    dev: false
 
   /mlly@1.2.0:
     resolution: {integrity: sha512-+c7A3CV0KGdKcylsI6khWyts/CYrGTrRVo4R/I7u/cUsy0Conxa6LUhiEzVKIw14lc2L5aiO4+SeVe4TeGRKww==}
@@ -5564,6 +5572,12 @@ packages:
     resolution: {integrity: sha512-APM0Gt1KoXBz0iIkkdB/kfvGOwC4UuJFeG/c+yV7wSc7q96cG/kJ0HiYCnzivD9SB53cLV1MlHFNfOuPaadYSw==}
     dev: true
 
+  /run-exclusive@2.2.18:
+    resolution: {integrity: sha512-TXr1Gkl1iEAOCCpBTRm/2m0+1KGjORcWpZZ+VGGTe7dYX8E4y8/fMvrHk0zf+kclec2R//tpvdBxgG0bDgaJfw==}
+    dependencies:
+      minimal-polyfills: 2.2.2
+    dev: false
+
   /run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
     dependencies:
@@ -5900,6 +5914,10 @@ packages:
   /ts-dedent@2.2.0:
     resolution: {integrity: sha512-q5W7tVM71e2xjHZTlgfTDoPF/SmqKG5hddq9SzR49CH2hayqRKJtQ4mtRlSxKaJlR/+9rEM+mnBHf7I2/BQcpQ==}
     engines: {node: '>=6.10'}
+    dev: false
+
+  /tsafe@1.6.0:
+    resolution: {integrity: sha512-wlUeRBnyN3EN2chXznpLm7vBEvJLEOziDU+MN6NRlD99AkwmXgtChNQhp+V97VyRa3Bp05IaL4Cocsc7JlyEUg==}
     dev: false
 
   /tslib@1.14.1:
