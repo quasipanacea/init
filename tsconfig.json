@@ -1,9 +1,12 @@
 {
 	"extends": "./repos/client-web/node_modules/@vue/tsconfig/tsconfig.json",
 	"compilerOptions": {
-		"lib": ["ES2020", "DOM"],
+		"allowImportingTsExtensions": true,
 		"esModuleInterop": true,
+		"lib": ["ES2020", "DOM"],
 		"noEmit": true,
-		"allowImportingTsExtensions": true
+		"paths": {
+			"@common/*": ["./repos/common/shared/qp-common/*"]
+		}
 	}
 }
