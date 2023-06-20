@@ -17,12 +17,12 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:*
         version: link:../common/shared/quasipanacea-common
-      '@quasipanacea/pack-core':
+      '@quasipanacea/components':
+        specifier: workspace:*
+        version: link:../common/shared/quasipanacea-components
+      '@quasipanacea/plugin-pack-core':
         specifier: workspace:*
         version: link:../common/plugins/plugin-pack-core
-      '@quasipanacea/plugin-components':
-        specifier: workspace:*
-        version: link:../common/shared/quasipanacea-plugin-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
         version: link:../common/shared/quasipanacea-plugin-utility
@@ -117,9 +117,9 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-common
-      '@quasipanacea/plugin-components':
+      '@quasipanacea/components':
         specifier: workspace:*
-        version: link:../../shared/quasipanacea-plugin-components
+        version: link:../../shared/quasipanacea-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-plugin-utility
@@ -136,9 +136,9 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-common
-      '@quasipanacea/plugin-components':
+      '@quasipanacea/components':
         specifier: workspace:*
-        version: link:../../shared/quasipanacea-plugin-components
+        version: link:../../shared/quasipanacea-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-plugin-utility
@@ -155,9 +155,9 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-common
-      '@quasipanacea/plugin-components':
+      '@quasipanacea/components':
         specifier: workspace:*
-        version: link:../../shared/quasipanacea-plugin-components
+        version: link:../../shared/quasipanacea-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-plugin-utility
@@ -174,9 +174,9 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-common
-      '@quasipanacea/plugin-components':
+      '@quasipanacea/components':
         specifier: workspace:*
-        version: link:../../shared/quasipanacea-plugin-components
+        version: link:../../shared/quasipanacea-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-plugin-utility
@@ -196,15 +196,15 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-common
-      '@quasipanacea/plugin-components':
+      '@quasipanacea/components':
         specifier: workspace:*
-        version: link:../../shared/quasipanacea-plugin-components
+        version: link:../../shared/quasipanacea-components
+      '@quasipanacea/plugin-theme-default':
+        specifier: workspace:*
+        version: link:../plugin-theme-default
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-plugin-utility
-      '@quasipanacea/theme-default':
-        specifier: workspace:*
-        version: link:../plugin-theme-default
     devDependencies:
       '@quasipanacea/types':
         specifier: workspace:*
@@ -221,9 +221,9 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-common
-      '@quasipanacea/plugin-components':
+      '@quasipanacea/components':
         specifier: workspace:*
-        version: link:../../shared/quasipanacea-plugin-components
+        version: link:../../shared/quasipanacea-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-plugin-utility
@@ -240,15 +240,15 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-common
-      '@quasipanacea/plugin-components':
+      '@quasipanacea/components':
         specifier: workspace:*
-        version: link:../../shared/quasipanacea-plugin-components
+        version: link:../../shared/quasipanacea-components
+      '@quasipanacea/plugin-theme-default':
+        specifier: workspace:*
+        version: link:../plugin-theme-default
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-plugin-utility
-      '@quasipanacea/theme-default':
-        specifier: workspace:*
-        version: link:../plugin-theme-default
       cytoscape:
         specifier: ^3.23.0
         version: 3.23.0
@@ -289,9 +289,9 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-common
-      '@quasipanacea/plugin-components':
+      '@quasipanacea/components':
         specifier: workspace:*
-        version: link:../../shared/quasipanacea-plugin-components
+        version: link:../../shared/quasipanacea-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-plugin-utility
@@ -311,49 +311,49 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-common
-      '@quasipanacea/model-colors':
+      '@quasipanacea/plugin-model-colors':
         specifier: workspace:*
         version: link:../plugin-model-colors
-      '@quasipanacea/model-default':
+      '@quasipanacea/plugin-model-default':
         specifier: workspace:*
         version: link:../plugin-model-default
-      '@quasipanacea/model-flat':
+      '@quasipanacea/plugin-model-flat':
         specifier: workspace:^
         version: link:../plugin-model-flat
-      '@quasipanacea/model-line':
+      '@quasipanacea/plugin-model-line':
         specifier: workspace:^
         version: link:../plugin-model-line
-      '@quasipanacea/overview-debug':
+      '@quasipanacea/plugin-overview-debug':
         specifier: workspace:*
         version: link:../plugin-overview-debug
-      '@quasipanacea/overview-graph':
+      '@quasipanacea/plugin-overview-graph':
         specifier: workspace:*
         version: link:../plugin-overview-graph
-      '@quasipanacea/overview-mindelixir':
+      '@quasipanacea/plugin-overview-mindelixir':
         specifier: workspace:*
         version: link:../plugin-overview-mindelixir
-      '@quasipanacea/pod-chemical':
+      '@quasipanacea/plugin-pod-chemical':
         specifier: workspace:*
         version: link:../plugin-pod-chemical
-      '@quasipanacea/pod-debug':
+      '@quasipanacea/plugin-pod-debug':
         specifier: workspace:*
         version: link:../plugin-pod-debug
-      '@quasipanacea/pod-latex':
+      '@quasipanacea/plugin-pod-latex':
         specifier: workspace:*
         version: link:../plugin-pod-latex
-      '@quasipanacea/pod-markdown':
+      '@quasipanacea/plugin-pod-markdown':
         specifier: workspace:*
         version: link:../plugin-pod-markdown
-      '@quasipanacea/pod-milkdown':
+      '@quasipanacea/plugin-pod-milkdown':
         specifier: workspace:^
         version: link:../plugin-pod-milkdown
-      '@quasipanacea/pod-plaintext':
+      '@quasipanacea/plugin-pod-plaintext':
         specifier: workspace:*
         version: link:../plugin-pod-plaintext
-      '@quasipanacea/view-list':
+      '@quasipanacea/plugin-view-list':
         specifier: workspace:*
         version: link:../plugin-view-list
-      '@quasipanacea/view-markmap':
+      '@quasipanacea/plugin-view-markmap':
         specifier: workspace:*
         version: link:../plugin-view-markmap
 
@@ -362,9 +362,9 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-common
-      '@quasipanacea/plugin-components':
+      '@quasipanacea/components':
         specifier: workspace:*
-        version: link:../../shared/quasipanacea-plugin-components
+        version: link:../../shared/quasipanacea-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-plugin-utility
@@ -393,9 +393,9 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-common
-      '@quasipanacea/plugin-components':
+      '@quasipanacea/components':
         specifier: workspace:*
-        version: link:../../shared/quasipanacea-plugin-components
+        version: link:../../shared/quasipanacea-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-plugin-utility
@@ -415,9 +415,9 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-common
-      '@quasipanacea/plugin-components':
+      '@quasipanacea/components':
         specifier: workspace:*
-        version: link:../../shared/quasipanacea-plugin-components
+        version: link:../../shared/quasipanacea-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-plugin-utility
@@ -437,9 +437,9 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-common
-      '@quasipanacea/plugin-components':
+      '@quasipanacea/components':
         specifier: workspace:*
-        version: link:../../shared/quasipanacea-plugin-components
+        version: link:../../shared/quasipanacea-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-plugin-utility
@@ -525,9 +525,9 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-common
-      '@quasipanacea/plugin-components':
+      '@quasipanacea/components':
         specifier: workspace:*
-        version: link:../../shared/quasipanacea-plugin-components
+        version: link:../../shared/quasipanacea-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-plugin-utility
@@ -553,9 +553,9 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-common
-      '@quasipanacea/plugin-components':
+      '@quasipanacea/components':
         specifier: workspace:*
-        version: link:../../shared/quasipanacea-plugin-components
+        version: link:../../shared/quasipanacea-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-plugin-utility
@@ -575,9 +575,9 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-common
-      '@quasipanacea/plugin-components':
+      '@quasipanacea/components':
         specifier: workspace:*
-        version: link:../../shared/quasipanacea-plugin-components
+        version: link:../../shared/quasipanacea-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-plugin-utility
@@ -600,9 +600,9 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-common
-      '@quasipanacea/plugin-components':
+      '@quasipanacea/components':
         specifier: workspace:*
-        version: link:../../shared/quasipanacea-plugin-components
+        version: link:../../shared/quasipanacea-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-plugin-utility
@@ -619,9 +619,9 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-common
-      '@quasipanacea/plugin-components':
+      '@quasipanacea/components':
         specifier: workspace:*
-        version: link:../../shared/quasipanacea-plugin-components
+        version: link:../../shared/quasipanacea-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
         version: link:../../shared/quasipanacea-plugin-utility
@@ -670,7 +670,7 @@ importers:
         specifier: ^3.19.1
         version: 3.21.4
 
-  repos/common/shared/quasipanacea-plugin-components:
+  repos/common/shared/quasipanacea-components:
     dependencies:
       '@codemirror/commands':
         specifier: ^6.2.2
@@ -784,43 +784,43 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:*
         version: link:../common/shared/quasipanacea-common
-      '@quasipanacea/overview-debug':
+      '@quasipanacea/components':
+        specifier: workspace:*
+        version: link:../common/shared/quasipanacea-components
+      '@quasipanacea/plugin-overview-debug':
         specifier: workspace:*
         version: link:../common/plugins/plugin-overview-debug
-      '@quasipanacea/overview-mindelixir':
+      '@quasipanacea/plugin-overview-mindelixir':
         specifier: workspace:*
         version: link:../common/plugins/plugin-overview-mindelixir
-      '@quasipanacea/pack-core':
+      '@quasipanacea/plugin-pack-core':
         specifier: workspace:*
         version: link:../common/plugins/plugin-pack-core
-      '@quasipanacea/plugin-components':
+      '@quasipanacea/plugin-pod-chemical':
         specifier: workspace:*
-        version: link:../common/shared/quasipanacea-plugin-components
+        version: link:../common/plugins/plugin-pod-chemical
+      '@quasipanacea/plugin-pod-debug':
+        specifier: workspace:*
+        version: link:../common/plugins/plugin-pod-debug
+      '@quasipanacea/plugin-pod-latex':
+        specifier: workspace:*
+        version: link:../common/plugins/plugin-pod-latex
+      '@quasipanacea/plugin-pod-markdown':
+        specifier: workspace:*
+        version: link:../common/plugins/plugin-pod-markdown
+      '@quasipanacea/plugin-pod-milkdown':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin-pod-milkdown
+      '@quasipanacea/plugin-pod-plaintext':
+        specifier: workspace:*
+        version: link:../common/plugins/plugin-pod-plaintext
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
         version: link:../common/shared/quasipanacea-plugin-utility
-      '@quasipanacea/pod-chemical':
-        specifier: workspace:*
-        version: link:../common/plugins/plugin-pod-chemical
-      '@quasipanacea/pod-debug':
-        specifier: workspace:*
-        version: link:../common/plugins/plugin-pod-debug
-      '@quasipanacea/pod-latex':
-        specifier: workspace:*
-        version: link:../common/plugins/plugin-pod-latex
-      '@quasipanacea/pod-markdown':
-        specifier: workspace:*
-        version: link:../common/plugins/plugin-pod-markdown
-      '@quasipanacea/pod-milkdown':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-pod-milkdown
-      '@quasipanacea/pod-plaintext':
-        specifier: workspace:*
-        version: link:../common/plugins/plugin-pod-plaintext
-      '@quasipanacea/view-list':
+      '@quasipanacea/plugin-view-list':
         specifier: workspace:*
         version: link:../common/plugins/plugin-view-list
-      '@quasipanacea/view-markmap':
+      '@quasipanacea/plugin-view-markmap':
         specifier: workspace:*
         version: link:../common/plugins/plugin-view-markmap
 
