@@ -4,9 +4,6 @@
 		"allowImportingTsExtensions": true,
 		"esModuleInterop": true,
 		"lib": ["ES2020", "DOM"],
-		"noEmit": true,
-		"paths": {
-			"@common/*": ["./repos/common/shared/qp-common/*"]
-		}
+		"noEmit": true
 	}
 }
