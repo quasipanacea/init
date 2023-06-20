@@ -16,16 +16,16 @@ importers:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:*
-        version: link:../common/shared/qp-common
+        version: link:../common/shared/quasipanacea-common
       '@quasipanacea/pack-core':
         specifier: workspace:*
-        version: link:../common/plugins/qp-pack-core
+        version: link:../common/plugins/plugin-pack-core
       '@quasipanacea/plugin-components':
         specifier: workspace:*
-        version: link:../common/shared/qp-plugin-components
+        version: link:../common/shared/quasipanacea-plugin-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
-        version: link:../common/shared/qp-plugin-utility
+        version: link:../common/shared/quasipanacea-plugin-utility
       '@trpc/client':
         specifier: ^10.18.0
         version: 10.18.0(@trpc/server@10.18.0)
@@ -112,17 +112,17 @@ importers:
         specifier: 1.6.4
         version: 1.6.4(typescript@5.0.4)
 
-  repos/common/plugins/qp-model-colors:
+  repos/common/plugins/plugin-model-colors:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:*
-        version: link:../../shared/qp-common
+        version: link:../../shared/quasipanacea-common
       '@quasipanacea/plugin-components':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-components
+        version: link:../../shared/quasipanacea-plugin-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-utility
+        version: link:../../shared/quasipanacea-plugin-utility
     devDependencies:
       vue:
         specifier: ^3.2.47
@@ -131,17 +131,17 @@ importers:
         specifier: ^4.1.6
         version: 4.1.6(vue@3.2.47)
 
-  repos/common/plugins/qp-model-default:
+  repos/common/plugins/plugin-model-default:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:*
-        version: link:../../shared/qp-common
+        version: link:../../shared/quasipanacea-common
       '@quasipanacea/plugin-components':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-components
+        version: link:../../shared/quasipanacea-plugin-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-utility
+        version: link:../../shared/quasipanacea-plugin-utility
     devDependencies:
       vue:
         specifier: ^3.2.47
@@ -150,17 +150,17 @@ importers:
         specifier: ^4.1.6
         version: 4.1.6(vue@3.2.47)
 
-  repos/common/plugins/qp-model-flat:
+  repos/common/plugins/plugin-model-flat:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:*
-        version: link:../../shared/qp-common
+        version: link:../../shared/quasipanacea-common
       '@quasipanacea/plugin-components':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-components
+        version: link:../../shared/quasipanacea-plugin-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-utility
+        version: link:../../shared/quasipanacea-plugin-utility
     devDependencies:
       vue:
         specifier: ^3.2.47
@@ -169,17 +169,17 @@ importers:
         specifier: ^4.1.6
         version: 4.1.6(vue@3.2.47)
 
-  repos/common/plugins/qp-model-line:
+  repos/common/plugins/plugin-model-line:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:*
-        version: link:../../shared/qp-common
+        version: link:../../shared/quasipanacea-common
       '@quasipanacea/plugin-components':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-components
+        version: link:../../shared/quasipanacea-plugin-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-utility
+        version: link:../../shared/quasipanacea-plugin-utility
     devDependencies:
       '@trpc/client':
         specifier: ^10.18.0
@@ -191,24 +191,24 @@ importers:
         specifier: ^4.1.6
         version: 4.1.6(vue@3.2.47)
 
-  repos/common/plugins/qp-overview-bullets:
+  repos/common/plugins/plugin-overview-bullets:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:*
-        version: link:../../shared/qp-common
+        version: link:../../shared/quasipanacea-common
       '@quasipanacea/plugin-components':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-components
+        version: link:../../shared/quasipanacea-plugin-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-utility
+        version: link:../../shared/quasipanacea-plugin-utility
       '@quasipanacea/theme-default':
         specifier: workspace:*
-        version: link:../qp-theme-default
+        version: link:../plugin-theme-default
     devDependencies:
       '@quasipanacea/types':
         specifier: workspace:*
-        version: link:../../shared/qp-types
+        version: link:../../shared/quasipanacea-types
       vue:
         specifier: ^3.2.47
         version: 3.2.47
@@ -216,17 +216,17 @@ importers:
         specifier: ^4.1.6
         version: 4.1.6(vue@3.2.47)
 
-  repos/common/plugins/qp-overview-debug:
+  repos/common/plugins/plugin-overview-debug:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:*
-        version: link:../../shared/qp-common
+        version: link:../../shared/quasipanacea-common
       '@quasipanacea/plugin-components':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-components
+        version: link:../../shared/quasipanacea-plugin-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-utility
+        version: link:../../shared/quasipanacea-plugin-utility
     devDependencies:
       vue:
         specifier: ^3.2.47
@@ -235,20 +235,20 @@ importers:
         specifier: ^4.1.6
         version: 4.1.6(vue@3.2.47)
 
-  repos/common/plugins/qp-overview-graph:
+  repos/common/plugins/plugin-overview-graph:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:*
-        version: link:../../shared/qp-common
+        version: link:../../shared/quasipanacea-common
       '@quasipanacea/plugin-components':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-components
+        version: link:../../shared/quasipanacea-plugin-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-utility
+        version: link:../../shared/quasipanacea-plugin-utility
       '@quasipanacea/theme-default':
         specifier: workspace:*
-        version: link:../qp-theme-default
+        version: link:../plugin-theme-default
       cytoscape:
         specifier: ^3.23.0
         version: 3.23.0
@@ -276,7 +276,7 @@ importers:
     devDependencies:
       '@quasipanacea/types':
         specifier: workspace:*
-        version: link:../../shared/qp-types
+        version: link:../../shared/quasipanacea-types
       vue:
         specifier: ^3.2.47
         version: 3.2.47
@@ -284,17 +284,17 @@ importers:
         specifier: ^4.1.6
         version: 4.1.6(vue@3.2.47)
 
-  repos/common/plugins/qp-overview-mindelixir:
+  repos/common/plugins/plugin-overview-mindelixir:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:*
-        version: link:../../shared/qp-common
+        version: link:../../shared/quasipanacea-common
       '@quasipanacea/plugin-components':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-components
+        version: link:../../shared/quasipanacea-plugin-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-utility
+        version: link:../../shared/quasipanacea-plugin-utility
       mind-elixir:
         specifier: ^1.2.0
         version: 1.2.0
@@ -306,68 +306,68 @@ importers:
         specifier: ^4.1.6
         version: 4.1.6(vue@3.2.47)
 
-  repos/common/plugins/qp-pack-core:
+  repos/common/plugins/plugin-pack-core:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:*
-        version: link:../../shared/qp-common
+        version: link:../../shared/quasipanacea-common
       '@quasipanacea/model-colors':
         specifier: workspace:*
-        version: link:../qp-model-colors
+        version: link:../plugin-model-colors
       '@quasipanacea/model-default':
         specifier: workspace:*
-        version: link:../qp-model-default
+        version: link:../plugin-model-default
       '@quasipanacea/model-flat':
         specifier: workspace:^
-        version: link:../qp-model-flat
+        version: link:../plugin-model-flat
       '@quasipanacea/model-line':
         specifier: workspace:^
-        version: link:../qp-model-line
+        version: link:../plugin-model-line
       '@quasipanacea/overview-debug':
         specifier: workspace:*
-        version: link:../qp-overview-debug
+        version: link:../plugin-overview-debug
       '@quasipanacea/overview-graph':
         specifier: workspace:*
-        version: link:../qp-overview-graph
+        version: link:../plugin-overview-graph
       '@quasipanacea/overview-mindelixir':
         specifier: workspace:*
-        version: link:../qp-overview-mindelixir
+        version: link:../plugin-overview-mindelixir
       '@quasipanacea/pod-chemical':
         specifier: workspace:*
-        version: link:../qp-pod-chemical
+        version: link:../plugin-pod-chemical
       '@quasipanacea/pod-debug':
         specifier: workspace:*
-        version: link:../qp-pod-debug
+        version: link:../plugin-pod-debug
       '@quasipanacea/pod-latex':
         specifier: workspace:*
-        version: link:../qp-pod-latex
+        version: link:../plugin-pod-latex
       '@quasipanacea/pod-markdown':
         specifier: workspace:*
-        version: link:../qp-pod-markdown
+        version: link:../plugin-pod-markdown
       '@quasipanacea/pod-milkdown':
         specifier: workspace:^
-        version: link:../qp-pod-milkdown
+        version: link:../plugin-pod-milkdown
       '@quasipanacea/pod-plaintext':
         specifier: workspace:*
-        version: link:../qp-pod-plaintext
+        version: link:../plugin-pod-plaintext
       '@quasipanacea/view-list':
         specifier: workspace:*
-        version: link:../qp-view-list
+        version: link:../plugin-view-list
       '@quasipanacea/view-markmap':
         specifier: workspace:*
-        version: link:../qp-view-markmap
+        version: link:../plugin-view-markmap
 
-  repos/common/plugins/qp-pod-chemical:
+  repos/common/plugins/plugin-pod-chemical:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:*
-        version: link:../../shared/qp-common
+        version: link:../../shared/quasipanacea-common
       '@quasipanacea/plugin-components':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-components
+        version: link:../../shared/quasipanacea-plugin-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-utility
+        version: link:../../shared/quasipanacea-plugin-utility
       github-markdown-css:
         specifier: ^5.2.0
         version: 5.2.0
@@ -388,17 +388,17 @@ importers:
         specifier: ^4.1.6
         version: 4.1.6(vue@3.2.47)
 
-  repos/common/plugins/qp-pod-debug:
+  repos/common/plugins/plugin-pod-debug:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:*
-        version: link:../../shared/qp-common
+        version: link:../../shared/quasipanacea-common
       '@quasipanacea/plugin-components':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-components
+        version: link:../../shared/quasipanacea-plugin-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-utility
+        version: link:../../shared/quasipanacea-plugin-utility
     devDependencies:
       '@trpc/client':
         specifier: ^10.18.0
@@ -410,17 +410,17 @@ importers:
         specifier: ^4.1.6
         version: 4.1.6(vue@3.2.47)
 
-  repos/common/plugins/qp-pod-latex:
+  repos/common/plugins/plugin-pod-latex:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:*
-        version: link:../../shared/qp-common
+        version: link:../../shared/quasipanacea-common
       '@quasipanacea/plugin-components':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-components
+        version: link:../../shared/quasipanacea-plugin-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-utility
+        version: link:../../shared/quasipanacea-plugin-utility
     devDependencies:
       '@trpc/client':
         specifier: ^10.18.0
@@ -432,17 +432,17 @@ importers:
         specifier: ^4.1.6
         version: 4.1.6(vue@3.2.47)
 
-  repos/common/plugins/qp-pod-markdown:
+  repos/common/plugins/plugin-pod-markdown:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:*
-        version: link:../../shared/qp-common
+        version: link:../../shared/quasipanacea-common
       '@quasipanacea/plugin-components':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-components
+        version: link:../../shared/quasipanacea-plugin-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-utility
+        version: link:../../shared/quasipanacea-plugin-utility
       github-markdown-css:
         specifier: ^5.2.0
         version: 5.2.0
@@ -460,7 +460,7 @@ importers:
         specifier: ^4.1.6
         version: 4.1.6(vue@3.2.47)
 
-  repos/common/plugins/qp-pod-milkdown:
+  repos/common/plugins/plugin-pod-milkdown:
     dependencies:
       '@milkdown/core':
         specifier: ^7.2.3
@@ -524,13 +524,13 @@ importers:
         version: 0.2.5(vue@3.2.47)
       '@quasipanacea/common':
         specifier: workspace:*
-        version: link:../../shared/qp-common
+        version: link:../../shared/quasipanacea-common
       '@quasipanacea/plugin-components':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-components
+        version: link:../../shared/quasipanacea-plugin-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-utility
+        version: link:../../shared/quasipanacea-plugin-utility
       '@tailwindcss/typography':
         specifier: ^0.5.9
         version: 0.5.9(tailwindcss@3.3.2)
@@ -548,17 +548,17 @@ importers:
         specifier: ^4.1.6
         version: 4.1.6(vue@3.2.47)
 
-  repos/common/plugins/qp-pod-plaintext:
+  repos/common/plugins/plugin-pod-plaintext:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:*
-        version: link:../../shared/qp-common
+        version: link:../../shared/quasipanacea-common
       '@quasipanacea/plugin-components':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-components
+        version: link:../../shared/quasipanacea-plugin-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-utility
+        version: link:../../shared/quasipanacea-plugin-utility
     devDependencies:
       '@trpc/client':
         specifier: ^10.18.0
@@ -570,17 +570,17 @@ importers:
         specifier: ^4.1.6
         version: 4.1.6(vue@3.2.47)
 
-  repos/common/plugins/qp-theme-default:
+  repos/common/plugins/plugin-theme-default:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:*
-        version: link:../../shared/qp-common
+        version: link:../../shared/quasipanacea-common
       '@quasipanacea/plugin-components':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-components
+        version: link:../../shared/quasipanacea-plugin-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-utility
+        version: link:../../shared/quasipanacea-plugin-utility
       github-markdown-css:
         specifier: ^5.2.0
         version: 5.2.0
@@ -595,17 +595,17 @@ importers:
         specifier: ^4.1.6
         version: 4.1.6(vue@3.2.47)
 
-  repos/common/plugins/qp-view-list:
+  repos/common/plugins/plugin-view-list:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:*
-        version: link:../../shared/qp-common
+        version: link:../../shared/quasipanacea-common
       '@quasipanacea/plugin-components':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-components
+        version: link:../../shared/quasipanacea-plugin-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-utility
+        version: link:../../shared/quasipanacea-plugin-utility
     devDependencies:
       vue:
         specifier: ^3.2.47
@@ -614,17 +614,17 @@ importers:
         specifier: ^4.1.6
         version: 4.1.6(vue@3.2.47)
 
-  repos/common/plugins/qp-view-markmap:
+  repos/common/plugins/plugin-view-markmap:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:*
-        version: link:../../shared/qp-common
+        version: link:../../shared/quasipanacea-common
       '@quasipanacea/plugin-components':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-components
+        version: link:../../shared/quasipanacea-plugin-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
-        version: link:../../shared/qp-plugin-utility
+        version: link:../../shared/quasipanacea-plugin-utility
       markmap-common:
         specifier: ^0.14.2
         version: 0.14.2
@@ -645,14 +645,14 @@ importers:
         specifier: ^4.1.6
         version: 4.1.6(vue@3.2.47)
 
-  repos/common/shared/qp-common:
+  repos/common/shared/quasipanacea-common:
     dependencies:
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
-        version: link:../qp-plugin-utility
+        version: link:../quasipanacea-plugin-utility
       '@quasipanacea/types':
         specifier: workspace:^
-        version: link:../qp-types
+        version: link:../quasipanacea-types
       '@trpc/client':
         specifier: ^10.18.0
         version: 10.18.0(@trpc/server@10.18.0)
@@ -670,7 +670,7 @@ importers:
         specifier: ^3.19.1
         version: 3.21.4
 
-  repos/common/shared/qp-plugin-components:
+  repos/common/shared/quasipanacea-plugin-components:
     dependencies:
       '@codemirror/commands':
         specifier: ^6.2.2
@@ -689,10 +689,10 @@ importers:
         version: 6.9.3
       '@quasipanacea/common':
         specifier: workspace:*
-        version: link:../qp-common
+        version: link:../quasipanacea-common
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
-        version: link:../qp-plugin-utility
+        version: link:../quasipanacea-plugin-utility
       cm6-theme-basic-light:
         specifier: ^0.2.0
         version: 0.2.0(@codemirror/language@6.6.0)(@codemirror/state@6.2.0)(@codemirror/view@6.9.3)(@lezer/highlight@1.1.4)
@@ -728,7 +728,7 @@ importers:
         specifier: ^4.1.6
         version: 4.1.6(vue@3.2.47)
 
-  repos/common/shared/qp-plugin-utility:
+  repos/common/shared/quasipanacea-plugin-utility:
     dependencies:
       katex:
         specifier: ^0.16.4
@@ -777,52 +777,52 @@ importers:
         specifier: ^0.16.0
         version: 0.16.0
 
-  repos/common/shared/qp-types: {}
+  repos/common/shared/quasipanacea-types: {}
 
   repos/server-deno:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:*
-        version: link:../common/shared/qp-common
+        version: link:../common/shared/quasipanacea-common
       '@quasipanacea/overview-debug':
         specifier: workspace:*
-        version: link:../common/plugins/qp-overview-debug
+        version: link:../common/plugins/plugin-overview-debug
       '@quasipanacea/overview-mindelixir':
         specifier: workspace:*
-        version: link:../common/plugins/qp-overview-mindelixir
+        version: link:../common/plugins/plugin-overview-mindelixir
       '@quasipanacea/pack-core':
         specifier: workspace:*
-        version: link:../common/plugins/qp-pack-core
+        version: link:../common/plugins/plugin-pack-core
       '@quasipanacea/plugin-components':
         specifier: workspace:*
-        version: link:../common/shared/qp-plugin-components
+        version: link:../common/shared/quasipanacea-plugin-components
       '@quasipanacea/plugin-utility':
         specifier: workspace:*
-        version: link:../common/shared/qp-plugin-utility
+        version: link:../common/shared/quasipanacea-plugin-utility
       '@quasipanacea/pod-chemical':
         specifier: workspace:*
-        version: link:../common/plugins/qp-pod-chemical
+        version: link:../common/plugins/plugin-pod-chemical
       '@quasipanacea/pod-debug':
         specifier: workspace:*
-        version: link:../common/plugins/qp-pod-debug
+        version: link:../common/plugins/plugin-pod-debug
       '@quasipanacea/pod-latex':
         specifier: workspace:*
-        version: link:../common/plugins/qp-pod-latex
+        version: link:../common/plugins/plugin-pod-latex
       '@quasipanacea/pod-markdown':
         specifier: workspace:*
-        version: link:../common/plugins/qp-pod-markdown
+        version: link:../common/plugins/plugin-pod-markdown
       '@quasipanacea/pod-milkdown':
         specifier: workspace:^
-        version: link:../common/plugins/qp-pod-milkdown
+        version: link:../common/plugins/plugin-pod-milkdown
       '@quasipanacea/pod-plaintext':
         specifier: workspace:*
-        version: link:../common/plugins/qp-pod-plaintext
+        version: link:../common/plugins/plugin-pod-plaintext
       '@quasipanacea/view-list':
         specifier: workspace:*
-        version: link:../common/plugins/qp-view-list
+        version: link:../common/plugins/plugin-view-list
       '@quasipanacea/view-markmap':
         specifier: workspace:*
-        version: link:../common/plugins/qp-view-markmap
+        version: link:../common/plugins/plugin-view-markmap
 
 packages:
 
@@ -1377,8 +1377,8 @@ packages:
       '@milkdown/prose': 7.2.3
       '@milkdown/transformer': 7.2.3(@milkdown/prose@7.2.3)
       mdast-util-to-markdown: 1.5.0
-      remark-parse: 10.0.1
-      remark-stringify: 10.0.2
+      remark-parse: 10.0.2
+      remark-stringify: 10.0.3
       tslib: 2.5.0
       unified: 10.1.2
     transitivePeerDependencies:
@@ -6488,14 +6488,6 @@ packages:
       unified: 10.1.2
     dev: false
 
-  /remark-stringify@10.0.2:
-    resolution: {integrity: sha512-6wV3pvbPvHkbNnWB0wdDvVFHOe1hBRAx1Q/5g/EpH4RppAII6J8Gnwe7VbHuXaoKIF6LAg6ExTel/+kNqSQ7lw==}
-    dependencies:
-      '@types/mdast': 3.0.11
-      mdast-util-to-markdown: 1.5.0
-      unified: 10.1.2
-    dev: false
-
   /remark-stringify@10.0.3:
     resolution: {integrity: sha512-koyOzCMYoUHudypbj4XpnAKFbkddRMYZHwghnxd7ue5210WzGw6kOBwauJTRUMq16jsovXx8dYNvSSWP89kZ3A==}
     dependencies:
@@ -6516,8 +6508,8 @@ packages:
     resolution: {integrity: sha512-A3ARm2V4BgiRXaUo5K0dRvJ1lbogrbXnhkJRmD0yw092/Yl0kOCZt1k9ZeElEwkZsWGsMumz6qL5MfNJH9nOBA==}
     dependencies:
       '@types/mdast': 3.0.11
-      remark-parse: 10.0.1
-      remark-stringify: 10.0.2
+      remark-parse: 10.0.2
+      remark-stringify: 10.0.3
       unified: 10.1.2
     transitivePeerDependencies:
       - supports-color
