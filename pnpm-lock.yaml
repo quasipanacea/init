@@ -534,6 +534,9 @@ importers:
       '@tailwindcss/typography':
         specifier: ^0.5.9
         version: 0.5.9(tailwindcss@3.3.2)
+      lodash:
+        specifier: ^4.17.21
+        version: 4.17.21
       tailwindcss:
         specifier: ^3.3.2
         version: 3.3.2
