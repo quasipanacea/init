@@ -16,16 +16,13 @@ importers:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
-        version: link:../common/shared/quasipanacea-common
-      '@quasipanacea/components':
-        specifier: workspace:^
-        version: link:../common/shared/quasipanacea-components
+        version: link:../common/packages/common
       '@quasipanacea/plugin-pack-core':
         specifier: workspace:^
         version: link:../common/plugins/plugin-pack-core
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
-        version: link:../common/shared/quasipanacea-plugin-utility
+        version: link:../common/packages/plugin-utility
       '@trpc/client':
         specifier: ^10.32.0
         version: 10.32.0(@trpc/server@10.32.0)
@@ -115,143 +112,198 @@ importers:
         specifier: 1.8.1
         version: 1.8.1(typescript@5.1.3)
 
+  repos/common/packages/common:
+    dependencies:
+      '@quasipanacea/plugin-utility':
+        specifier: workspace:^
+        version: link:../plugin-utility
+      '@quasipanacea/types':
+        specifier: workspace:^
+        version: link:../types
+      '@trpc/client':
+        specifier: ^10.32.0
+        version: 10.32.0(@trpc/server@10.32.0)
+      '@trpc/server':
+        specifier: ^10.32.0
+        version: 10.32.0
+      evt:
+        specifier: ^2.4.18
+        version: 2.4.18
+      mind-elixir:
+        specifier: ^1.2.0
+        version: 1.2.0
+    devDependencies:
+      zod:
+        specifier: ^3.21.4
+        version: 3.21.4
+
+  repos/common/packages/plugin-utility:
+    dependencies:
+      katex:
+        specifier: ^0.16.4
+        version: 0.16.4
+      mind-elixir:
+        specifier: ^1.2.0
+        version: 1.2.0
+      rehype-external-links:
+        specifier: ^2.0.1
+        version: 2.0.1
+      rehype-katex:
+        specifier: ^6.0.2
+        version: 6.0.2
+      rehype-stringify:
+        specifier: ^9.0.3
+        version: 9.0.3
+      remark:
+        specifier: ^14.0.2
+        version: 14.0.2
+      remark-gfm:
+        specifier: ^3.0.1
+        version: 3.0.1
+      remark-math:
+        specifier: ^5.1.1
+        version: 5.1.1
+      remark-parse:
+        specifier: ^10.0.1
+        version: 10.0.1
+      remark-rehype:
+        specifier: ^10.1.0
+        version: 10.1.0
+      remark-toc:
+        specifier: ^8.0.1
+        version: 8.0.1
+      unified:
+        specifier: ^10.1.2
+        version: 10.1.2
+    devDependencies:
+      '@trpc/client':
+        specifier: ^10.32.0
+        version: 10.32.0(@trpc/server@10.32.0)
+      '@trpc/server':
+        specifier: ^10.32.0
+        version: 10.32.0
+      '@types/katex':
+        specifier: ^0.16.0
+        version: 0.16.0
+
+  repos/common/packages/types: {}
+
   repos/common/plugins/plugin-model-colors:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-common
-      '@quasipanacea/components':
-        specifier: workspace:^
-        version: link:../../shared/quasipanacea-components
+        version: link:../../packages/common
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-plugin-utility
+        version: link:../../packages/plugin-utility
     devDependencies:
       vue:
-        specifier: ^3.2.47
-        version: 3.2.47
+        specifier: ^3.0.0
+        version: 3.3.4
       vue-router:
-        specifier: ^4.1.6
-        version: 4.1.6(vue@3.2.47)
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
 
   repos/common/plugins/plugin-model-default:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-common
-      '@quasipanacea/components':
-        specifier: workspace:^
-        version: link:../../shared/quasipanacea-components
+        version: link:../../packages/common
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-plugin-utility
+        version: link:../../packages/plugin-utility
     devDependencies:
       vue:
-        specifier: ^3.2.47
-        version: 3.2.47
+        specifier: ^3.0.0
+        version: 3.3.4
       vue-router:
-        specifier: ^4.1.6
-        version: 4.1.6(vue@3.2.47)
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
 
   repos/common/plugins/plugin-model-flat:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-common
-      '@quasipanacea/components':
-        specifier: workspace:^
-        version: link:../../shared/quasipanacea-components
+        version: link:../../packages/common
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-plugin-utility
+        version: link:../../packages/plugin-utility
     devDependencies:
       vue:
-        specifier: ^3.2.47
-        version: 3.2.47
+        specifier: ^3.0.0
+        version: 3.3.4
       vue-router:
-        specifier: ^4.1.6
-        version: 4.1.6(vue@3.2.47)
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
 
   repos/common/plugins/plugin-model-line:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-common
-      '@quasipanacea/components':
-        specifier: workspace:^
-        version: link:../../shared/quasipanacea-components
+        version: link:../../packages/common
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-plugin-utility
+        version: link:../../packages/plugin-utility
     devDependencies:
       '@trpc/client':
         specifier: ^10.32.0
         version: 10.32.0(@trpc/server@10.32.0)
       vue:
-        specifier: ^3.2.47
-        version: 3.2.47
+        specifier: ^3.0.0
+        version: 3.3.4
       vue-router:
-        specifier: ^4.1.6
-        version: 4.1.6(vue@3.2.47)
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
 
   repos/common/plugins/plugin-overview-bullets:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-common
-      '@quasipanacea/components':
-        specifier: workspace:^
-        version: link:../../shared/quasipanacea-components
+        version: link:../../packages/common
       '@quasipanacea/plugin-theme-default':
         specifier: workspace:^
         version: link:../plugin-theme-default
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-plugin-utility
+        version: link:../../packages/plugin-utility
     devDependencies:
       '@quasipanacea/types':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-types
+        version: link:../../packages/types
       vue:
-        specifier: ^3.2.47
-        version: 3.2.47
+        specifier: ^3.0.0
+        version: 3.3.4
       vue-router:
-        specifier: ^4.1.6
-        version: 4.1.6(vue@3.2.47)
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
 
   repos/common/plugins/plugin-overview-debug:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-common
-      '@quasipanacea/components':
-        specifier: workspace:^
-        version: link:../../shared/quasipanacea-components
+        version: link:../../packages/common
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-plugin-utility
+        version: link:../../packages/plugin-utility
     devDependencies:
       vue:
-        specifier: ^3.2.47
-        version: 3.2.47
+        specifier: ^3.0.0
+        version: 3.3.4
       vue-router:
-        specifier: ^4.1.6
-        version: 4.1.6(vue@3.2.47)
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
 
   repos/common/plugins/plugin-overview-graph:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-common
-      '@quasipanacea/components':
-        specifier: workspace:^
-        version: link:../../shared/quasipanacea-components
+        version: link:../../packages/common
       '@quasipanacea/plugin-theme-default':
         specifier: workspace:^
         version: link:../plugin-theme-default
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-plugin-utility
+        version: link:../../packages/plugin-utility
       cytoscape:
         specifier: ^3.23.0
         version: 3.23.0
@@ -279,41 +331,38 @@ importers:
     devDependencies:
       '@quasipanacea/types':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-types
+        version: link:../../packages/types
       vue:
-        specifier: ^3.2.47
-        version: 3.2.47
+        specifier: ^3.0.0
+        version: 3.3.4
       vue-router:
-        specifier: ^4.1.6
-        version: 4.1.6(vue@3.2.47)
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
 
   repos/common/plugins/plugin-overview-mindelixir:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-common
-      '@quasipanacea/components':
-        specifier: workspace:^
-        version: link:../../shared/quasipanacea-components
+        version: link:../../packages/common
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-plugin-utility
+        version: link:../../packages/plugin-utility
       mind-elixir:
         specifier: ^1.2.0
         version: 1.2.0
     devDependencies:
       vue:
-        specifier: ^3.2.47
-        version: 3.2.47
+        specifier: ^3.0.0
+        version: 3.3.4
       vue-router:
-        specifier: ^4.1.6
-        version: 4.1.6(vue@3.2.47)
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
 
   repos/common/plugins/plugin-pack-core:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-common
+        version: link:../../packages/common
       '@quasipanacea/plugin-model-colors':
         specifier: workspace:^
         version: link:../plugin-model-colors
@@ -364,13 +413,10 @@ importers:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-common
-      '@quasipanacea/components':
-        specifier: workspace:^
-        version: link:../../shared/quasipanacea-components
+        version: link:../../packages/common
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-plugin-utility
+        version: link:../../packages/plugin-utility
       github-markdown-css:
         specifier: ^5.2.0
         version: 5.2.0
@@ -385,67 +431,58 @@ importers:
         specifier: ^10.32.0
         version: 10.32.0(@trpc/server@10.32.0)
       vue:
-        specifier: ^3.2.47
-        version: 3.2.47
+        specifier: ^3.0.0
+        version: 3.3.4
       vue-router:
-        specifier: ^4.1.6
-        version: 4.1.6(vue@3.2.47)
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
 
   repos/common/plugins/plugin-pod-debug:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-common
-      '@quasipanacea/components':
-        specifier: workspace:^
-        version: link:../../shared/quasipanacea-components
+        version: link:../../packages/common
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-plugin-utility
+        version: link:../../packages/plugin-utility
     devDependencies:
       '@trpc/client':
         specifier: ^10.32.0
         version: 10.32.0(@trpc/server@10.32.0)
       vue:
-        specifier: ^3.2.47
-        version: 3.2.47
+        specifier: ^3.0.0
+        version: 3.3.4
       vue-router:
-        specifier: ^4.1.6
-        version: 4.1.6(vue@3.2.47)
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
 
   repos/common/plugins/plugin-pod-latex:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-common
-      '@quasipanacea/components':
-        specifier: workspace:^
-        version: link:../../shared/quasipanacea-components
+        version: link:../../packages/common
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-plugin-utility
+        version: link:../../packages/plugin-utility
     devDependencies:
       '@trpc/client':
         specifier: ^10.32.0
         version: 10.32.0(@trpc/server@10.32.0)
       vue:
-        specifier: ^3.2.47
-        version: 3.2.47
+        specifier: ^3.0.0
+        version: 3.3.4
       vue-router:
-        specifier: ^4.1.6
-        version: 4.1.6(vue@3.2.47)
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
 
   repos/common/plugins/plugin-pod-markdown:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-common
-      '@quasipanacea/components':
-        specifier: workspace:^
-        version: link:../../shared/quasipanacea-components
+        version: link:../../packages/common
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-plugin-utility
+        version: link:../../packages/plugin-utility
       github-markdown-css:
         specifier: ^5.2.0
         version: 5.2.0
@@ -457,11 +494,11 @@ importers:
         specifier: ^10.32.0
         version: 10.32.0(@trpc/server@10.32.0)
       vue:
-        specifier: ^3.2.47
-        version: 3.2.47
+        specifier: ^3.0.0
+        version: 3.3.4
       vue-router:
-        specifier: ^4.1.6
-        version: 4.1.6(vue@3.2.47)
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
 
   repos/common/plugins/plugin-pod-milkdown:
     dependencies:
@@ -521,19 +558,16 @@ importers:
         version: 7.2.3(@milkdown/core@7.2.3)(@milkdown/ctx@7.2.3)(@milkdown/prose@7.2.3)(@milkdown/transformer@7.2.3)
       '@milkdown/vue':
         specifier: ^7.2.3
-        version: 7.2.3(@milkdown/core@7.2.3)(@milkdown/ctx@7.2.3)(@milkdown/prose@7.2.3)(@milkdown/transformer@7.2.3)(vue@3.2.47)
+        version: 7.2.3(@milkdown/core@7.2.3)(@milkdown/ctx@7.2.3)(@milkdown/prose@7.2.3)(@milkdown/transformer@7.2.3)(vue@3.3.4)
       '@prosemirror-adapter/vue':
         specifier: ^0.2.5
-        version: 0.2.5(vue@3.2.47)
+        version: 0.2.5(vue@3.3.4)
       '@quasipanacea/common':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-common
-      '@quasipanacea/components':
-        specifier: workspace:^
-        version: link:../../shared/quasipanacea-components
+        version: link:../../packages/common
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-plugin-utility
+        version: link:../../packages/plugin-utility
       '@tailwindcss/typography':
         specifier: ^0.5.9
         version: 0.5.9(tailwindcss@3.3.2)
@@ -548,45 +582,39 @@ importers:
         specifier: ^10.32.0
         version: 10.32.0(@trpc/server@10.32.0)
       vue:
-        specifier: ^3.2.47
-        version: 3.2.47
+        specifier: ^3.0.0
+        version: 3.3.4
       vue-router:
-        specifier: ^4.1.6
-        version: 4.1.6(vue@3.2.47)
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
 
   repos/common/plugins/plugin-pod-plaintext:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-common
-      '@quasipanacea/components':
-        specifier: workspace:^
-        version: link:../../shared/quasipanacea-components
+        version: link:../../packages/common
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-plugin-utility
+        version: link:../../packages/plugin-utility
     devDependencies:
       '@trpc/client':
         specifier: ^10.32.0
         version: 10.32.0(@trpc/server@10.32.0)
       vue:
-        specifier: ^3.2.47
-        version: 3.2.47
+        specifier: ^3.0.0
+        version: 3.3.4
       vue-router:
-        specifier: ^4.1.6
-        version: 4.1.6(vue@3.2.47)
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
 
   repos/common/plugins/plugin-theme-default:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-common
-      '@quasipanacea/components':
-        specifier: workspace:^
-        version: link:../../shared/quasipanacea-components
+        version: link:../../packages/common
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-plugin-utility
+        version: link:../../packages/plugin-utility
       github-markdown-css:
         specifier: ^5.2.0
         version: 5.2.0
@@ -595,42 +623,36 @@ importers:
         version: 0.16.4
     devDependencies:
       vue:
-        specifier: ^3.2.47
-        version: 3.2.47
+        specifier: ^3.0.0
+        version: 3.3.4
       vue-router:
-        specifier: ^4.1.6
-        version: 4.1.6(vue@3.2.47)
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
 
   repos/common/plugins/plugin-view-list:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-common
-      '@quasipanacea/components':
-        specifier: workspace:^
-        version: link:../../shared/quasipanacea-components
+        version: link:../../packages/common
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-plugin-utility
+        version: link:../../packages/plugin-utility
     devDependencies:
       vue:
-        specifier: ^3.2.47
-        version: 3.2.47
+        specifier: ^3.0.0
+        version: 3.3.4
       vue-router:
-        specifier: ^4.1.6
-        version: 4.1.6(vue@3.2.47)
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
 
   repos/common/plugins/plugin-view-markmap:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-common
-      '@quasipanacea/components':
-        specifier: workspace:^
-        version: link:../../shared/quasipanacea-components
+        version: link:../../packages/common
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
-        version: link:../../shared/quasipanacea-plugin-utility
+        version: link:../../packages/plugin-utility
       markmap-common:
         specifier: ^0.14.2
         version: 0.14.2
@@ -645,154 +667,17 @@ importers:
         version: 0.14.4(markmap-common@0.14.2)
     devDependencies:
       vue:
-        specifier: ^3.2.47
-        version: 3.2.47
+        specifier: ^3.0.0
+        version: 3.3.4
       vue-router:
-        specifier: ^4.1.6
-        version: 4.1.6(vue@3.2.47)
-
-  repos/common/shared/quasipanacea-common:
-    dependencies:
-      '@quasipanacea/plugin-utility':
-        specifier: workspace:^
-        version: link:../quasipanacea-plugin-utility
-      '@quasipanacea/types':
-        specifier: workspace:^
-        version: link:../quasipanacea-types
-      '@trpc/client':
-        specifier: ^10.32.0
-        version: 10.32.0(@trpc/server@10.32.0)
-      '@trpc/server':
-        specifier: ^10.32.0
-        version: 10.32.0
-      evt:
-        specifier: ^2.4.18
-        version: 2.4.18
-      mind-elixir:
-        specifier: ^1.2.0
-        version: 1.2.0
-    devDependencies:
-      zod:
-        specifier: ^3.21.4
-        version: 3.21.4
-
-  repos/common/shared/quasipanacea-components:
-    dependencies:
-      '@codemirror/commands':
-        specifier: ^6.2.2
-        version: 6.2.2
-      '@codemirror/lang-markdown':
-        specifier: ^6.1.0
-        version: 6.1.0
-      '@codemirror/language':
-        specifier: ^6.6.0
-        version: 6.6.0
-      '@codemirror/state':
-        specifier: ^6.2.0
-        version: 6.2.0
-      '@codemirror/view':
-        specifier: ^6.9.3
-        version: 6.9.3
-      '@quasipanacea/common':
-        specifier: workspace:^
-        version: link:../quasipanacea-common
-      '@quasipanacea/plugin-utility':
-        specifier: workspace:^
-        version: link:../quasipanacea-plugin-utility
-      cm6-theme-basic-light:
-        specifier: ^0.2.0
-        version: 0.2.0(@codemirror/language@6.6.0)(@codemirror/state@6.2.0)(@codemirror/view@6.9.3)(@lezer/highlight@1.1.4)
-      codemirror:
-        specifier: ^6.0.1
-        version: 6.0.1(@lezer/common@1.0.2)
-      github-markdown-css:
-        specifier: ^5.2.0
-        version: 5.2.0
-      golden-layout:
-        specifier: ^2.6.0
-        version: 2.6.0
-      lodash:
-        specifier: ^4.17.21
-        version: 4.17.21
-      mind-elixir:
-        specifier: ^1.2.0
-        version: 1.2.0
-      split-grid:
-        specifier: ^1.0.11
-        version: 1.0.11
-    devDependencies:
-      '@types/cytoscape':
-        specifier: ^3.19.9
-        version: 3.19.9
-      '@types/lodash':
-        specifier: ^4.14.194
-        version: 4.14.194
-      vue:
-        specifier: ^3.2.47
-        version: 3.2.47
-      vue-router:
-        specifier: ^4.1.6
-        version: 4.1.6(vue@3.2.47)
-
-  repos/common/shared/quasipanacea-plugin-utility:
-    dependencies:
-      katex:
-        specifier: ^0.16.4
-        version: 0.16.4
-      mind-elixir:
-        specifier: ^1.2.0
-        version: 1.2.0
-      rehype-external-links:
-        specifier: ^2.0.1
-        version: 2.0.1
-      rehype-katex:
-        specifier: ^6.0.2
-        version: 6.0.2
-      rehype-stringify:
-        specifier: ^9.0.3
-        version: 9.0.3
-      remark:
-        specifier: ^14.0.2
-        version: 14.0.2
-      remark-gfm:
-        specifier: ^3.0.1
-        version: 3.0.1
-      remark-math:
-        specifier: ^5.1.1
-        version: 5.1.1
-      remark-parse:
-        specifier: ^10.0.1
-        version: 10.0.1
-      remark-rehype:
-        specifier: ^10.1.0
-        version: 10.1.0
-      remark-toc:
-        specifier: ^8.0.1
-        version: 8.0.1
-      unified:
-        specifier: ^10.1.2
-        version: 10.1.2
-    devDependencies:
-      '@trpc/client':
-        specifier: ^10.32.0
-        version: 10.32.0(@trpc/server@10.32.0)
-      '@trpc/server':
-        specifier: ^10.32.0
-        version: 10.32.0
-      '@types/katex':
-        specifier: ^0.16.0
-        version: 0.16.0
-
-  repos/common/shared/quasipanacea-types: {}
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
 
   repos/server-deno:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
-        version: link:../common/shared/quasipanacea-common
-      '@quasipanacea/components':
-        specifier: workspace:^
-        version: link:../common/shared/quasipanacea-components
+        version: link:../common/packages/common
       '@quasipanacea/plugin-overview-debug':
         specifier: workspace:^
         version: link:../common/plugins/plugin-overview-debug
@@ -825,7 +710,7 @@ importers:
         version: link:../common/plugins/plugin-pod-plaintext
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
-        version: link:../common/shared/quasipanacea-plugin-utility
+        version: link:../common/packages/plugin-utility
       '@quasipanacea/plugin-view-list':
         specifier: workspace:^
         version: link:../common/plugins/plugin-view-list
@@ -872,117 +757,6 @@ packages:
 
   /@braintree/sanitize-url@6.0.2:
     resolution: {integrity: sha512-Tbsj02wXCbqGmzdnXNk0SOF19ChhRU70BsroIi4Pm6Ehp56in6vch94mfbdQ17DozxkL3BAVjbZ4Qc1a0HFRAg==}
-    dev: false
-
-  /@codemirror/autocomplete@6.4.2(@codemirror/language@6.6.0)(@codemirror/state@6.2.0)(@codemirror/view@6.9.3)(@lezer/common@1.0.2):
-    resolution: {integrity: sha512-8WE2xp+D0MpWEv5lZ6zPW1/tf4AGb358T5GWYiKEuCP8MvFfT3tH2mIF9Y2yr2e3KbHuSvsVhosiEyqCpiJhZQ==}
-    peerDependencies:
-      '@codemirror/language': ^6.0.0
-      '@codemirror/state': ^6.0.0
-      '@codemirror/view': ^6.0.0
-      '@lezer/common': ^1.0.0
-    dependencies:
-      '@codemirror/language': 6.6.0
-      '@codemirror/state': 6.2.0
-      '@codemirror/view': 6.9.3
-      '@lezer/common': 1.0.2
-    dev: false
-
-  /@codemirror/commands@6.2.2:
-    resolution: {integrity: sha512-s9lPVW7TxXrI/7voZ+HmD/yiAlwAYn9PH5SUVSUhsxXHhv4yl5eZ3KLntSoTynfdgVYM0oIpccQEWRBQgmNZyw==}
-    dependencies:
-      '@codemirror/language': 6.6.0
-      '@codemirror/state': 6.2.0
-      '@codemirror/view': 6.9.3
-      '@lezer/common': 1.0.2
-    dev: false
-
-  /@codemirror/lang-css@6.1.1(@codemirror/view@6.9.3)(@lezer/common@1.0.2):
-    resolution: {integrity: sha512-P6jdNEHyRcqqDgbvHYyC9Wxkek0rnG3a9aVSRi4a7WrjPbQtBTaOmvYpXmm13zZMAatO4Oqpac+0QZs7sy+LnQ==}
-    dependencies:
-      '@codemirror/autocomplete': 6.4.2(@codemirror/language@6.6.0)(@codemirror/state@6.2.0)(@codemirror/view@6.9.3)(@lezer/common@1.0.2)
-      '@codemirror/language': 6.6.0
-      '@codemirror/state': 6.2.0
-      '@lezer/css': 1.1.1
-    transitivePeerDependencies:
-      - '@codemirror/view'
-      - '@lezer/common'
-    dev: false
-
-  /@codemirror/lang-html@6.4.3:
-    resolution: {integrity: sha512-VKzQXEC8nL69Jg2hvAFPBwOdZNvL8tMFOrdFwWpU+wc6a6KEkndJ/19R5xSaglNX6v2bttm8uIEFYxdQDcIZVQ==}
-    dependencies:
-      '@codemirror/autocomplete': 6.4.2(@codemirror/language@6.6.0)(@codemirror/state@6.2.0)(@codemirror/view@6.9.3)(@lezer/common@1.0.2)
-      '@codemirror/lang-css': 6.1.1(@codemirror/view@6.9.3)(@lezer/common@1.0.2)
-      '@codemirror/lang-javascript': 6.1.4
-      '@codemirror/language': 6.6.0
-      '@codemirror/state': 6.2.0
-      '@codemirror/view': 6.9.3
-      '@lezer/common': 1.0.2
-      '@lezer/css': 1.1.1
-      '@lezer/html': 1.3.4
-    dev: false
-
-  /@codemirror/lang-javascript@6.1.4:
-    resolution: {integrity: sha512-OxLf7OfOZBTMRMi6BO/F72MNGmgOd9B0vetOLvHsDACFXayBzW8fm8aWnDM0yuy68wTK03MBf4HbjSBNRG5q7A==}
-    dependencies:
-      '@codemirror/autocomplete': 6.4.2(@codemirror/language@6.6.0)(@codemirror/state@6.2.0)(@codemirror/view@6.9.3)(@lezer/common@1.0.2)
-      '@codemirror/language': 6.6.0
-      '@codemirror/lint': 6.2.0
-      '@codemirror/state': 6.2.0
-      '@codemirror/view': 6.9.3
-      '@lezer/common': 1.0.2
-      '@lezer/javascript': 1.4.2
-    dev: false
-
-  /@codemirror/lang-markdown@6.1.0:
-    resolution: {integrity: sha512-HQDJg1Js19fPKKsI3Rp1X0J6mxyrRy2NX6+Evh0+/jGm6IZHL5ygMGKBYNWKXodoDQFvgdofNRG33gWOwV59Ag==}
-    dependencies:
-      '@codemirror/lang-html': 6.4.3
-      '@codemirror/language': 6.6.0
-      '@codemirror/state': 6.2.0
-      '@codemirror/view': 6.9.3
-      '@lezer/common': 1.0.2
-      '@lezer/markdown': 1.0.2
-    dev: false
-
-  /@codemirror/language@6.6.0:
-    resolution: {integrity: sha512-cwUd6lzt3MfNYOobdjf14ZkLbJcnv4WtndYaoBkbor/vF+rCNguMPK0IRtvZJG4dsWiaWPcK8x1VijhvSxnstg==}
-    dependencies:
-      '@codemirror/state': 6.2.0
-      '@codemirror/view': 6.9.3
-      '@lezer/common': 1.0.2
-      '@lezer/highlight': 1.1.4
-      '@lezer/lr': 1.3.3
-      style-mod: 4.0.2
-    dev: false
-
-  /@codemirror/lint@6.2.0:
-    resolution: {integrity: sha512-KVCECmR2fFeYBr1ZXDVue7x3q5PMI0PzcIbA+zKufnkniMBo1325t0h1jM85AKp8l3tj67LRxVpZfgDxEXlQkg==}
-    dependencies:
-      '@codemirror/state': 6.2.0
-      '@codemirror/view': 6.9.3
-      crelt: 1.0.5
-    dev: false
-
-  /@codemirror/search@6.3.0:
-    resolution: {integrity: sha512-rBhZxzT34CarfhgCZGhaLBScABDN3iqJxixzNuINp9lrb3lzm0nTpR77G1VrxGO3HOGK7j62jcJftQM7eCOIuw==}
-    dependencies:
-      '@codemirror/state': 6.2.0
-      '@codemirror/view': 6.9.3
-      crelt: 1.0.5
-    dev: false
-
-  /@codemirror/state@6.2.0:
-    resolution: {integrity: sha512-69QXtcrsc3RYtOtd+GsvczJ319udtBf1PTrr2KbLWM/e2CXUPnh0Nz9AUo8WfhSQ7GeL8dPVNUmhQVgpmuaNGA==}
-    dev: false
-
-  /@codemirror/view@6.9.3:
-    resolution: {integrity: sha512-BJ5mvEIhFM+SrNwc5X8pLIvMM9ffjkviVbxpg84Xk2OE8ZyKaEbId8kX+nAYEEso7+qnbwsXe1bkAHsasebMow==}
-    dependencies:
-      '@codemirror/state': 6.2.0
-      style-mod: 4.0.2
-      w3c-keyname: 2.2.6
     dev: false
 
   /@colors/colors@1.5.0:
@@ -1327,51 +1101,6 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
-    dev: false
-
-  /@lezer/common@1.0.2:
-    resolution: {integrity: sha512-SVgiGtMnMnW3ActR8SXgsDhw7a0w0ChHSYAyAUxxrOiJ1OqYWEKk/xJd84tTSPo1mo6DXLObAJALNnd0Hrv7Ng==}
-    dev: false
-
-  /@lezer/css@1.1.1:
-    resolution: {integrity: sha512-mSjx+unLLapEqdOYDejnGBokB5+AiJKZVclmud0MKQOKx3DLJ5b5VTCstgDDknR6iIV4gVrN6euzsCnj0A2gQA==}
-    dependencies:
-      '@lezer/highlight': 1.1.4
-      '@lezer/lr': 1.3.3
-    dev: false
-
-  /@lezer/highlight@1.1.4:
-    resolution: {integrity: sha512-IECkFmw2l7sFcYXrV8iT9GeY4W0fU4CxX0WMwhmhMIVjoDdD1Hr6q3G2NqVtLg/yVe5n7i4menG3tJ2r4eCrPQ==}
-    dependencies:
-      '@lezer/common': 1.0.2
-    dev: false
-
-  /@lezer/html@1.3.4:
-    resolution: {integrity: sha512-HdJYMVZcT4YsMo7lW3ipL4NoyS2T67kMPuSVS5TgLGqmaCjEU/D6xv7zsa1ktvTK5lwk7zzF1e3eU6gBZIPm5g==}
-    dependencies:
-      '@lezer/common': 1.0.2
-      '@lezer/highlight': 1.1.4
-      '@lezer/lr': 1.3.3
-    dev: false
-
-  /@lezer/javascript@1.4.2:
-    resolution: {integrity: sha512-77qdAD4zanmImPiAu4ibrMUzRc79UHoccdPa+Ey5iwS891TAkhnMAodUe17T7zV7tnF7e9HXM0pfmjoGEhrppg==}
-    dependencies:
-      '@lezer/highlight': 1.1.4
-      '@lezer/lr': 1.3.3
-    dev: false
-
-  /@lezer/lr@1.3.3:
-    resolution: {integrity: sha512-JPQe3mwJlzEVqy67iQiiGozhcngbO8QBgpqZM6oL1Wj/dXckrEexpBLeFkq0edtW5IqnPRFxA24BHJni8Js69w==}
-    dependencies:
-      '@lezer/common': 1.0.2
-    dev: false
-
-  /@lezer/markdown@1.0.2:
-    resolution: {integrity: sha512-8CY0OoZ6V5EzPjSPeJ4KLVbtXdLBd8V6sRCooN5kHnO28ytreEGTyrtU/zUwo/XLRzGr/e1g44KlzKi3yWGB5A==}
-    dependencies:
-      '@lezer/common': 1.0.2
-      '@lezer/highlight': 1.1.4
     dev: false
 
   /@milkdown/core@7.2.3(@milkdown/ctx@7.2.3)(@milkdown/prose@7.2.3)(@milkdown/transformer@7.2.3):
@@ -1758,7 +1487,7 @@ packages:
       tslib: 2.5.0
     dev: false
 
-  /@milkdown/vue@7.2.3(@milkdown/core@7.2.3)(@milkdown/ctx@7.2.3)(@milkdown/prose@7.2.3)(@milkdown/transformer@7.2.3)(vue@3.2.47):
+  /@milkdown/vue@7.2.3(@milkdown/core@7.2.3)(@milkdown/ctx@7.2.3)(@milkdown/prose@7.2.3)(@milkdown/transformer@7.2.3)(vue@3.3.4):
     resolution: {integrity: sha512-0uMDMgmGk6BcwdIOXehor70C0Moru0ZfB/zD8nMJmSqOnosts4cI3Ee7j7FPFDsD/MteE1xlBSmhfkO1RosTQg==}
     peerDependencies:
       '@milkdown/core': ^7.2.0
@@ -1769,7 +1498,7 @@ packages:
       '@milkdown/prose': 7.2.3
       '@milkdown/utils': 7.2.3(@milkdown/core@7.2.3)(@milkdown/ctx@7.2.3)(@milkdown/prose@7.2.3)(@milkdown/transformer@7.2.3)
       tslib: 2.5.0
-      vue: 3.2.47
+      vue: 3.3.4
     transitivePeerDependencies:
       - '@milkdown/ctx'
       - '@milkdown/transformer'
@@ -1803,7 +1532,7 @@ packages:
       tslib: 2.5.0
     dev: false
 
-  /@prosemirror-adapter/vue@0.2.5(vue@3.2.47):
+  /@prosemirror-adapter/vue@0.2.5(vue@3.3.4):
     resolution: {integrity: sha512-dPBmUCATd9U0rk4iAssseZK98ewMOOdMiApPJl3aiVfdn4eVp8n6KrNAOF082oB09ZoqMFWy8EMtLvOp7uwG1w==}
     peerDependencies:
       vue: ^3.0.0
@@ -1811,7 +1540,7 @@ packages:
       '@prosemirror-adapter/core': 0.2.5
       nanoid: 4.0.2
       tslib: 2.5.0
-      vue: 3.2.47
+      vue: 3.3.4
     dev: false
 
   /@rollup/plugin-node-resolve@15.1.0:
@@ -1922,10 +1651,6 @@ packages:
 
   /@types/chai@4.3.5:
     resolution: {integrity: sha512-mEo1sAde+UCE6b2hxn332f1g1E8WfYRu6p5SvTKr2ZKC1f7gFJXk4h5PyGP9Dt6gCaG8y8XhwnXWC6Iy2cmBng==}
-    dev: true
-
-  /@types/cytoscape@3.19.9:
-    resolution: {integrity: sha512-oqCx0ZGiBO0UESbjgq052vjDAy2X53lZpMrWqiweMpvVwKw/2IiYDdzPFK6+f4tMfdv9YKEM9raO5bAZc3UYBg==}
     dev: true
 
   /@types/d3-array@2.12.3:
@@ -2164,6 +1889,7 @@ packages:
 
   /@types/lodash@4.14.194:
     resolution: {integrity: sha512-r22s9tAS7imvBt2lyHC9B8AGwWnXaYb1tY09oyLkXDs4vArpYJzw09nj8MLx5VfciBPGIb+ZwG0ssYnEPJxn/g==}
+    dev: false
 
   /@types/mdast@3.0.11:
     resolution: {integrity: sha512-Y/uImid8aAwrEA24/1tcRZwpxX3pIFTSilcNDKSPn+Y2iDywSEachzRuvgAYYLR3wpGXAsMbv5lvKLDZLeYPAw==}
@@ -2429,14 +2155,6 @@ packages:
       '@volar/language-core': 1.7.8
     dev: true
 
-  /@vue/compiler-core@3.2.47:
-    resolution: {integrity: sha512-p4D7FDnQb7+YJmO2iPEv0SQNeNzcbHdGByJDsT4lynf63AFkOTFN07HsiRSvjGo0QrxR/o3d0hUyNCUnBU2Tig==}
-    dependencies:
-      '@babel/parser': 7.21.4
-      '@vue/shared': 3.2.47
-      estree-walker: 2.0.2
-      source-map: 0.6.1
-
   /@vue/compiler-core@3.3.4:
     resolution: {integrity: sha512-cquyDNvZ6jTbf/+x+AgM2Arrp6G4Dzbb0R64jiG804HRMfRiFXWI6kqUVqZ6ZR0bQhIoQjB4+2bhNtVwndW15g==}
     dependencies:
@@ -2445,31 +2163,11 @@ packages:
       estree-walker: 2.0.2
       source-map-js: 1.0.2
 
-  /@vue/compiler-dom@3.2.47:
-    resolution: {integrity: sha512-dBBnEHEPoftUiS03a4ggEig74J2YBZ2UIeyfpcRM2tavgMWo4bsEfgCGsu+uJIL/vax9S+JztH8NmQerUo7shQ==}
-    dependencies:
-      '@vue/compiler-core': 3.2.47
-      '@vue/shared': 3.2.47
-
   /@vue/compiler-dom@3.3.4:
     resolution: {integrity: sha512-wyM+OjOVpuUukIq6p5+nwHYtj9cFroz9cwkfmP9O1nzH68BenTTv0u7/ndggT8cIQlnBeOo6sUT/gvHcIkLA5w==}
     dependencies:
       '@vue/compiler-core': 3.3.4
       '@vue/shared': 3.3.4
-
-  /@vue/compiler-sfc@3.2.47:
-    resolution: {integrity: sha512-rog05W+2IFfxjMcFw10tM9+f7i/+FFpZJJ5XHX72NP9eC2uRD+42M3pYcQqDXVYoj74kHMSEdQ/WmCjt8JFksQ==}
-    dependencies:
-      '@babel/parser': 7.21.4
-      '@vue/compiler-core': 3.2.47
-      '@vue/compiler-dom': 3.2.47
-      '@vue/compiler-ssr': 3.2.47
-      '@vue/reactivity-transform': 3.2.47
-      '@vue/shared': 3.2.47
-      estree-walker: 2.0.2
-      magic-string: 0.25.9
-      postcss: 8.4.23
-      source-map: 0.6.1
 
   /@vue/compiler-sfc@3.3.4:
     resolution: {integrity: sha512-6y/d8uw+5TkCuzBkgLS0v3lSM3hJDntFEiUORM11pQ/hKvkhSKZrXW6i69UyXlJQisJxuUEJKAWEqWbWsLeNKQ==}
@@ -2484,12 +2182,6 @@ packages:
       magic-string: 0.30.0
       postcss: 8.4.23
       source-map-js: 1.0.2
-
-  /@vue/compiler-ssr@3.2.47:
-    resolution: {integrity: sha512-wVXC+gszhulcMD8wpxMsqSOpvDZ6xKXSVWkf50Guf/S+28hTAXPDYRTbLQ3EDkOP5Xz/+SY37YiwDquKbJOgZw==}
-    dependencies:
-      '@vue/compiler-dom': 3.2.47
-      '@vue/shared': 3.2.47
 
   /@vue/compiler-ssr@3.3.4:
     resolution: {integrity: sha512-m0v6oKpup2nMSehwA6Uuu+j+wEwcy7QmwMkVNVfrV9P2qE5KshC6RwOCq8fjGS/Eak/uNb8AaWekfiXxbBB6gQ==}
@@ -2552,15 +2244,6 @@ packages:
       vue-template-compiler: 2.7.14
     dev: true
 
-  /@vue/reactivity-transform@3.2.47:
-    resolution: {integrity: sha512-m8lGXw8rdnPVVIdIFhf0LeQ/ixyHkH5plYuS83yop5n7ggVJU+z5v0zecwEnX7fa7HNLBhh2qngJJkxpwEEmYA==}
-    dependencies:
-      '@babel/parser': 7.21.4
-      '@vue/compiler-core': 3.2.47
-      '@vue/shared': 3.2.47
-      estree-walker: 2.0.2
-      magic-string: 0.25.9
-
   /@vue/reactivity-transform@3.3.4:
     resolution: {integrity: sha512-MXgwjako4nu5WFLAjpBnCj/ieqcjE2aJBINUNQzkZQfzIZA4xn+0fV1tIYBJvvva3N3OvKGofRLvQIwEQPpaXw==}
     dependencies:
@@ -2570,21 +2253,10 @@ packages:
       estree-walker: 2.0.2
       magic-string: 0.30.0
 
-  /@vue/reactivity@3.2.47:
-    resolution: {integrity: sha512-7khqQ/75oyyg+N/e+iwV6lpy1f5wq759NdlS1fpAhFXa8VeAIKGgk2E/C4VF59lx5b+Ezs5fpp/5WsRYXQiKxQ==}
-    dependencies:
-      '@vue/shared': 3.2.47
-
   /@vue/reactivity@3.3.4:
     resolution: {integrity: sha512-kLTDLwd0B1jG08NBF3R5rqULtv/f8x3rOFByTDz4J53ttIQEDmALqKqXY0J+XQeN0aV2FBxY8nJDf88yvOPAqQ==}
     dependencies:
       '@vue/shared': 3.3.4
-
-  /@vue/runtime-core@3.2.47:
-    resolution: {integrity: sha512-RZxbLQIRB/K0ev0K9FXhNbBzT32H9iRtYbaXb0ZIz2usLms/D55dJR2t6cIEUn6vyhS3ALNvNthI+Q95C+NOpA==}
-    dependencies:
-      '@vue/reactivity': 3.2.47
-      '@vue/shared': 3.2.47
 
   /@vue/runtime-core@3.3.4:
     resolution: {integrity: sha512-R+bqxMN6pWO7zGI4OMlmvePOdP2c93GsHFM/siJI7O2nxFRzj55pLwkpCedEY+bTMgp5miZ8CxfIZo3S+gFqvA==}
@@ -2592,28 +2264,12 @@ packages:
       '@vue/reactivity': 3.3.4
       '@vue/shared': 3.3.4
 
-  /@vue/runtime-dom@3.2.47:
-    resolution: {integrity: sha512-ArXrFTjS6TsDei4qwNvgrdmHtD930KgSKGhS5M+j8QxXrDJYLqYw4RRcDy1bz1m1wMmb6j+zGLifdVHtkXA7gA==}
-    dependencies:
-      '@vue/runtime-core': 3.2.47
-      '@vue/shared': 3.2.47
-      csstype: 2.6.21
-
   /@vue/runtime-dom@3.3.4:
     resolution: {integrity: sha512-Aj5bTJ3u5sFsUckRghsNjVTtxZQ1OyMWCr5dZRAPijF/0Vy4xEoRCwLyHXcj4D0UFbJ4lbx3gPTgg06K/GnPnQ==}
     dependencies:
       '@vue/runtime-core': 3.3.4
       '@vue/shared': 3.3.4
       csstype: 3.1.2
-
-  /@vue/server-renderer@3.2.47(vue@3.2.47):
-    resolution: {integrity: sha512-dN9gc1i8EvmP9RCzvneONXsKfBRgqFeFZLurmHOveL7oH6HiFXJw5OGu294n1nHc/HMgTy6LulU/tv5/A7f/LA==}
-    peerDependencies:
-      vue: 3.2.47
-    dependencies:
-      '@vue/compiler-ssr': 3.2.47
-      '@vue/shared': 3.2.47
-      vue: 3.2.47
 
   /@vue/server-renderer@3.3.4(vue@3.3.4):
     resolution: {integrity: sha512-Q6jDDzR23ViIb67v+vM1Dqntu+HUexQcsWKhhQa4ARVzxOY2HbC7QRW/ggkDBd5BU+uM1sV6XOAP0b216o34JQ==}
@@ -2623,9 +2279,6 @@ packages:
       '@vue/compiler-ssr': 3.3.4
       '@vue/shared': 3.3.4
       vue: 3.3.4
-
-  /@vue/shared@3.2.47:
-    resolution: {integrity: sha512-BHGyyGN3Q97EZx0taMQ+OLNuZcW3d37ZEVmEAyeoA9ERdGvm9Irc/0Fua8SNyOtV1w6BS4q25wbMzJujO9HIfQ==}
 
   /@vue/shared@3.3.4:
     resolution: {integrity: sha512-7OjdcV8vQ74eiz1TZLzZP4JwqM5fA94K6yntPS5Z25r9HDuGNzaGdgvwKYq6S+MxwF0TFRwe50fIR/MYnakdkQ==}
@@ -3075,34 +2728,6 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /cm6-theme-basic-light@0.2.0(@codemirror/language@6.6.0)(@codemirror/state@6.2.0)(@codemirror/view@6.9.3)(@lezer/highlight@1.1.4):
-    resolution: {integrity: sha512-1prg2gv44sYfpHscP26uLT/ePrh0mlmVwMSoSd3zYKQ92Ab3jPRLzyCnpyOCQLJbK+YdNs4HvMRqMNYdy4pMhA==}
-    peerDependencies:
-      '@codemirror/language': ^6.0.0
-      '@codemirror/state': ^6.0.0
-      '@codemirror/view': ^6.0.0
-      '@lezer/highlight': ^1.0.0
-    dependencies:
-      '@codemirror/language': 6.6.0
-      '@codemirror/state': 6.2.0
-      '@codemirror/view': 6.9.3
-      '@lezer/highlight': 1.1.4
-    dev: false
-
-  /codemirror@6.0.1(@lezer/common@1.0.2):
-    resolution: {integrity: sha512-J8j+nZ+CdWmIeFIGXEFbFPtpiYacFMDR8GlHK3IyHQJMCaVRfGx9NT+Hxivv1ckLWPvNdZqndbr/7lVhrf/Svg==}
-    dependencies:
-      '@codemirror/autocomplete': 6.4.2(@codemirror/language@6.6.0)(@codemirror/state@6.2.0)(@codemirror/view@6.9.3)(@lezer/common@1.0.2)
-      '@codemirror/commands': 6.2.2
-      '@codemirror/language': 6.6.0
-      '@codemirror/lint': 6.2.0
-      '@codemirror/search': 6.3.0
-      '@codemirror/state': 6.2.0
-      '@codemirror/view': 6.9.3
-    transitivePeerDependencies:
-      - '@lezer/common'
-    dev: false
-
   /color-convert@1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
     dependencies:
@@ -3207,10 +2832,6 @@ packages:
       layout-base: 2.0.1
     dev: false
 
-  /crelt@1.0.5:
-    resolution: {integrity: sha512-+BO9wPPi+DWTDcNYhr/W90myha8ptzftZT+LwcmUbbok0rcP/fequmFYCw8NMoH7pkAZQzU78b3kYrlua5a9eA==}
-    dev: false
-
   /cross-spawn@6.0.5:
     resolution: {integrity: sha512-eTVLrBSt7fjbDygz805pMnstIs2VTBNkRm0qxZd+M7A5XDdxVRWO5MxGBXZhjY4cqLYLdtrGqRf8mBPmzwSpWQ==}
     engines: {node: '>=4.8'}
@@ -3242,9 +2863,6 @@ packages:
     dependencies:
       rrweb-cssom: 0.6.0
     dev: true
-
-  /csstype@2.6.21:
-    resolution: {integrity: sha512-Z1PhmomIfypOpoMjRQB70jfvy/wxT50qW08YXO5lMIJkrdq4yOTR+AW7FqutScmB9NkLwxo+jU+kZLbofZZq/w==}
 
   /csstype@3.1.2:
     resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
@@ -4755,10 +4373,6 @@ packages:
       slash: 3.0.0
     dev: true
 
-  /golden-layout@2.6.0:
-    resolution: {integrity: sha512-sIVQCiRWOymHbVD1Aw/T9/ijbPYAVGBlgGYd1N9MRKfcyBNSpjr87Vg9nSHm+RCT8ELrvK8IJYJV0QRJuVUkCQ==}
-    dev: false
-
   /gopd@1.0.1:
     resolution: {integrity: sha512-d65bNlIadxvpb/A2abVdlqKqV563juRnZ1Wtk6s1sIR8uNsXR70xqIzVqxVf1eTqDunwT2MkczEeaezCKTZhwA==}
     dependencies:
@@ -5571,11 +5185,6 @@ packages:
     dependencies:
       yallist: 4.0.0
     dev: true
-
-  /magic-string@0.25.9:
-    resolution: {integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==}
-    dependencies:
-      sourcemap-codec: 1.4.8
 
   /magic-string@0.30.0:
     resolution: {integrity: sha512-LA+31JYDJLs82r2ScLrlz1GjSgu66ZV518eyWT+S8VhyQn/JL0u9MeBOvQMGYiPk1DBiSN9DDMOcXvigJZaViQ==}
@@ -7184,14 +6793,6 @@ packages:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
 
-  /source-map@0.6.1:
-    resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==}
-    engines: {node: '>=0.10.0'}
-
-  /sourcemap-codec@1.4.8:
-    resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
-    deprecated: Please use @jridgewell/sourcemap-codec instead
-
   /space-separated-tokens@2.0.2:
     resolution: {integrity: sha512-PEGlAwrG8yXGXRjW32fGbg66JAlOAwbObuqVoJpv/mRgoWDQfgH1wDPvtzWyUSNAXBGSk8h755YDbbcEy3SH2Q==}
     dev: false
@@ -7217,10 +6818,6 @@ packages:
   /spdx-license-ids@3.0.13:
     resolution: {integrity: sha512-XkD+zwiqXHikFZm4AX/7JSCXA98U5Db4AFd5XUg/+9UNtnH75+Z9KxtpYiJZx36mUDVOwH83pl7yvCer6ewM3w==}
     dev: true
-
-  /split-grid@1.0.11:
-    resolution: {integrity: sha512-ELtFtxc3r5we5GZfe6Fi0BFFxIi2M6BY1YEntBscKRDD3zx4JVHqx2VnTRSQu1BixCYSTH3MTjKd4esI2R7EgQ==}
-    dev: false
 
   /split@0.3.3:
     resolution: {integrity: sha512-wD2AeVmxXRBoX44wAycgjVpMhvbwdI2aZjCkvfNcH1YqHQvJVa1duWc73OyVGJUc05fhFaTZeQ/PYsrmyH0JVA==}
@@ -7356,10 +6953,6 @@ packages:
     dependencies:
       acorn: 8.8.2
     dev: true
-
-  /style-mod@4.0.2:
-    resolution: {integrity: sha512-C4myMmRTO8iaC5Gg+N1ftK2WT4eXUTMAa+HEFPPrfVeO/NtqLTtAmV1HbqnuGtLwCek44Ra76fdGUkSqjiMPcQ==}
-    dev: false
 
   /stylis@4.1.3:
     resolution: {integrity: sha512-GP6WDNWf+o403jrEp9c5jibKavrtLW+/qYGhFxFrG8maXhwTBI7gLLhiBb0o7uFccWN+EOS9aMO6cGHWAO07OA==}
@@ -7985,15 +7578,6 @@ packages:
       - supports-color
     dev: true
 
-  /vue-router@4.1.6(vue@3.2.47):
-    resolution: {integrity: sha512-DYWYwsG6xNPmLq/FmZn8Ip+qrhFEzA14EI12MsMgVxvHFDYvlr4NXpVF5hrRH1wVcDP8fGi5F4rxuJSl8/r+EQ==}
-    peerDependencies:
-      vue: ^3.2.0
-    dependencies:
-      '@vue/devtools-api': 6.5.0
-      vue: 3.2.47
-    dev: true
-
   /vue-router@4.2.2(vue@3.3.4):
     resolution: {integrity: sha512-cChBPPmAflgBGmy3tBsjeoe3f3VOSG6naKyY5pjtrqLGbNEXdzCigFUHgBvp9e3ysAtFtEx7OLqcSDh/1Cq2TQ==}
     peerDependencies:
@@ -8001,7 +7585,6 @@ packages:
     dependencies:
       '@vue/devtools-api': 6.5.0
       vue: 3.3.4
-    dev: false
 
   /vue-template-compiler@2.7.14:
     resolution: {integrity: sha512-zyA5Y3ArvVG0NacJDkkzJuPQDF8RFeRlzV2vLeSnhSpieO6LK2OVbdLPi5MPPs09Ii+gMO8nY4S3iKQxBxDmWQ==}
@@ -8021,15 +7604,6 @@ packages:
       semver: 7.3.8
       typescript: 5.1.3
     dev: true
-
-  /vue@3.2.47:
-    resolution: {integrity: sha512-60188y/9Dc9WVrAZeUVSDxRQOZ+z+y5nO2ts9jWXSTkMvayiWxCWOWtBQoYjLeccfXkiiPZWAHcV+WTPhkqJHQ==}
-    dependencies:
-      '@vue/compiler-dom': 3.2.47
-      '@vue/compiler-sfc': 3.2.47
-      '@vue/runtime-dom': 3.2.47
-      '@vue/server-renderer': 3.2.47(vue@3.2.47)
-      '@vue/shared': 3.2.47
 
   /vue@3.3.4:
     resolution: {integrity: sha512-VTyEYn3yvIeY1Py0WaYGZsXnz3y5UnGi62GjVEqvEGPl6nxbOrCXbVOTQWBEJUqAyTUk2uJ5JLVnYJ6ZzGbrSw==}

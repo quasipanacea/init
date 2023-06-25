@@ -1,5 +1,5 @@
 packages:
   - './repos/common/plugins/*'
-  - './repos/common/shared/*'
+  - './repos/common/packages/*'
   - './repos/server-deno'
   - './repos/client-web'
