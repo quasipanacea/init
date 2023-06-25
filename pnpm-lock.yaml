@@ -27,11 +27,11 @@ importers:
         specifier: workspace:^
         version: link:../common/shared/quasipanacea-plugin-utility
       '@trpc/client':
-        specifier: ^10.18.0
-        version: 10.18.0(@trpc/server@10.18.0)
+        specifier: ^10.32.0
+        version: 10.32.0(@trpc/server@10.32.0)
       '@trpc/server':
-        specifier: ^10.18.0
-        version: 10.18.0
+        specifier: ^10.32.0
+        version: 10.32.0
       bulma:
         specifier: ^0.9.4
         version: 0.9.4
@@ -45,7 +45,7 @@ importers:
         specifier: ^4.2.2
         version: 4.2.2(vue@3.3.4)
       zod:
-        specifier: ^3.19.1
+        specifier: ^3.21.4
         version: 3.21.4
     devDependencies:
       '@rollup/plugin-node-resolve':
@@ -185,8 +185,8 @@ importers:
         version: link:../../shared/quasipanacea-plugin-utility
     devDependencies:
       '@trpc/client':
-        specifier: ^10.18.0
-        version: 10.18.0(@trpc/server@10.18.0)
+        specifier: ^10.32.0
+        version: 10.32.0(@trpc/server@10.32.0)
       vue:
         specifier: ^3.2.47
         version: 3.2.47
@@ -382,8 +382,8 @@ importers:
         version: 10.0.2
     devDependencies:
       '@trpc/client':
-        specifier: ^10.18.0
-        version: 10.18.0(@trpc/server@10.18.0)
+        specifier: ^10.32.0
+        version: 10.32.0(@trpc/server@10.32.0)
       vue:
         specifier: ^3.2.47
         version: 3.2.47
@@ -404,8 +404,8 @@ importers:
         version: link:../../shared/quasipanacea-plugin-utility
     devDependencies:
       '@trpc/client':
-        specifier: ^10.18.0
-        version: 10.18.0(@trpc/server@10.18.0)
+        specifier: ^10.32.0
+        version: 10.32.0(@trpc/server@10.32.0)
       vue:
         specifier: ^3.2.47
         version: 3.2.47
@@ -426,8 +426,8 @@ importers:
         version: link:../../shared/quasipanacea-plugin-utility
     devDependencies:
       '@trpc/client':
-        specifier: ^10.18.0
-        version: 10.18.0(@trpc/server@10.18.0)
+        specifier: ^10.32.0
+        version: 10.32.0(@trpc/server@10.32.0)
       vue:
         specifier: ^3.2.47
         version: 3.2.47
@@ -454,8 +454,8 @@ importers:
         version: 0.16.4
     devDependencies:
       '@trpc/client':
-        specifier: ^10.18.0
-        version: 10.18.0(@trpc/server@10.18.0)
+        specifier: ^10.32.0
+        version: 10.32.0(@trpc/server@10.32.0)
       vue:
         specifier: ^3.2.47
         version: 3.2.47
@@ -545,8 +545,8 @@ importers:
         version: 3.3.2
     devDependencies:
       '@trpc/client':
-        specifier: ^10.18.0
-        version: 10.18.0(@trpc/server@10.18.0)
+        specifier: ^10.32.0
+        version: 10.32.0(@trpc/server@10.32.0)
       vue:
         specifier: ^3.2.47
         version: 3.2.47
@@ -567,8 +567,8 @@ importers:
         version: link:../../shared/quasipanacea-plugin-utility
     devDependencies:
       '@trpc/client':
-        specifier: ^10.18.0
-        version: 10.18.0(@trpc/server@10.18.0)
+        specifier: ^10.32.0
+        version: 10.32.0(@trpc/server@10.32.0)
       vue:
         specifier: ^3.2.47
         version: 3.2.47
@@ -660,11 +660,11 @@ importers:
         specifier: workspace:^
         version: link:../quasipanacea-types
       '@trpc/client':
-        specifier: ^10.18.0
-        version: 10.18.0(@trpc/server@10.18.0)
+        specifier: ^10.32.0
+        version: 10.32.0(@trpc/server@10.32.0)
       '@trpc/server':
-        specifier: ^10.18.0
-        version: 10.18.0
+        specifier: ^10.32.0
+        version: 10.32.0
       evt:
         specifier: ^2.4.18
         version: 2.4.18
@@ -673,7 +673,7 @@ importers:
         version: 1.2.0
     devDependencies:
       zod:
-        specifier: ^3.19.1
+        specifier: ^3.21.4
         version: 3.21.4
 
   repos/common/shared/quasipanacea-components:
@@ -774,11 +774,11 @@ importers:
         version: 10.1.2
     devDependencies:
       '@trpc/client':
-        specifier: ^10.18.0
-        version: 10.18.0(@trpc/server@10.18.0)
+        specifier: ^10.32.0
+        version: 10.32.0(@trpc/server@10.32.0)
       '@trpc/server':
-        specifier: ^10.18.0
-        version: 10.18.0
+        specifier: ^10.32.0
+        version: 10.32.0
       '@types/katex':
         specifier: ^0.16.0
         version: 0.16.0
@@ -1900,15 +1900,15 @@ packages:
     engines: {node: '>= 10'}
     dev: true
 
-  /@trpc/client@10.18.0(@trpc/server@10.18.0):
-    resolution: {integrity: sha512-2d+6r2C/xygTjDWX9jT66defgHzbQP0Z8vrvyT3XtPjqU6JNlRNuS2ZtB8xDPdOQUUVnndzZ43BMr+Zu49K0OQ==}
+  /@trpc/client@10.32.0(@trpc/server@10.32.0):
+    resolution: {integrity: sha512-hrj6XV84nE6DH5AmsPJ0JzIRcx3f6zU0tvS705DnZtNBOoMk7Lx+wX+KCDxj4DxLsTXC+roAxZxWwAB6/LGsXA==}
     peerDependencies:
-      '@trpc/server': 10.18.0
+      '@trpc/server': 10.32.0
     dependencies:
-      '@trpc/server': 10.18.0
+      '@trpc/server': 10.32.0
 
-  /@trpc/server@10.18.0:
-    resolution: {integrity: sha512-nVMqdDIF9YLOeC3g6RdAvdCPqkHFjpshSqZGThZ+fyjiWSUXj2ZKCduhJFnY77TjtgODojeaaghmzcnjxb+Onw==}
+  /@trpc/server@10.32.0:
+    resolution: {integrity: sha512-C4HRHpaffw2pekpfNSHQtwlocq6kwAQq48mR9RIsUZGNbjXZbgvBC927vRP6QPAoG+n4oHPWyZ9G1hs3KMcPiw==}
 
   /@tsconfig/node18@2.0.1:
     resolution: {integrity: sha512-UqdfvuJK0SArA2CxhKWwwAWfnVSXiYe63bVpMutc27vpngCntGUZQETO24pEJ46zU6XM+7SpqYoMgcO3bM11Ew==}
