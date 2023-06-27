@@ -45,6 +45,9 @@ importers:
         specifier: ^3.21.4
         version: 3.21.4
     devDependencies:
+      '@quasipanacea/types':
+        specifier: workspace:^
+        version: link:../common/packages/types
       '@rollup/plugin-node-resolve':
         specifier: ^15.1.0
         version: 15.1.0
@@ -245,6 +248,9 @@ importers:
         specifier: workspace:^
         version: link:../../packages/plugin-utility
     devDependencies:
+      '@quasipanacea/types':
+        specifier: workspace:^
+        version: link:../../packages/types
       '@trpc/client':
         specifier: ^10.32.0
         version: 10.32.0(@trpc/server@10.32.0)
@@ -578,6 +584,9 @@ importers:
         specifier: ^3.3.2
         version: 3.3.2
     devDependencies:
+      '@quasipanacea/types':
+        specifier: workspace:^
+        version: link:../../packages/types
       '@trpc/client':
         specifier: ^10.32.0
         version: 10.32.0(@trpc/server@10.32.0)

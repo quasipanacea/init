@@ -1,10 +1,15 @@
 {
 	"settings": {
+		"deno.config": "../../repos/server-deno/deno.jsonc",
 		"search.exclude": {
 			"**/.git": true,
 			"**/node_modules": true,
 			"**/dependencies": true,
-			"**/deno.lock": true
+			"**/deno.lock": true,
+			"**/*.tsbuildinfo": true
+		},
+		"files.exclude": {
+			// "**/*.tsbuildinfo": true
 		}
 	},
 	"folders": [
