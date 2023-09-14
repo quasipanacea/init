@@ -19,7 +19,7 @@ importers:
         version: link:../common/packages/common
       '@quasipanacea/plugin-pack-core':
         specifier: workspace:^
-        version: link:../common/plugins/plugin-pack-core
+        version: link:../common/plugins/plugin.pack.core
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
         version: link:../common/packages/plugin-utility
@@ -233,7 +233,7 @@ importers:
 
   repos/common/packages/types: {}
 
-  repos/common/plugins/plugin-model-colors:
+  repos/common/plugins/plugin.model.colors.controller:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
@@ -249,7 +249,7 @@ importers:
         specifier: ^4.0.0
         version: 4.2.2(vue@3.3.4)
 
-  repos/common/plugins/plugin-model-default:
+  repos/common/plugins/plugin.model.colors.view:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
@@ -265,7 +265,7 @@ importers:
         specifier: ^4.0.0
         version: 4.2.2(vue@3.3.4)
 
-  repos/common/plugins/plugin-model-flat:
+  repos/common/plugins/plugin.model.default.controller:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
@@ -281,7 +281,55 @@ importers:
         specifier: ^4.0.0
         version: 4.2.2(vue@3.3.4)
 
-  repos/common/plugins/plugin-model-graph:
+  repos/common/plugins/plugin.model.default.view:
+    dependencies:
+      '@quasipanacea/common':
+        specifier: workspace:^
+        version: link:../../packages/common
+      '@quasipanacea/plugin-utility':
+        specifier: workspace:^
+        version: link:../../packages/plugin-utility
+    devDependencies:
+      vue:
+        specifier: ^3.0.0
+        version: 3.3.4
+      vue-router:
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
+
+  repos/common/plugins/plugin.model.flat.controller:
+    dependencies:
+      '@quasipanacea/common':
+        specifier: workspace:^
+        version: link:../../packages/common
+      '@quasipanacea/plugin-utility':
+        specifier: workspace:^
+        version: link:../../packages/plugin-utility
+    devDependencies:
+      vue:
+        specifier: ^3.0.0
+        version: 3.3.4
+      vue-router:
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
+
+  repos/common/plugins/plugin.model.flat.view:
+    dependencies:
+      '@quasipanacea/common':
+        specifier: workspace:^
+        version: link:../../packages/common
+      '@quasipanacea/plugin-utility':
+        specifier: workspace:^
+        version: link:../../packages/plugin-utility
+    devDependencies:
+      vue:
+        specifier: ^3.0.0
+        version: 3.3.4
+      vue-router:
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
+
+  repos/common/plugins/plugin.model.graph.controller:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
@@ -303,7 +351,7 @@ importers:
         specifier: ^4.0.0
         version: 4.2.2(vue@3.3.4)
 
-  repos/common/plugins/plugin-model-line:
+  repos/common/plugins/plugin.model.graph.view:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
@@ -325,7 +373,51 @@ importers:
         specifier: ^4.0.0
         version: 4.2.2(vue@3.3.4)
 
-  repos/common/plugins/plugin-model-list:
+  repos/common/plugins/plugin.model.line.controller:
+    dependencies:
+      '@quasipanacea/common':
+        specifier: workspace:^
+        version: link:../../packages/common
+      '@quasipanacea/plugin-utility':
+        specifier: workspace:^
+        version: link:../../packages/plugin-utility
+    devDependencies:
+      '@quasipanacea/types':
+        specifier: workspace:^
+        version: link:../../packages/types
+      '@trpc/client':
+        specifier: ^10.33.0
+        version: 10.33.0(@trpc/server@10.33.0)
+      vue:
+        specifier: ^3.0.0
+        version: 3.3.4
+      vue-router:
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
+
+  repos/common/plugins/plugin.model.line.view:
+    dependencies:
+      '@quasipanacea/common':
+        specifier: workspace:^
+        version: link:../../packages/common
+      '@quasipanacea/plugin-utility':
+        specifier: workspace:^
+        version: link:../../packages/plugin-utility
+    devDependencies:
+      '@quasipanacea/types':
+        specifier: workspace:^
+        version: link:../../packages/types
+      '@trpc/client':
+        specifier: ^10.33.0
+        version: 10.33.0(@trpc/server@10.33.0)
+      vue:
+        specifier: ^3.0.0
+        version: 3.3.4
+      vue-router:
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
+
+  repos/common/plugins/plugin.model.list.controller:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
@@ -341,7 +433,23 @@ importers:
         specifier: ^4.0.0
         version: 4.2.2(vue@3.3.4)
 
-  repos/common/plugins/plugin-model-markmap:
+  repos/common/plugins/plugin.model.list.view:
+    dependencies:
+      '@quasipanacea/common':
+        specifier: workspace:^
+        version: link:../../packages/common
+      '@quasipanacea/plugin-utility':
+        specifier: workspace:^
+        version: link:../../packages/plugin-utility
+    devDependencies:
+      vue:
+        specifier: ^3.0.0
+        version: 3.3.4
+      vue-router:
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
+
+  repos/common/plugins/plugin.model.markmap.controller:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
@@ -369,115 +477,7 @@ importers:
         specifier: ^4.0.0
         version: 4.2.2(vue@3.3.4)
 
-  repos/common/plugins/plugin-modelview-colors:
-    dependencies:
-      '@quasipanacea/common':
-        specifier: workspace:^
-        version: link:../../packages/common
-      '@quasipanacea/plugin-utility':
-        specifier: workspace:^
-        version: link:../../packages/plugin-utility
-    devDependencies:
-      vue:
-        specifier: ^3.0.0
-        version: 3.3.4
-      vue-router:
-        specifier: ^4.0.0
-        version: 4.2.2(vue@3.3.4)
-
-  repos/common/plugins/plugin-modelview-default:
-    dependencies:
-      '@quasipanacea/common':
-        specifier: workspace:^
-        version: link:../../packages/common
-      '@quasipanacea/plugin-utility':
-        specifier: workspace:^
-        version: link:../../packages/plugin-utility
-    devDependencies:
-      vue:
-        specifier: ^3.0.0
-        version: 3.3.4
-      vue-router:
-        specifier: ^4.0.0
-        version: 4.2.2(vue@3.3.4)
-
-  repos/common/plugins/plugin-modelview-flat:
-    dependencies:
-      '@quasipanacea/common':
-        specifier: workspace:^
-        version: link:../../packages/common
-      '@quasipanacea/plugin-utility':
-        specifier: workspace:^
-        version: link:../../packages/plugin-utility
-    devDependencies:
-      vue:
-        specifier: ^3.0.0
-        version: 3.3.4
-      vue-router:
-        specifier: ^4.0.0
-        version: 4.2.2(vue@3.3.4)
-
-  repos/common/plugins/plugin-modelview-graph:
-    dependencies:
-      '@quasipanacea/common':
-        specifier: workspace:^
-        version: link:../../packages/common
-      '@quasipanacea/plugin-utility':
-        specifier: workspace:^
-        version: link:../../packages/plugin-utility
-    devDependencies:
-      '@quasipanacea/types':
-        specifier: workspace:^
-        version: link:../../packages/types
-      '@trpc/client':
-        specifier: ^10.33.0
-        version: 10.33.0(@trpc/server@10.33.0)
-      vue:
-        specifier: ^3.0.0
-        version: 3.3.4
-      vue-router:
-        specifier: ^4.0.0
-        version: 4.2.2(vue@3.3.4)
-
-  repos/common/plugins/plugin-modelview-line:
-    dependencies:
-      '@quasipanacea/common':
-        specifier: workspace:^
-        version: link:../../packages/common
-      '@quasipanacea/plugin-utility':
-        specifier: workspace:^
-        version: link:../../packages/plugin-utility
-    devDependencies:
-      '@quasipanacea/types':
-        specifier: workspace:^
-        version: link:../../packages/types
-      '@trpc/client':
-        specifier: ^10.33.0
-        version: 10.33.0(@trpc/server@10.33.0)
-      vue:
-        specifier: ^3.0.0
-        version: 3.3.4
-      vue-router:
-        specifier: ^4.0.0
-        version: 4.2.2(vue@3.3.4)
-
-  repos/common/plugins/plugin-modelview-list:
-    dependencies:
-      '@quasipanacea/common':
-        specifier: workspace:^
-        version: link:../../packages/common
-      '@quasipanacea/plugin-utility':
-        specifier: workspace:^
-        version: link:../../packages/plugin-utility
-    devDependencies:
-      vue:
-        specifier: ^3.0.0
-        version: 3.3.4
-      vue-router:
-        specifier: ^4.0.0
-        version: 4.2.2(vue@3.3.4)
-
-  repos/common/plugins/plugin-modelview-markmap:
+  repos/common/plugins/plugin.model.markmap.view:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
@@ -505,14 +505,14 @@ importers:
         specifier: ^4.0.0
         version: 4.2.2(vue@3.3.4)
 
-  repos/common/plugins/plugin-overview-basic:
+  repos/common/plugins/plugin.overview.basic:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
         version: link:../../packages/common
       '@quasipanacea/plugin-theme-default':
         specifier: workspace:^
-        version: link:../plugin-theme-default
+        version: link:../plugin.theme.default
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
         version: link:../../packages/plugin-utility
@@ -530,29 +530,7 @@ importers:
         specifier: ^4.0.0
         version: 4.2.2(vue@3.3.4)
 
-  repos/common/plugins/plugin-overview-bullets:
-    dependencies:
-      '@quasipanacea/common':
-        specifier: workspace:^
-        version: link:../../packages/common
-      '@quasipanacea/plugin-theme-default':
-        specifier: workspace:^
-        version: link:../plugin-theme-default
-      '@quasipanacea/plugin-utility':
-        specifier: workspace:^
-        version: link:../../packages/plugin-utility
-    devDependencies:
-      '@quasipanacea/types':
-        specifier: workspace:^
-        version: link:../../packages/types
-      vue:
-        specifier: ^3.0.0
-        version: 3.3.4
-      vue-router:
-        specifier: ^4.0.0
-        version: 4.2.2(vue@3.3.4)
-
-  repos/common/plugins/plugin-overview-debug:
+  repos/common/plugins/plugin.overview.debug:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
@@ -568,7 +546,7 @@ importers:
         specifier: ^4.0.0
         version: 4.2.2(vue@3.3.4)
 
-  repos/common/plugins/plugin-overview-graph:
+  repos/common/plugins/plugin.overview.graph:
     dependencies:
       '@antv/g6':
         specifier: ^4.8.20
@@ -578,7 +556,7 @@ importers:
         version: link:../../packages/common
       '@quasipanacea/plugin-theme-default':
         specifier: workspace:^
-        version: link:../plugin-theme-default
+        version: link:../plugin.theme.default
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
         version: link:../../packages/plugin-utility
@@ -635,134 +613,109 @@ importers:
         specifier: ^4.0.0
         version: 4.2.2(vue@3.3.4)
 
-  repos/common/plugins/plugin-overview-mindelixir:
+  repos/common/plugins/plugin.pack.core:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
         version: link:../../packages/common
-      '@quasipanacea/plugin-utility':
-        specifier: workspace:^
-        version: link:../../packages/plugin-utility
-      mind-elixir:
-        specifier: ^1.2.0
-        version: 1.2.0
-    devDependencies:
-      vue:
-        specifier: ^3.0.0
-        version: 3.3.4
-      vue-router:
-        specifier: ^4.0.0
-        version: 4.2.2(vue@3.3.4)
-
-  repos/common/plugins/plugin-pack-core:
-    dependencies:
-      '@quasipanacea/common':
-        specifier: workspace:^
-        version: link:../../packages/common
-      '@quasipanacea/plugin-model-colors':
-        specifier: workspace:^
-        version: link:../plugin-model-colors
-      '@quasipanacea/plugin-model-default':
-        specifier: workspace:^
-        version: link:../plugin-model-default
-      '@quasipanacea/plugin-model-flat':
-        specifier: workspace:^
-        version: link:../plugin-model-flat
-      '@quasipanacea/plugin-model-graph':
-        specifier: workspace:^
-        version: link:../plugin-model-graph
-      '@quasipanacea/plugin-model-line':
-        specifier: workspace:^
-        version: link:../plugin-model-line
-      '@quasipanacea/plugin-model-list':
-        specifier: workspace:^
-        version: link:../plugin-model-list
-      '@quasipanacea/plugin-model-markmap':
-        specifier: workspace:^
-        version: link:../plugin-model-markmap
-      '@quasipanacea/plugin-modelview-colors':
-        specifier: workspace:^
-        version: link:../plugin-modelview-colors
-      '@quasipanacea/plugin-modelview-default':
-        specifier: workspace:^
-        version: link:../plugin-modelview-default
-      '@quasipanacea/plugin-modelview-flat':
-        specifier: workspace:^
-        version: link:../plugin-modelview-flat
-      '@quasipanacea/plugin-modelview-graph':
-        specifier: workspace:^
-        version: link:../plugin-modelview-graph
-      '@quasipanacea/plugin-modelview-line':
-        specifier: workspace:^
-        version: link:../plugin-modelview-line
-      '@quasipanacea/plugin-modelview-list':
-        specifier: workspace:^
-        version: link:../plugin-modelview-list
-      '@quasipanacea/plugin-modelview-markmap':
-        specifier: workspace:^
-        version: link:../plugin-modelview-markmap
       '@quasipanacea/plugin-overview-basic':
         specifier: workspace:^
-        version: link:../plugin-overview-basic
-      '@quasipanacea/plugin-overview-bullets':
-        specifier: workspace:^
-        version: link:../plugin-overview-bullets
+        version: link:../plugin.overview.basic
       '@quasipanacea/plugin-overview-debug':
         specifier: workspace:^
-        version: link:../plugin-overview-debug
+        version: link:../plugin.overview.debug
       '@quasipanacea/plugin-overview-graph':
         specifier: workspace:^
-        version: link:../plugin-overview-graph
-      '@quasipanacea/plugin-overview-mindelixir':
+        version: link:../plugin.overview.graph
+      '@quasipanacea/plugin.model.colors.controller':
         specifier: workspace:^
-        version: link:../plugin-overview-mindelixir
-      '@quasipanacea/plugin-pod-chemical':
+        version: link:../plugin.model.colors.controller
+      '@quasipanacea/plugin.model.colors.view':
         specifier: workspace:^
-        version: link:../plugin-pod-chemical
-      '@quasipanacea/plugin-pod-debug':
+        version: link:../plugin.model.colors.view
+      '@quasipanacea/plugin.model.default.controller':
         specifier: workspace:^
-        version: link:../plugin-pod-debug
-      '@quasipanacea/plugin-pod-excalidraw':
+        version: link:../plugin.model.default.controller
+      '@quasipanacea/plugin.model.default.view':
         specifier: workspace:^
-        version: link:../plugin-pod-excalidraw
-      '@quasipanacea/plugin-pod-flashcard':
+        version: link:../plugin.model.default.view
+      '@quasipanacea/plugin.model.flat.controller':
         specifier: workspace:^
-        version: link:../plugin-pod-flashcard
-      '@quasipanacea/plugin-pod-latex':
+        version: link:../plugin.model.flat.controller
+      '@quasipanacea/plugin.model.flat.view':
         specifier: workspace:^
-        version: link:../plugin-pod-latex
-      '@quasipanacea/plugin-pod-markdown':
+        version: link:../plugin.model.flat.view
+      '@quasipanacea/plugin.model.graph.controller':
         specifier: workspace:^
-        version: link:../plugin-pod-markdown
-      '@quasipanacea/plugin-pod-plaintext':
+        version: link:../plugin.model.graph.controller
+      '@quasipanacea/plugin.model.graph.view':
         specifier: workspace:^
-        version: link:../plugin-pod-plaintext
-      '@quasipanacea/plugin-podview-chemical':
+        version: link:../plugin.model.graph.view
+      '@quasipanacea/plugin.model.line.controller':
         specifier: workspace:^
-        version: link:../plugin-podview-chemical
-      '@quasipanacea/plugin-podview-debug':
+        version: link:../plugin.model.line.controller
+      '@quasipanacea/plugin.model.line.view':
         specifier: workspace:^
-        version: link:../plugin-podview-debug
-      '@quasipanacea/plugin-podview-excalidraw':
+        version: link:../plugin.model.line.view
+      '@quasipanacea/plugin.model.list.controller':
         specifier: workspace:^
-        version: link:../plugin-podview-excalidraw
-      '@quasipanacea/plugin-podview-flashcard':
+        version: link:../plugin.model.list.controller
+      '@quasipanacea/plugin.model.list.view':
         specifier: workspace:^
-        version: link:../plugin-podview-flashcard
-      '@quasipanacea/plugin-podview-latex':
+        version: link:../plugin.model.list.view
+      '@quasipanacea/plugin.model.markmap.controller':
         specifier: workspace:^
-        version: link:../plugin-podview-latex
-      '@quasipanacea/plugin-podview-milkdown':
+        version: link:../plugin.model.markmap.controller
+      '@quasipanacea/plugin.model.markmap.view':
         specifier: workspace:^
-        version: link:../plugin-podview-milkdown
-      '@quasipanacea/plugin-podview-plaintext':
+        version: link:../plugin.model.markmap.view
+      '@quasipanacea/plugin.pod.chemical.controller':
         specifier: workspace:^
-        version: link:../plugin-podview-plaintext
-      '@quasipanacea/plugin-podview-remark':
+        version: link:../plugin.pod.chemical.controller
+      '@quasipanacea/plugin.pod.chemical.view':
         specifier: workspace:^
-        version: link:../plugin-podview-remark
+        version: link:../plugin.pod.chemical.view
+      '@quasipanacea/plugin.pod.debug.controller':
+        specifier: workspace:^
+        version: link:../plugin.pod.debug.controller
+      '@quasipanacea/plugin.pod.debug.view':
+        specifier: workspace:^
+        version: link:../plugin.pod.debug.view
+      '@quasipanacea/plugin.pod.excalidraw.controller':
+        specifier: workspace:^
+        version: link:../plugin.pod.excalidraw.controller
+      '@quasipanacea/plugin.pod.excalidraw.view':
+        specifier: workspace:^
+        version: link:../plugin.pod.excalidraw.view
+      '@quasipanacea/plugin.pod.flashcard.controller':
+        specifier: workspace:^
+        version: link:../plugin.pod.flashcard.controller
+      '@quasipanacea/plugin.pod.flashcard.view':
+        specifier: workspace:^
+        version: link:../plugin.pod.flashcard.view
+      '@quasipanacea/plugin.pod.latex.controller':
+        specifier: workspace:^
+        version: link:../plugin.pod.latex.controller
+      '@quasipanacea/plugin.pod.latex.view':
+        specifier: workspace:^
+        version: link:../plugin.pod.latex.view
+      '@quasipanacea/plugin.pod.markdown.controller':
+        specifier: workspace:^
+        version: link:../plugin.pod.markdown.controller
+      '@quasipanacea/plugin.pod.markdown.view.milkdown':
+        specifier: workspace:^
+        version: link:../plugin.pod.markdown.view.milkdown
+      '@quasipanacea/plugin.pod.markdown.view.remark':
+        specifier: workspace:^
+        version: link:../plugin.pod.markdown.view.remark
+      '@quasipanacea/plugin.pod.plaintext.controller':
+        specifier: workspace:^
+        version: link:../plugin.pod.plaintext.controller
+      '@quasipanacea/plugin.pod.plaintext.view':
+        specifier: workspace:^
+        version: link:../plugin.pod.plaintext.view
 
-  repos/common/plugins/plugin-pod-chemical:
+  repos/common/plugins/plugin.pod.chemical.controller:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
@@ -790,7 +743,38 @@ importers:
         specifier: ^4.0.0
         version: 4.2.2(vue@3.3.4)
 
-  repos/common/plugins/plugin-pod-debug:
+  repos/common/plugins/plugin.pod.chemical.view:
+    dependencies:
+      '@quasipanacea/common':
+        specifier: workspace:^
+        version: link:../../packages/common
+      '@quasipanacea/plugin-utility':
+        specifier: workspace:^
+        version: link:../../packages/plugin-utility
+      '@quasipanacea/plugin.pod.chemical.controller':
+        specifier: workspace:^
+        version: link:../plugin.pod.chemical.controller
+      github-markdown-css:
+        specifier: ^5.2.0
+        version: 5.2.0
+      katex:
+        specifier: ^0.16.4
+        version: 0.16.4
+      mermaid:
+        specifier: ^10.0.2
+        version: 10.0.2
+    devDependencies:
+      '@trpc/client':
+        specifier: ^10.33.0
+        version: 10.33.0(@trpc/server@10.33.0)
+      vue:
+        specifier: ^3.0.0
+        version: 3.3.4
+      vue-router:
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
+
+  repos/common/plugins/plugin.pod.debug.controller:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
@@ -809,7 +793,29 @@ importers:
         specifier: ^4.0.0
         version: 4.2.2(vue@3.3.4)
 
-  repos/common/plugins/plugin-pod-excalidraw:
+  repos/common/plugins/plugin.pod.debug.view:
+    dependencies:
+      '@quasipanacea/common':
+        specifier: workspace:^
+        version: link:../../packages/common
+      '@quasipanacea/plugin-utility':
+        specifier: workspace:^
+        version: link:../../packages/plugin-utility
+      '@quasipanacea/plugin.pod.debug.controller':
+        specifier: workspace:^
+        version: link:../plugin.pod.debug.controller
+    devDependencies:
+      '@trpc/client':
+        specifier: ^10.33.0
+        version: 10.33.0(@trpc/server@10.33.0)
+      vue:
+        specifier: ^3.0.0
+        version: 3.3.4
+      vue-router:
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
+
+  repos/common/plugins/plugin.pod.excalidraw.controller:
     dependencies:
       '@excalidraw/excalidraw':
         specifier: ^0.15.2
@@ -843,142 +849,7 @@ importers:
         specifier: ^4.0.0
         version: 4.2.2(vue@3.3.4)
 
-  repos/common/plugins/plugin-pod-flashcard:
-    dependencies:
-      '@quasipanacea/common':
-        specifier: workspace:^
-        version: link:../../packages/common
-      '@quasipanacea/plugin-utility':
-        specifier: workspace:^
-        version: link:../../packages/plugin-utility
-    devDependencies:
-      '@trpc/client':
-        specifier: ^10.33.0
-        version: 10.33.0(@trpc/server@10.33.0)
-      vue:
-        specifier: ^3.0.0
-        version: 3.3.4
-      vue-router:
-        specifier: ^4.0.0
-        version: 4.2.2(vue@3.3.4)
-
-  repos/common/plugins/plugin-pod-latex:
-    dependencies:
-      '@quasipanacea/common':
-        specifier: workspace:^
-        version: link:../../packages/common
-      '@quasipanacea/plugin-utility':
-        specifier: workspace:^
-        version: link:../../packages/plugin-utility
-    devDependencies:
-      '@trpc/client':
-        specifier: ^10.33.0
-        version: 10.33.0(@trpc/server@10.33.0)
-      vue:
-        specifier: ^3.0.0
-        version: 3.3.4
-      vue-router:
-        specifier: ^4.0.0
-        version: 4.2.2(vue@3.3.4)
-
-  repos/common/plugins/plugin-pod-markdown:
-    dependencies:
-      '@quasipanacea/common':
-        specifier: workspace:^
-        version: link:../../packages/common
-      '@quasipanacea/plugin-utility':
-        specifier: workspace:^
-        version: link:../../packages/plugin-utility
-      github-markdown-css:
-        specifier: ^5.2.0
-        version: 5.2.0
-      katex:
-        specifier: ^0.16.4
-        version: 0.16.4
-    devDependencies:
-      '@trpc/client':
-        specifier: ^10.33.0
-        version: 10.33.0(@trpc/server@10.33.0)
-      vue:
-        specifier: ^3.0.0
-        version: 3.3.4
-      vue-router:
-        specifier: ^4.0.0
-        version: 4.2.2(vue@3.3.4)
-
-  repos/common/plugins/plugin-pod-plaintext:
-    dependencies:
-      '@quasipanacea/common':
-        specifier: workspace:^
-        version: link:../../packages/common
-      '@quasipanacea/plugin-utility':
-        specifier: workspace:^
-        version: link:../../packages/plugin-utility
-    devDependencies:
-      '@trpc/client':
-        specifier: ^10.33.0
-        version: 10.33.0(@trpc/server@10.33.0)
-      vue:
-        specifier: ^3.0.0
-        version: 3.3.4
-      vue-router:
-        specifier: ^4.0.0
-        version: 4.2.2(vue@3.3.4)
-
-  repos/common/plugins/plugin-podview-chemical:
-    dependencies:
-      '@quasipanacea/common':
-        specifier: workspace:^
-        version: link:../../packages/common
-      '@quasipanacea/plugin-pod-chemical':
-        specifier: workspace:^
-        version: link:../plugin-pod-chemical
-      '@quasipanacea/plugin-utility':
-        specifier: workspace:^
-        version: link:../../packages/plugin-utility
-      github-markdown-css:
-        specifier: ^5.2.0
-        version: 5.2.0
-      katex:
-        specifier: ^0.16.4
-        version: 0.16.4
-      mermaid:
-        specifier: ^10.0.2
-        version: 10.0.2
-    devDependencies:
-      '@trpc/client':
-        specifier: ^10.33.0
-        version: 10.33.0(@trpc/server@10.33.0)
-      vue:
-        specifier: ^3.0.0
-        version: 3.3.4
-      vue-router:
-        specifier: ^4.0.0
-        version: 4.2.2(vue@3.3.4)
-
-  repos/common/plugins/plugin-podview-debug:
-    dependencies:
-      '@quasipanacea/common':
-        specifier: workspace:^
-        version: link:../../packages/common
-      '@quasipanacea/plugin-pod-debug':
-        specifier: workspace:^
-        version: link:../plugin-pod-debug
-      '@quasipanacea/plugin-utility':
-        specifier: workspace:^
-        version: link:../../packages/plugin-utility
-    devDependencies:
-      '@trpc/client':
-        specifier: ^10.33.0
-        version: 10.33.0(@trpc/server@10.33.0)
-      vue:
-        specifier: ^3.0.0
-        version: 3.3.4
-      vue-router:
-        specifier: ^4.0.0
-        version: 4.2.2(vue@3.3.4)
-
-  repos/common/plugins/plugin-podview-excalidraw:
+  repos/common/plugins/plugin.pod.excalidraw.view:
     dependencies:
       '@excalidraw/excalidraw':
         specifier: ^0.15.2
@@ -986,12 +857,12 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:^
         version: link:../../packages/common
-      '@quasipanacea/plugin-pod-excalidraw':
-        specifier: workspace:^
-        version: link:../plugin-pod-excalidraw
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
         version: link:../../packages/plugin-utility
+      '@quasipanacea/plugin.pod.excalidraw.controller':
+        specifier: workspace:^
+        version: link:../plugin.pod.excalidraw.controller
       veaury:
         specifier: ^2.3.12
         version: 2.3.12(react-dom@18.2.0)(react@18.2.0)
@@ -1015,14 +886,11 @@ importers:
         specifier: ^4.0.0
         version: 4.2.2(vue@3.3.4)
 
-  repos/common/plugins/plugin-podview-flashcard:
+  repos/common/plugins/plugin.pod.flashcard.controller:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
         version: link:../../packages/common
-      '@quasipanacea/plugin-pod-flashcard':
-        specifier: workspace:^
-        version: link:../plugin-pod-flashcard
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
         version: link:../../packages/plugin-utility
@@ -1037,14 +905,33 @@ importers:
         specifier: ^4.0.0
         version: 4.2.2(vue@3.3.4)
 
-  repos/common/plugins/plugin-podview-latex:
+  repos/common/plugins/plugin.pod.flashcard.view:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
         version: link:../../packages/common
-      '@quasipanacea/plugin-pod-latex':
+      '@quasipanacea/plugin-utility':
         specifier: workspace:^
-        version: link:../plugin-pod-latex
+        version: link:../../packages/plugin-utility
+      '@quasipanacea/plugin.pod.flashcard.controller':
+        specifier: workspace:^
+        version: link:../plugin.pod.flashcard.controller
+    devDependencies:
+      '@trpc/client':
+        specifier: ^10.33.0
+        version: 10.33.0(@trpc/server@10.33.0)
+      vue:
+        specifier: ^3.0.0
+        version: 3.3.4
+      vue-router:
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
+
+  repos/common/plugins/plugin.pod.latex.controller:
+    dependencies:
+      '@quasipanacea/common':
+        specifier: workspace:^
+        version: link:../../packages/common
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
         version: link:../../packages/plugin-utility
@@ -1059,7 +946,54 @@ importers:
         specifier: ^4.0.0
         version: 4.2.2(vue@3.3.4)
 
-  repos/common/plugins/plugin-podview-milkdown:
+  repos/common/plugins/plugin.pod.latex.view:
+    dependencies:
+      '@quasipanacea/common':
+        specifier: workspace:^
+        version: link:../../packages/common
+      '@quasipanacea/plugin-utility':
+        specifier: workspace:^
+        version: link:../../packages/plugin-utility
+      '@quasipanacea/plugin.pod.latex.controller':
+        specifier: workspace:^
+        version: link:../plugin.pod.latex.controller
+    devDependencies:
+      '@trpc/client':
+        specifier: ^10.33.0
+        version: 10.33.0(@trpc/server@10.33.0)
+      vue:
+        specifier: ^3.0.0
+        version: 3.3.4
+      vue-router:
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
+
+  repos/common/plugins/plugin.pod.markdown.controller:
+    dependencies:
+      '@quasipanacea/common':
+        specifier: workspace:^
+        version: link:../../packages/common
+      '@quasipanacea/plugin-utility':
+        specifier: workspace:^
+        version: link:../../packages/plugin-utility
+      github-markdown-css:
+        specifier: ^5.2.0
+        version: 5.2.0
+      katex:
+        specifier: ^0.16.4
+        version: 0.16.4
+    devDependencies:
+      '@trpc/client':
+        specifier: ^10.33.0
+        version: 10.33.0(@trpc/server@10.33.0)
+      vue:
+        specifier: ^3.0.0
+        version: 3.3.4
+      vue-router:
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
+
+  repos/common/plugins/plugin.pod.markdown.view.milkdown:
     dependencies:
       '@milkdown/core':
         specifier: ^7.2.3
@@ -1124,12 +1058,12 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:^
         version: link:../../packages/common
-      '@quasipanacea/plugin-pod-markdown':
-        specifier: workspace:^
-        version: link:../plugin-pod-markdown
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
         version: link:../../packages/plugin-utility
+      '@quasipanacea/plugin.pod.markdown.controller':
+        specifier: workspace:^
+        version: link:../plugin.pod.markdown.controller
       '@tailwindcss/typography':
         specifier: ^0.5.9
         version: 0.5.9(tailwindcss@3.3.2)
@@ -1153,39 +1087,17 @@ importers:
         specifier: ^4.0.0
         version: 4.2.2(vue@3.3.4)
 
-  repos/common/plugins/plugin-podview-plaintext:
+  repos/common/plugins/plugin.pod.markdown.view.remark:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
         version: link:../../packages/common
-      '@quasipanacea/plugin-pod-plaintext':
-        specifier: workspace:^
-        version: link:../plugin-pod-plaintext
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
         version: link:../../packages/plugin-utility
-    devDependencies:
-      '@trpc/client':
-        specifier: ^10.33.0
-        version: 10.33.0(@trpc/server@10.33.0)
-      vue:
-        specifier: ^3.0.0
-        version: 3.3.4
-      vue-router:
-        specifier: ^4.0.0
-        version: 4.2.2(vue@3.3.4)
-
-  repos/common/plugins/plugin-podview-remark:
-    dependencies:
-      '@quasipanacea/common':
+      '@quasipanacea/plugin.pod.markdown.controller':
         specifier: workspace:^
-        version: link:../../packages/common
-      '@quasipanacea/plugin-pod-markdown':
-        specifier: workspace:^
-        version: link:../plugin-pod-markdown
-      '@quasipanacea/plugin-utility':
-        specifier: workspace:^
-        version: link:../../packages/plugin-utility
+        version: link:../plugin.pod.markdown.controller
       github-markdown-css:
         specifier: ^5.2.0
         version: 5.2.0
@@ -1203,7 +1115,48 @@ importers:
         specifier: ^4.0.0
         version: 4.2.2(vue@3.3.4)
 
-  repos/common/plugins/plugin-theme-default:
+  repos/common/plugins/plugin.pod.plaintext.controller:
+    dependencies:
+      '@quasipanacea/common':
+        specifier: workspace:^
+        version: link:../../packages/common
+      '@quasipanacea/plugin-utility':
+        specifier: workspace:^
+        version: link:../../packages/plugin-utility
+    devDependencies:
+      '@trpc/client':
+        specifier: ^10.33.0
+        version: 10.33.0(@trpc/server@10.33.0)
+      vue:
+        specifier: ^3.0.0
+        version: 3.3.4
+      vue-router:
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
+
+  repos/common/plugins/plugin.pod.plaintext.view:
+    dependencies:
+      '@quasipanacea/common':
+        specifier: workspace:^
+        version: link:../../packages/common
+      '@quasipanacea/plugin-utility':
+        specifier: workspace:^
+        version: link:../../packages/plugin-utility
+      '@quasipanacea/plugin.pod.plaintext.controller':
+        specifier: workspace:^
+        version: link:../plugin.pod.plaintext.controller
+    devDependencies:
+      '@trpc/client':
+        specifier: ^10.33.0
+        version: 10.33.0(@trpc/server@10.33.0)
+      vue:
+        specifier: ^3.0.0
+        version: 3.3.4
+      vue-router:
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
+
+  repos/common/plugins/plugin.theme.default:
     dependencies:
       '@quasipanacea/common':
         specifier: workspace:^
@@ -1230,114 +1183,108 @@ importers:
       '@quasipanacea/common':
         specifier: workspace:^
         version: link:../common/packages/common
-      '@quasipanacea/plugin-model-colors':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-model-colors
-      '@quasipanacea/plugin-model-default':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-model-default
-      '@quasipanacea/plugin-model-flat':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-model-flat
-      '@quasipanacea/plugin-model-graph':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-model-graph
-      '@quasipanacea/plugin-model-line':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-model-line
-      '@quasipanacea/plugin-model-list':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-model-list
-      '@quasipanacea/plugin-model-markmap':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-model-markmap
-      '@quasipanacea/plugin-modelview-colors':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-modelview-colors
-      '@quasipanacea/plugin-modelview-default':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-modelview-default
-      '@quasipanacea/plugin-modelview-flat':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-modelview-flat
-      '@quasipanacea/plugin-modelview-graph':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-modelview-graph
-      '@quasipanacea/plugin-modelview-line':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-modelview-line
-      '@quasipanacea/plugin-modelview-list':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-modelview-list
-      '@quasipanacea/plugin-modelview-markmap':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-modelview-markmap
       '@quasipanacea/plugin-overview-basic':
         specifier: workspace:^
-        version: link:../common/plugins/plugin-overview-basic
-      '@quasipanacea/plugin-overview-bullets':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-overview-bullets
+        version: link:../common/plugins/plugin.overview.basic
       '@quasipanacea/plugin-overview-debug':
         specifier: workspace:^
-        version: link:../common/plugins/plugin-overview-debug
+        version: link:../common/plugins/plugin.overview.debug
       '@quasipanacea/plugin-overview-graph':
         specifier: workspace:^
-        version: link:../common/plugins/plugin-overview-graph
-      '@quasipanacea/plugin-overview-mindelixir':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-overview-mindelixir
+        version: link:../common/plugins/plugin.overview.graph
       '@quasipanacea/plugin-pack-core':
         specifier: workspace:^
-        version: link:../common/plugins/plugin-pack-core
-      '@quasipanacea/plugin-pod-chemical':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-pod-chemical
-      '@quasipanacea/plugin-pod-debug':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-pod-debug
-      '@quasipanacea/plugin-pod-excalidraw':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-pod-excalidraw
-      '@quasipanacea/plugin-pod-flashcard':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-pod-flashcard
-      '@quasipanacea/plugin-pod-latex':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-pod-latex
-      '@quasipanacea/plugin-pod-markdown':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-pod-markdown
-      '@quasipanacea/plugin-pod-plaintext':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-pod-plaintext
-      '@quasipanacea/plugin-podview-chemical':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-podview-chemical
-      '@quasipanacea/plugin-podview-debug':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-podview-debug
-      '@quasipanacea/plugin-podview-excalidraw':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-podview-excalidraw
-      '@quasipanacea/plugin-podview-flashcard':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-podview-flashcard
-      '@quasipanacea/plugin-podview-latex':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-podview-latex
-      '@quasipanacea/plugin-podview-milkdown':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-podview-milkdown
-      '@quasipanacea/plugin-podview-plaintext':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-podview-plaintext
-      '@quasipanacea/plugin-podview-remark':
-        specifier: workspace:^
-        version: link:../common/plugins/plugin-podview-remark
+        version: link:../common/plugins/plugin.pack.core
       '@quasipanacea/plugin-utility':
         specifier: workspace:^
         version: link:../common/packages/plugin-utility
+      '@quasipanacea/plugin.model.colors.controller':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.model.colors.controller
+      '@quasipanacea/plugin.model.colors.view':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.model.colors.view
+      '@quasipanacea/plugin.model.default.controller':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.model.default.controller
+      '@quasipanacea/plugin.model.default.view':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.model.default.view
+      '@quasipanacea/plugin.model.flat.controller':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.model.flat.controller
+      '@quasipanacea/plugin.model.flat.view':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.model.flat.view
+      '@quasipanacea/plugin.model.graph.controller':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.model.graph.controller
+      '@quasipanacea/plugin.model.graph.view':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.model.graph.view
+      '@quasipanacea/plugin.model.line.controller':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.model.line.controller
+      '@quasipanacea/plugin.model.line.view':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.model.line.view
+      '@quasipanacea/plugin.model.list.controller':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.model.list.controller
+      '@quasipanacea/plugin.model.list.view':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.model.list.view
+      '@quasipanacea/plugin.model.markmap.controller':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.model.markmap.controller
+      '@quasipanacea/plugin.model.markmap.view':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.model.markmap.view
+      '@quasipanacea/plugin.pod.chemical.controller':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.pod.chemical.controller
+      '@quasipanacea/plugin.pod.chemical.view':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.pod.chemical.view
+      '@quasipanacea/plugin.pod.debug.controller':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.pod.debug.controller
+      '@quasipanacea/plugin.pod.debug.view':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.pod.debug.view
+      '@quasipanacea/plugin.pod.excalidraw.controller':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.pod.excalidraw.controller
+      '@quasipanacea/plugin.pod.excalidraw.view':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.pod.excalidraw.view
+      '@quasipanacea/plugin.pod.flashcard.controller':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.pod.flashcard.controller
+      '@quasipanacea/plugin.pod.flashcard.view':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.pod.flashcard.view
+      '@quasipanacea/plugin.pod.latex.controller':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.pod.latex.controller
+      '@quasipanacea/plugin.pod.latex.view':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.pod.latex.view
+      '@quasipanacea/plugin.pod.markdown.controller':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.pod.markdown.controller
+      '@quasipanacea/plugin.pod.markdown.view.milkdown':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.pod.markdown.view.milkdown
+      '@quasipanacea/plugin.pod.markdown.view.remark':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.pod.markdown.view.remark
+      '@quasipanacea/plugin.pod.plaintext.controller':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.pod.plaintext.controller
+      '@quasipanacea/plugin.pod.plaintext.view':
+        specifier: workspace:^
+        version: link:../common/plugins/plugin.pod.plaintext.view
 
 packages:
 
