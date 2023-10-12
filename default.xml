@@ -5,12 +5,14 @@
 
 	<default revision="main" remote="me" />
 
-	<project name=".github" path="repos/.github" />
-	<project name="aggregator" path="repos/aggregator" />
-	<project name="cli" path="repos/cli" />
-	<project name="client-web" path="repos/client-web" />
-	<project name="common" path="repos/common" />
-	<project name="docs" path="repos/docs" />
-	<project name="server-deno" path="repos/server-deno" />
-	<project name="webext" path="repos/webext" />
+	<project name=".github" path="repositories/.github" />
+	<project name="cli" path="repositories/cli" />
+	<project name="docs" path="repositories/docs" />
+	<project name="client-web" path="repositories/client-web" />
+	<project name="common" path="repositories/common" />
+	<project name="plugins" path="repositories/plugins" />
+	<project name="apps" path="repositories/apps" />
+	<project name="aggregator" path="repositories/aggregator" />
+	<project name="server" path="repositories/server" />
+	<project name="webext" path="repositories/webext" />
 </manifest>

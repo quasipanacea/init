@@ -1,6 +1,6 @@
 {
 	"settings": {
-		"deno.config": "../../repos/server-deno/deno.jsonc",
+		"deno.config": "../../repositories/server/deno.jsonc",
 		"search.exclude": {
 			"**/.git": true,
 			"**/node_modules": true,
@@ -14,28 +14,28 @@
 	},
 	"folders": [
 		{
-			"path": "./repos/.github"
+			"path": "./repositories/.github"
 		},
 		{
-			"path": "./repos/docs"
+			"path": "./repositories/docs"
 		},
 		{
-			"path": "./repos/cli"
+			"path": "./repositories/cli"
 		},
 		{
-			"path": "./repos/common"
+			"path": "./repositories/common"
 		},
 		{
-			"path": "./repos/client-web"
+			"path": "./repositories/client-web"
 		},
 		{
-			"path": "./repos/server-deno"
+			"path": "./repositories/server"
 		},
 		{
-			"path": "./repos/webext"
+			"path": "./repositories/webext"
 		},
 		{
-			"path": "./repos/aggregator"
+			"path": "./repositories/aggregator"
 		},
 		{
 			"path": "."

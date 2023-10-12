@@ -17,14 +17,14 @@ task.init() {
 }
 
 task.do-deps() {
-	mkdir -p './repos'
+	mkdir -p './repositories'
 
-	for dir in "${npm_repos[@]}"; do cd "./repos/$dir"
+	for dir in "${npm_repos[@]}"; do cd "./repositories/$dir"
 		bake.info "Installing dependencies for: $dir"
 		pnpm install
 	cd ~-; done
 
-	for dir in "${cargo_repos[@]}"; do cd "./repos/$dir"
+	for dir in "${cargo_repos[@]}"; do cd "./repositories/$dir"
 		bake.info "Installing dependencies for: $dir"
 		cargo install
 	cd ~-; done

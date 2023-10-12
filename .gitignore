@@ -1,5 +1,5 @@
 .repo/
-repos/
+repositories/
 nightly/
 bootstrap/
 dependencies/

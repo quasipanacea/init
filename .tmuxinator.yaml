@@ -1,7 +1,7 @@
-name: Quasipanacea
-root: ./repos
+name: 'Quasipanacea'
+root: './repositories'
 
 windows:
-  - client-web: cd client-web && ./bake dev
-  - server-deno: cd server-deno && ./bake dev
-  - webext: cd webext && ./bake dev
+  - client-web: 'cd client-web && ./bake dev'
+  - server: 'cd server && ./bake dev'
+  - webext: 'cd webext && ./bake dev'
