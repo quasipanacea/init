@@ -26,6 +26,12 @@
 			"path": "./repositories/common"
 		},
 		{
+			"path": "./repositories/plugins"
+		},
+		{
+			"path": "./repositories/apps"
+		},
+		{
 			"path": "./repositories/client-web"
 		},
 		{

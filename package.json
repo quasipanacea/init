@@ -1,5 +1,8 @@
 {
 	"devDependencies": {
+		"@hyperupcall/prettier-config": "^0.7.0",
+		"prettier": "^3.0.3",
+		"prettier-plugin-pkg": "^0.18.0",
 		"typescript": "^5.0.4"
 	}
 }

@@ -1,5 +1,8 @@
 packages:
-  - './repositories/common/plugins/*'
   - './repositories/common/packages/*'
+  - './repositories/plugins/features/*'
+  - './repositories/plugins/packs/*'
+  - './repositories/plugins/themes/*'
+  - './repositories/apps/packages/*'
   - './repositories/server'
   - './repositories/client-web'
