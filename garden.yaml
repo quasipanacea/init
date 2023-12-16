@@ -1,0 +1,39 @@
+---
+garden:
+  root: '${GARDEN_CONFIG_DIR}/repositories'
+trees:
+  .github:
+    url: 'https://github.com/quasipanacea/.github.git'
+  cli:
+    url: 'https://github.com/quasipanacea/cli.git'
+  docs:
+    url: 'https://github.com/quasipanacea/docs.git'
+  client-web:
+    url: 'https://github.com/quasipanacea/client-web.git'
+  common:
+    url: 'https://github.com/quasipanacea/common.git'
+  plugins:
+    url: 'https://github.com/quasipanacea/plugins.git'
+  apps:
+    url: 'https://github.com/quasipanacea/apps.git'
+  aggregator:
+    url: 'https://github.com/quasipanacea/aggregator.git'
+  server:
+    url: 'https://github.com/quasipanacea/server.git'
+  webext:
+    url: 'https://github.com/quasipanacea/webext.git'
+groups:
+  primary:
+    - '.github'
+    - 'cli'
+    - 'docs'
+    - 'client-web'
+    - 'common'
+    - 'plugins'
+    - 'apps'
+    - 'aggregator'
+    - 'server'
+    - 'webext'
+gardens:
+  all:
+    groups: 'primary'

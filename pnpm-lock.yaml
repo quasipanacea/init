@@ -545,6 +545,31 @@ importers:
         specifier: ^4.0.0
         version: 4.2.2(vue@3.3.4)
 
+  repositories/plugins/features/plugin.overview.canvas:
+    dependencies:
+      '@quasipanacea/common':
+        specifier: workspace:^
+        version: link:../../../common/packages/common
+      '@quasipanacea/plugin-theme-default':
+        specifier: workspace:^
+        version: link:../../themes/plugin.theme.default
+      '@quasipanacea/plugin-utility':
+        specifier: workspace:^
+        version: link:../../../common/packages/plugin-utility
+      muuri:
+        specifier: ^0.9.5
+        version: 0.9.5
+    devDependencies:
+      '@quasipanacea/types':
+        specifier: workspace:^
+        version: link:../../../common/packages/types
+      vue:
+        specifier: ^3.0.0
+        version: 3.3.4
+      vue-router:
+        specifier: ^4.0.0
+        version: 4.2.2(vue@3.3.4)
+
   repositories/plugins/features/plugin.overview.debug:
     dependencies:
       '@quasipanacea/common':
@@ -1083,6 +1108,9 @@ importers:
       '@quasipanacea/plugin-overview-basic':
         specifier: workspace:^
         version: link:../../features/plugin.overview.basic
+      '@quasipanacea/plugin-overview-canvas':
+        specifier: workspace:^
+        version: link:../../features/plugin.overview.canvas
       '@quasipanacea/plugin-overview-debug':
         specifier: workspace:^
         version: link:../../features/plugin.overview.debug
@@ -9886,7 +9914,6 @@ packages:
     name: ts-node
     version: 10.9.1
     hasBin: true
-    prepare: true
     requiresBuild: true
     peerDependencies:
       '@swc/core': '>=1.3.85'
